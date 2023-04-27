@@ -10,3 +10,8 @@ const observer = new IntersectionObserver(function (entries, observer) {
 articles.forEach((article) => {
   observer.observe(article);
 });
+
+// Scroll pause 
+window.addEventListener('scroll', () => {
+  document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+}, false);
