@@ -5,13 +5,106 @@
 }
 
 .scene:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scene:nth-child(1),
+.scene:nth-child(4) {
   background-color: #f99d25;
   width: 100vw;
   height: 844px;
+}
+
+.scene:nth-child(4) {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.shake {
+  position: relative;
+  animation: shake, center-right;
+  animation-duration: 2s, 1s;
+  animation-delay: 0s, 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: forwards;
+}
+
+.animation {
+  animation-name: center-right;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: 4s;
+  animation-iteration-count: 1;
+  animation-direction: forwards;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  10% {
+    transform: translate(-5px, -5px) rotate(-5deg);
+  }
+  20% {
+    transform: translate(5px, -5px) rotate(5deg);
+  }
+  30% {
+    transform: translate(-5px, -5px) rotate(-5deg);
+  }
+  40% {
+    transform: translate(5px, -5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  60% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  70% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  80% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  90% {
+    transform: translate(-5px, -5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes center-right {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(800px);
+  }
+}
+.article__img--tall--shake {
+  width: 100px;
+  margin-left: 20px;
+}
+
+.article__img--small--shake {
+  width: 60px;
+  padding-top: 92px;
+}
+
+.article__img--tall--shake {
+  width: 100px;
+}
+
+.ground {
+  background-color: #fff;
+  height: 5px;
+  width: 100%;
 }
 
 .article__img--logo {
@@ -130,5 +223,6 @@
     transform: translateY(537px) scale(1);
   }
 }
+
 
 /*# sourceMappingURL=styles.css.map */
