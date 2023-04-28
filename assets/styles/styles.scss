@@ -1,11 +1,8 @@
-@import "_colors";
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 .scene:nth-child(1) {
   background-color: #f99d25;
@@ -17,6 +14,8 @@
   flex-direction: column;
 }
 
+
+
 .article__img--logo {
   margin-top: 180px;
   width: 0;
@@ -27,7 +26,7 @@
 }
 
 .scene:nth-child(1) p {
-  color: #ffff;
+  color: white;
   font-size: 32px;
   width: 300px;
   text-align: center;
@@ -42,7 +41,49 @@
   animation: right-left 3s ease-in 4s 1 forwards;
   position: relative;
   right: -300px;
+}
 
+.scene:nth-child(2) {
+  background-color: #f99d25;
+  width: 100vw;
+  height: 844px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.article__img--cloud {
+  height: 300px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 2;
+
+}
+
+.buildings {
+  position: relative;
+  left: 160px;
+  bottom: 210px;
+  z-index: 1;
+
+}
+
+.article__img--small--building {
+  width: 40px;
+  animation-name: move-down;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+.article__img--tall--building {
+  width: 60px;
+  margin-left: 20px;
+  animation-name: move-down-grow;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
 }
 
 @keyframes right-left {
@@ -53,7 +94,6 @@
   100% {
     transform: translateX(-800px);
   }
-
 }
 
 @keyframes fadeIn {
@@ -93,5 +133,15 @@
 
   100% {
     transform: translateY(-180px);
+  }
+}
+
+@keyframes move-down-grow {
+  from {
+    transform: translateY(0) scale(0);
+  }
+
+  to {
+    transform: translateY(537px) scale(1);
   }
 }
