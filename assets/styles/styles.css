@@ -1,7 +1,35 @@
-.test {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scene:nth-child(1) {
+  background-color: #f99d25;
   width: 100%;
-  height: 200px;
-  background-color: #007bff;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scene:nth-child(1) img {
+  width: 0;
+  height: 0;
+  animation-name: grow;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+  from {
+    width: 0px;
+    height: 0px;
+  }
+  to {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
