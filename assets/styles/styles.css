@@ -14,6 +14,8 @@
   flex-direction: column;
 }
 
+
+
 .article__img--logo {
   margin-top: 180px;
   width: 0;
@@ -41,44 +43,118 @@
   right: -300px;
 }
 
+.scene:nth-child(2) {
+  background-color: #f99d25;
+  width: 100vw;
+  height: 844px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.article__img--cloud {
+  height: 300px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 2;
+
+}
+
+.buildings {
+  position: relative;
+  left: 160px;
+  bottom: 210px;
+  z-index: 1;
+  animation-name: move-down, grow-buildings;
+  animation-duration: 3s, 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+.article__img--small--building {
+  width: 40px;
+
+}
+
+.article__img--tall--building {
+  width: 60px;
+  margin-left: 20px;
+}
+
 @keyframes right-left {
   0% {
     transform: translateX(0px);
   }
+
   100% {
     transform: translateX(-800px);
   }
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
+
   25% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @keyframes grow {
   from {
     width: 0px;
     height: 0px;
   }
+
   to {
     width: 390px;
     height: 390px;
   }
 }
+
 @keyframes move-up {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-180px);
+  }
+}
+
+@keyframes move-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(537px);
+  }
+}
+
+@keyframes grow-buildings {
+  from {
+    width: 40px;
+    height: 100px;
+  }
+
+  to {
+    width: 390px;
+    height: 390px;
   }
 }
 
