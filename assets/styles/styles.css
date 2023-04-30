@@ -25,6 +25,37 @@
   align-items: center;
 }
 
+.scene:nth-child(15) {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-color: rgb(189, 219, 230);
+}
+
+
+.scene:nth-child(15) .article__img--tent {
+  position: relative;
+  width: 280px;
+  right: 150px;
+  top: 80px;
+}
+
+.scene:nth-child(15) .article__img--red--cross--person {
+  width: 80px;
+  position: relative;
+  bottom: 38px;
+  right: 20px;
+
+}
+
+.scene:nth-child(15) .article__img--table {
+  width: 120px;
+  position: relative;
+  bottom: 130px;
+  left: 100px;
+}
+
 .shake {
   position: relative;
   animation: shake, center-right;
@@ -48,45 +79,58 @@
   0% {
     transform: translate(0, 0) rotate(0deg);
   }
+
   10% {
     transform: translate(-5px, -5px) rotate(-5deg);
   }
+
   20% {
     transform: translate(5px, -5px) rotate(5deg);
   }
+
   30% {
     transform: translate(-5px, -5px) rotate(-5deg);
   }
+
   40% {
     transform: translate(5px, -5px) rotate(5deg);
   }
+
   50% {
     transform: translate(-5px, 5px) rotate(-5deg);
   }
+
   60% {
     transform: translate(5px, 5px) rotate(5deg);
   }
+
   70% {
     transform: translate(-5px, 5px) rotate(-5deg);
   }
+
   80% {
     transform: translate(5px, 5px) rotate(5deg);
   }
+
   90% {
     transform: translate(-5px, -5px) rotate(-5deg);
   }
+
   100% {
     transform: translate(0, 0) rotate(0deg);
   }
 }
+
 @keyframes center-right {
   0% {
     transform: translateX(0px);
   }
+
   100% {
     transform: translateX(800px);
   }
 }
+
 .article__img--tall--shake {
   width: 100px;
   margin-left: 20px;
@@ -179,46 +223,57 @@
   0% {
     transform: translateX(0px);
   }
+
   100% {
     transform: translateX(-800px);
   }
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
+
   25% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @keyframes grow {
   from {
     width: 0px;
     height: 0px;
   }
+
   to {
     width: 390px;
     height: 390px;
   }
 }
+
 @keyframes move-up {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-180px);
   }
 }
+
 @keyframes move-down {
   from {
     transform: translateY(0) scale(0);
   }
+
   to {
     transform: translateY(537px) scale(1);
   }
