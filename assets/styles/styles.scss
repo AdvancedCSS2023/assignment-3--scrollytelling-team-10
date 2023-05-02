@@ -8,15 +8,16 @@
   height: 844px;
 }
 
-.article__rebuild{
+.article__rebuild {
   height: 800px;
   background-color: $orange;
 }
-.article__div--wrapper{
+
+.article__div--wrapper {
   padding-top: 200px;
 }
 
-.scene__img--bigcar{
+.scene__img--bigcar {
   width: 410px;
   position: relative;
   left: 510px;
@@ -25,7 +26,7 @@
   z-index: 2;
 }
 
-.scene__img--houses{
+.scene__img--houses {
   width: 340px;
   animation: 3.5s fadeIn;
   animation-fill-mode: forwards;
@@ -36,6 +37,7 @@
 
 // Common
 .scene {
+
   &:nth-child(1),
   &:nth-child(4),
   &:nth-child(6),
@@ -53,7 +55,7 @@
   }
 
   &:nth-child(1),
-  &:nth-child(2){
+  &:nth-child(2) {
     justify-content: center;
   }
 
@@ -89,30 +91,30 @@
     animation: right-left 3s ease-in 4s 1 forwards;
   }
 
-  .scene__shake {
-    position: relative;
-    animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;
-  }
-
   .animation {
     animation: center-right 3s 4s ease-in 1 forwards;
   }
+}
 
-  .ground--line {
-    background-color: $white;
-    height: 5px;
-    width: 100%;
-  }
+.ground--line {
+  background-color: $white;
+  height: 5px;
+  width: 100%;
+}
 
-  .scene__shake__img--small {
-    width: 60px;
-    padding-top: 92px;
-  }
+.scene__shake {
+  position: relative;
+  animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;
+}
 
-  .scene__shake__img--tall {
-    width: 100px;
-    margin-left: 20px;
-  }
+.scene__shake__img--small {
+  width: 60px;
+  padding-top: 92px;
+}
+
+.scene__shake__img--tall {
+  width: 100px;
+  margin-left: 20px;
 }
 
 // Scene 2
