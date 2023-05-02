@@ -63,22 +63,30 @@
   z-index: 2;
   width: 230px;
   right: 170px;
-  top: -120px;
+  bottom: 120px;
+  animation-name: move-down;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
 }
 
 .scene:nth-child(10) .article__img--red--cross--person {
   width: 60px;
   position: relative;
   z-index: 2;
-  top: -220px;
   right: 70px;
+  bottom: 210px;
+  animation-name: move-down;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
 }
 
 .scene:nth-child(10) .article__img--table {
   width: 90px;
   position: relative;
   z-index: 2;
-  top: 230px;
+  top: 250px;
   left: 20px;
 }
 
@@ -87,7 +95,7 @@
   width: 100px;
   bottom: 200px;
   left: 25px;
-  bottom: 245px;
+  bottom: 225px;
   z-index: 2;
 }
 
@@ -101,7 +109,7 @@
   height: 0;
   bottom: 200px;
   left: 48px;
-  bottom: 430px;
+  bottom: 410px;
   z-index: 2;
 }
 
@@ -114,7 +122,7 @@
   position: relative;
   z-index: 2;
   left: 110px;
-  top: 130px;
+  top: 140px;
 }
 
 .scene:nth-child(10) .article__img--other--person {
@@ -122,7 +130,7 @@
   position: relative;
   z-index: 2;
   left: 170px;
-  top: 30px;
+  top: 40px;
 }
 
 
@@ -134,6 +142,8 @@
   z-index: 1;
   bottom: 200px;
 }
+
+
 
 
 
