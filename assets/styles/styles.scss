@@ -8,25 +8,52 @@
   height: 844px;
 }
 
+.article__rebuild{
+  height: 800px;
+  background-color: $orange;
+}
+.article__div--wrapper{
+  padding-top: 200px;
+}
+
+.scene__img--bigcar{
+  width: 410px;
+  position: relative;
+  left: 510px;
+  top: 200px;
+  animation: rightstopleft 4s;
+  z-index: 2;
+}
+
+.scene__img--houses{
+  width: 340px;
+  animation: 3.5s fadeIn;
+  animation-fill-mode: forwards;
+  z-index: 1;
+  padding-left: 20px;
+}
+
+
 // Common
 .scene {
-
   &:nth-child(1),
   &:nth-child(4),
-  &:nth-child(6) {
+  &:nth-child(6),
+  .article__rebuild {
     background-color: $orange;
   }
 
   &:nth-child(1),
   &:nth-child(2),
-  &:nth-child(4) {
+  &:nth-child(4),
+  .article__rebuild {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   &:nth-child(1),
-  &:nth-child(2) {
+  &:nth-child(2){
     justify-content: center;
   }
 
