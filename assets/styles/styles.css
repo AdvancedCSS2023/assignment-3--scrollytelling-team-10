@@ -30,31 +30,88 @@
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  background-color: rgb(189, 219, 230);
+  /* background-color: rgb(189, 219, 230); */
+  width: 100vw;
+  height: 844px;
 }
-
 
 .scene:nth-child(15) .article__img--tent {
   position: relative;
-  width: 280px;
-  right: 150px;
-  top: 80px;
+  z-index: 2;
+  width: 230px;
+  right: 170px;
+  top: 395px;
 }
 
 .scene:nth-child(15) .article__img--red--cross--person {
-  width: 80px;
+  width: 60px;
   position: relative;
-  bottom: 38px;
-  right: 20px;
-
+  z-index: 2;
+  top: 300px;
+  right: 70px;
 }
 
 .scene:nth-child(15) .article__img--table {
-  width: 120px;
+  width: 90px;
   position: relative;
-  bottom: 130px;
-  left: 100px;
+  z-index: 2;
+  top: 230px;
+  left: 20px;
 }
+.sandwiches {
+  position: relative;
+  width: 100px;
+  bottom: 200px;
+  left: 25px;
+  bottom: 245px;
+  z-index: 2;
+}
+
+.sandwiches .article__img--sandwich {
+  width: 50px;
+}
+
+.bottles {
+  position: relative;
+  width: 50px;
+  height: 0;
+  bottom: 200px;
+  left: 48px;
+  bottom: 430px;
+  z-index: 2;
+}
+
+.bottles .article__img--bottles {
+  width: 17px;
+}
+
+.scene:nth-child(15) .article__img--person {
+  width: 58px;
+  position: relative;
+  z-index: 2;
+  left: 110px;
+  top: 130px;
+}
+
+.scene:nth-child(15) .article__img--other--person {
+  width: 58px;
+  position: relative;
+  z-index: 2;
+  left: 170px;
+  top: 30px;
+}
+
+
+.scene:nth-child(15) .article__div--ground {
+background-color: #f99d25;
+width: 100vw;
+height: 200px;
+position: relative;
+z-index: 1;
+bottom: 200px;
+}
+
+
 
 .shake {
   position: relative;
