@@ -1,168 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/styles/styles.css" />
-  <title>Assignment 3 -- Scrollytelling</title>
-</head>
-
-<body>
-  <main>
-    <article class="scene" id="scene1">
-      <img class="article__img--logo" src="./assets/img/Goal11__noborder.svg" alt="Goal 11" />
-      <p>
-        Make cities and human settlements inclusive, safe, resilient and
-        sustainable
-      </p>
-      <img class="article__img--car" src="./assets/img/Red--cross--car.svg" alt="Red cross car" />
-    </article>
-    <article class="scene" id="scene2">
-      <div class="cloud">
-        <img class="article__img--cloud" src="./assets/img/cloud.svg" alt="Cloud" />
-        <div class="buildings">
-          <img class="article__img--small--building" src="./assets/img/building--small.svg" alt="building" /><img
-            class="article__img--tall--building" src="./assets/img/building--tall.svg" alt="building" />
-        </div>
-      </div>
-    </article>
-    <div class="ground"></div>
-    <article class="scene" id="scene3">
-      <div class="shake">
-        <img class="article__img--small--shake" src="./assets/img/building--small.svg" alt="building" /><img
-          class="article__img--tall--shake" src="./assets/img/building--tall.svg" alt="building" />
-      </div>
-    </article>
-    <div class="ground"></div>
-    <article class="scene" id="scene4">
-      <div>
-        <p>Scene 4, et jordskjelv kommer, alt rister</p>
-      </div>
-      <div class="sun"></div>
-      <div class="cloud"></div>
-      <div>
-        <img class="table" src="./assets/img/Red--cross--table.svg" alt="Table" />
-      </div>
-      <div class="box"></div>
-      <div>
-        <img class="sandwitch" src="./assets/img/Sandwitch.svg" alt="Sandwitch" /><img class="sandwitch"
-          src="./assets/img/Sandwitch.svg" alt="Sandwitch" /><img class="sandwitch" src="./assets/img/Sandwitch.svg"
-          alt="Sandwitch" />
-      </div>
-      <div>
-        <img class="waterbottle" src="./assets/img/Water--bottle.svg" alt="Waterbottle" /><img class="waterbottle"
-          src="./assets/img/Water--bottle.svg" alt="Waterbottle" /><img class="waterbottle"
-          src="./assets/img/Water--bottle.svg" alt="Waterbottle" />
-      </div>
-      <div>
-        <img class="person1" src="./assets/img/person--1.svg" alt="Person" />
-      </div>
-      <div>
-        <img class="person2" src="./assets/img/person--2.svg" alt="Person" />
-      </div>
-      <div>
-        <img class="car" src="./assets/img/Red--cross--car.svg" alt="car" />
-      </div>
-    </article>
-    <article class="scene" id="scene5">
-      <div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <title>Assignment 3 - Scrollytelling</title>
+  </head>
+  <body>
+    <main>
+      <article class="scene" id="scene1">
+        <img
+          class="scene__img--logo"
+          src="./assets/img/Goal11__noborder.svg"
+          alt="Goal 11"
+        />
         <p>
-          Scene 5, husene er ødelagte, folk er uten mat og vann. Ingen
-          infrastruktur
+          Make cities and human settlements inclusive, safe, resilient and
+          sustainable
         </p>
-      </div>
-    </article>
-
-    <article class="scene">
-      <div>
-        <p>Scene 4: Innbyggerne deler på maten</p>
-      </div>
-    </article>
-    <article class="scene">
-      <div>
-        <p>Scene 5: Røde bros kommer</p>
-      </div>
-    </article>
-    <article class="scene">
-      <div>
-        <p>Scene 6, Røde kors bygger opp igjen med lokalsamfunnet</p>
-      </div>
-
-      <div class="clouds">
-        <img class="article__img--cloud" src="./assets/img/cloud.svg" alt="cloud" />
-        <img class="article__img--other--cloud" src="./assets/img/cloud.svg" alt="cloud" />
-      </div>
-
-      <div class="tent">
-        <img class="article__img--tent" src="./assets/img/Red--cross--tent.svg" alt="Red cross tent" />
-      </div>
-
-      <div class="red cross person">
-        <img class="article__img--red--cross--person" src="./assets/img/red--cross--person--1.svg"
-          alt="Red cross person" />
-      </div>
-
-      <div class="table">
-        <img class="article__img--table" src="./assets/img/Red--cross--table.svg" alt="Red cross table" />
-      </div>
-
-      <div class="person">
-        <img class="article__img--person" src="./assets/img/happy--person--1.svg" alt="Happy person" />
-      </div>
-
-      <div class="other person">
-        <img class="article__img--other--person" src="./assets/img/happy--person--2.svg" alt="Happy person" />
-      </div>
-
-      <div class="sandwiches">
-        <img class="article__img--sandwich" src="assets/img/Sandwitch.svg" alt="sandwich">
-        <img class="article__img--sandwich" src="assets/img/Sandwitch.svg" alt="sandwich">
-        <img class="article__img--sandwich" src="assets/img/Sandwitch.svg" alt="sandwich">
-        <img class="article__img--sandwich" src="assets/img/Sandwitch.svg" alt="sandwich">
-        <img class="article__img--sandwich" src="assets/img/Sandwitch.svg" alt="sandwich">
-        <img class="article__img--sandwich" src="assets/img/Sandwitch.svg" alt="sandwich">
-        <img class="article__img--sandwich" src="assets/img/Sandwitch.svg" alt="sandwich">
-        <img class="article__img--sandwich" src="assets/img/Sandwitch.svg" alt="sandwich">
-        <img class="article__img--sandwich" src="assets/img/Sandwitch.svg" alt="sandwich">
-        <img class="article__img--sandwich" src="assets/img/Sandwitch.svg" alt="sandwich">
-      </div>
-
-      <div class="bottles">
-        <img class="article__img--bottles" src="assets/img/Water--bottle.svg" alt="water bottle">
-        <img class="article__img--bottles" src="assets/img/Water--bottle.svg" alt="water bottle">
-        <img class="article__img--bottles" src="assets/img/Water--bottle.svg" alt="water bottle">
-        <img class="article__img--bottles" src="assets/img/Water--bottle.svg" alt="water bottle">
-        <img class="article__img--bottles" src="assets/img/Water--bottle.svg" alt="water bottle">
-        <img class="article__img--bottles" src="assets/img/Water--bottle.svg" alt="water bottle">
-        <img class="article__img--bottles" src="assets/img/Water--bottle.svg" alt="water bottle">
-        <img class="article__img--bottles" src="assets/img/Water--bottle.svg" alt="water bottle">
-        <img class="article__img--bottles" src="assets/img/Water--bottle.svg" alt="water bottle">
-        <img class="article__img--bottles" src="assets/img/Water--bottle.svg" alt="water bottle">
-
-      </div>
-      <div class="ground">
-        <div class="article__div--ground">
+        <img
+          class="scene__img--car"
+          src="./assets/img/Red--cross--car.svg"
+          alt="Red cross car"
+        />
+      </article>
+      <article class="scene" id="scene2">
+        <div class="scene__cloud">
+          <img
+            class="scene__img--cloud"
+            src="./assets/img/cloud.svg"
+            alt="Cloud"
+          />
+          <div class="scene__buildings">
+            <img
+              class="scene__building__img--small"
+              src="./assets/img/building--small.svg"
+              alt="building"
+            /><img
+              class="scene__building__img--tall"
+              src="./assets/img/building--tall.svg"
+              alt="building"
+            />
+          </div>
         </div>
-      </div>
-    </article>
-    <article class="scene">
-      <img class="article__img--car--big" src="./assets/img/Red--cross--car.svg" alt="red cross car" />
-      <div class="building--color">
-        <img class="div__img--building--gray" src="./assets/img/building--1.svg" alt="gray building" />
-        <img class="div__img--building--brown" src="./assets/img/building--2.svg" alt="red building" />
-        <img class="div__img--building--black" src="./assets/img/Building--3.svg" alt="black building" />
-      </div>
-      <div class="orange"></div>
-    </article>
-    <article class="scene">
-      <img class="article__img--logo" src="./assets/img/Goal11__noborder.svg" alt="Goal 11" />
-      <p>Hurra blablabla fakta ferdig</p>
-      <img class="article__img--car" src="./assets/img/cloud.svg" alt="cloud" />
-    </article>
-  </main>
-  <script src="./script.js"></script>
-</body>
+      </article>
+      <div class="ground--line"></div>
+      <article class="scene" id="scene3">
+        <div class="scene__shake">
+          <img
+            class="scene__shake__img--small"
+            src="./assets/img/building--small.svg"
+            alt="building"
+          /><img
+            class="scene__shake__img--tall"
+            src="./assets/img/building--tall.svg"
+            alt="building"
+          />
+        </div>
+      </article>
 
+      <div class="ground--line"></div>
+
+      <article class="scene" id="scene4">
+        <div><p>Scene 4, et jordskjelv kommer, alt rister</p></div>
+        <div class="scene__img--sun"></div>
+        <div class="scene__img--cloud"></div>
+        <div>
+          <img
+            class="scene__img--table"
+            src="./assets/img/Red--cross--table.svg"
+            alt="Table"
+          />
+        </div>
+        <div class="scene__ground"></div>
+        <div>
+          <img
+            class="scene__img--sandwitch"
+            src="./assets/img/Sandwitch.svg"
+            alt="Sandwitch"
+          /><img
+            class="scene__img--sandwitch"
+            src="./assets/img/Sandwitch.svg"
+            alt="Sandwitch"
+          /><img
+            class="scene__img--sandwitch"
+            src="./assets/img/Sandwitch.svg"
+            alt="Sandwitch"
+          />
+        </div>
+        <div>
+          <img
+            class="scene__img--waterbottle"
+            src="./assets/img/Water--bottle.svg"
+            alt="Waterbottle"
+          /><img
+            class="scene__img--waterbottle"
+            src="./assets/img/Water--bottle.svg"
+            alt="Waterbottle"
+          /><img
+            class="scene__img--waterbottle"
+            src="./assets/img/Water--bottle.svg"
+            alt="Waterbottle"
+          />
+        </div>
+        <div>
+          <img
+            class="scene__img--person1"
+            src="./assets/img/person--1.svg"
+            alt="Person"
+          />
+        </div>
+        <div>
+          <img
+            class="scene__img--person2"
+            src="./assets/img/person--2.svg"
+            alt="Person"
+          />
+        </div>
+        <div>
+          <img
+            class="scene__img--car"
+            src="./assets/img/Red--cross--car.svg"
+            alt="car"
+          />
+        </div>
+      </article>
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>
