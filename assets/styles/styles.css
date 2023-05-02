@@ -74,98 +74,85 @@
   0% {
     background: #F99D25;
   }
-
   50% {
     background: lightblue;
   }
-
   100% {
     background: #FFF;
   }
 }
-
+/*
 @keyframes sunRising {
-  0% {
-    top: 70%;
-    left: -10%;
-  }
+    0% {
+        top: 70%;
+        left: -10%;
+    }
 
-  25% {
-    top: 30%;
-    left: 25%;
-  }
+    25% {
+        top: 30%;
+        left: 25%;
+    }
 
-  50% {
-    top: 5%;
-    left: 50%;
-  }
+    50% {
+        top: 5%;
+        left: 50%;
+    }
 
-  75% {
-    top: 30%;
-    left: 75%;
-  }
+    75% {
+        top: 30%;
+        left: 75%;
+    }
 
-  100% {
-    top: 70%;
-    left: 110%;
-  }
-}
-
+    100% {
+        top: 70%;
+        left: 110%;
+    }
+}*/
 /* Sun animation */
 @keyframes pulse {
   0% {
     transform: scale(1);
     animation-timing-function: ease-in;
   }
-
   50% {
     transform: scale(1.2);
     animation-timing-function: ease-out;
   }
-
   100% {
     transform: scale(1);
   }
 }
-
 @keyframes fade-in {
   from {
     opacity: 0;
     visibility: hidden;
   }
-
   to {
     opacity: 1;
     visibility: visible;
   }
 }
-
 @keyframes hidden-visible {
   to {
     visibility: visible;
   }
 }
-
 @keyframes jump {
   0% {
     top: 0px;
   }
-
   /* start position */
   30% {
     top: 500px;
   }
-
   /* jump up */
   60% {
     top: 500px;
   }
-
   /* hang in the air */
   100% {
     top: 450px;
   }
-
   /* land on the viewport */
 }
 
@@ -173,66 +160,51 @@
   0% {
     transform: translateX(0px);
   }
-
   30% {
     transform: translateX(200px);
   }
-
   70% {
     transform: translateX(200px);
   }
-
   100% {
     transform: translateX(0px);
   }
 }
-
 @keyframes walking {
   0% {
     transform: translate(0, 0) translateX(0px);
   }
-
   10% {
     transform: translate(0, 15px) translateX(20px);
   }
-
   20% {
     transform: translate(0, 0) translateX(40px);
   }
-
   30% {
     transform: translate(0, 15px) translateX(60px);
   }
-
   40% {
     transform: translate(0, 0) translateX(80px);
   }
-
   50% {
     transform: translate(0, 15px) translateX(100px);
   }
-
   60% {
     transform: translate(0, 0) translateX(120px);
   }
-
   70% {
     transform: translate(0, 15px) translateX(140px);
   }
-
   80% {
     transform: translate(0, 0) translateX(160px);
   }
-
   90% {
     transform: translate(0, 15px) translateX(180px);
   }
-
   100% {
     transform: translate(0, 0) translateX(200px);
   }
 }
-
 @keyframes right-left {
   0% {
     transform: translateX(0px);
@@ -292,73 +264,94 @@
     transform: translateY(537px) scale(1);
   }
 }
-
 @keyframes rotate {
   to {
     transform: rotate(360deg);
   }
 }
-
 @keyframes walking {
   0% {
     transform: translate(0, 0) translateX(0);
   }
-
   10% {
     transform: translate(0, 15px) translateX(40px);
   }
-
   20% {
     transform: translate(0, 0) translateX(80px);
   }
-
   30% {
     transform: translate(0, 15px) translateX(120px);
   }
-
   40% {
     transform: translate(0, 0) translateX(160px);
   }
-
   50% {
     transform: translate(0, 15px) translateX(200px);
   }
-
   60% {
     transform: translate(0, 0) translateX(240px);
   }
-
   70% {
     transform: translate(0, 15px) translateX(280px);
   }
-
   80% {
     transform: translate(0, 0) translateX(320px);
   }
-
   9% {
     transform: translate(0, 15px) translateX(360px);
   }
-
   100% {
     transform: translate(0, 0) translateX(400px);
   }
 }
-
+@keyframes rightstopleft {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-130%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
 .scene {
   width: 100vw;
   height: 844px;
 }
 
-.scene:nth-child(1),
-.scene:nth-child(4),
-.scene:nth-child(6) {
+.article__rebuild {
+  height: 800px;
   background-color: #F99D25;
 }
 
-.scene:nth-child(1),
-.scene:nth-child(2),
-.scene:nth-child(4) {
+.article__div--wrapper {
+  padding-top: 200px;
+}
+
+.scene__img--bigcar {
+  width: 410px;
+  position: relative;
+  left: 510px;
+  top: 200px;
+  animation: rightstopleft 4s;
+  z-index: 2;
+}
+
+.scene__img--houses {
+  width: 340px;
+  animation: 3.5s fadeIn;
+  animation-fill-mode: forwards;
+  z-index: 1;
+  padding-left: 20px;
+}
+
+.scene:nth-child(1), .scene:nth-child(4), .scene:nth-child(6),
+.scene .article__rebuild {
+  background-color: #F99D25;
+}
+.scene:nth-child(1), .scene:nth-child(2), .scene:nth-child(4),
+.scene .article__rebuild {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -397,28 +390,27 @@
   right: -300px;
   animation: right-left 3s ease-in 4s 1 forwards;
 }
-
-.scene:nth-child(1) .scene__shake {
-  position: relative;
-  animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;
-}
-
 .scene:nth-child(1) .animation {
   animation: center-right 3s 4s ease-in 1 forwards;
 }
 
-.scene:nth-child(1) .ground--line {
+.ground--line {
   background-color: #FFF;
   height: 5px;
   width: 100%;
 }
 
-.scene:nth-child(1) .scene__shake__img--small {
+.scene__shake {
+  position: relative;
+  animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;
+}
+
+.scene__shake__img--small {
   width: 60px;
   padding-top: 92px;
 }
 
-.scene:nth-child(1) .scene__shake__img--tall {
+.scene__shake__img--tall {
   width: 100px;
   margin-left: 20px;
 }
@@ -458,7 +450,11 @@
 
 /* Scene 6 */
 .scene:nth-child(6) {
-  animation: bgChange 20s 1;
+  animation: bgChange 20s 1 forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .scene:nth-child(6) .scene__img--sun {
@@ -469,7 +465,6 @@
   border-radius: 50%;
   position: relative;
   left: 200px;
-  top: 200px;
   animation: pulse 2s infinite, sunRising 20s 1 forwards;
   transition: background-color 5s;
 }
@@ -478,10 +473,10 @@
   width: 200px;
   height: 60px;
   background: #FFF;
+  bottom: 230px;
   position: relative;
   border-radius: 200px;
-  top: -90px;
-  animation: moveclouds 5s linear alternate infinite;
+  animation: moveclouds 6s linear alternate infinite;
 }
 
 .scene:nth-child(6) .scene__img--cloud:before,
@@ -508,8 +503,8 @@
 .scene:nth-child(6) .scene__img--table {
   width: 150px;
   position: relative;
-  top: 550px;
-  left: 30px;
+  top: 210px;
+  left: 40px;
   z-index: 1;
 }
 
@@ -527,18 +522,18 @@
 }
 
 .scene:nth-child(6) .scene__img--sandwitch:nth-child(1) {
-  top: 240px;
-  left: 110px;
+  left: 120px;
+  top: 90px;
 }
 
 .scene:nth-child(6) .scene__img--sandwitch:nth-child(2) {
-  top: 215px;
-  left: 40px;
+  top: 65px;
+  left: 60px;
 }
 
 .scene:nth-child(6) .scene__img--sandwitch:nth-child(3) {
-  top: 190px;
-  left: -30px;
+  right: 20px;
+  top: 40px;
 }
 
 .scene:nth-child(6) .scene__img--waterbottle {
@@ -547,17 +542,17 @@
 }
 
 .scene:nth-child(6) .scene__img--waterbottle:nth-child(1) {
-  top: 170px;
-  left: 60px;
+  left: 50px;
+  top: 20px;
 }
 
 .scene:nth-child(6) .scene__img--waterbottle:nth-child(2) {
-  top: 170px;
+  top: 20px;
   left: 60px;
 }
 
 .scene:nth-child(6) .scene__img--waterbottle:nth-child(3) {
-  top: 180px;
+  top: 30px;
   left: 10px;
 }
 
@@ -569,21 +564,21 @@
 }
 
 .scene:nth-child(6) .scene__img--person1 {
-  top: 210px;
-  left: -120px;
+  top: 50px;
+  left: -210px;
   z-index: 3;
 }
 
 .scene:nth-child(6) .scene__img--person2 {
-  left: -190px;
+  left: -200px;
   animation-delay: 0.4s;
 }
 
 .scene:nth-child(6) .scene__img--car {
   position: relative;
   width: 300px;
-  right: 300px;
-  bottom: 180px;
+  left: -300px;
+  bottom: 200px;
   animation: left-right 4s ease-in-out 4s 1 forwards;
   z-index: 3;
 }
@@ -592,12 +587,11 @@
   position: relative;
   width: 100%;
   height: 200px;
-  top: 170px;
+  top: 650px;
   background-color: #F99D25;
 }
 
 /* Scene 7 */
-
 .scene:nth-child(7) {
   display: flex;
   flex-direction: column;
@@ -627,7 +621,6 @@
   position: relative;
   z-index: 3;
 }
-
 
 .scene:nth-child(7) .article__img--tent {
   position: relative;
@@ -737,3 +730,4 @@
 
 
 /*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
