@@ -59,164 +59,131 @@
   0% {
     background: #F99D25;
   }
-
   50% {
     background: lightblue;
   }
-
   100% {
     background: #FFF;
   }
 }
-
 @keyframes sunRising {
   0% {
     top: 70%;
     left: -10%;
   }
-
   25% {
     top: 30%;
     left: 25%;
   }
-
   50% {
     top: 5%;
     left: 50%;
   }
-
   75% {
     top: 30%;
     left: 75%;
   }
-
   100% {
     top: 70%;
     left: 110%;
   }
 }
-
 /* Sun animation */
 @keyframes pulse {
   0% {
     transform: scale(1);
     animation-timing-function: ease-in;
   }
-
   50% {
     transform: scale(1.2);
     animation-timing-function: ease-out;
   }
-
   100% {
     transform: scale(1);
   }
 }
-
 @keyframes fade-in {
   from {
     opacity: 0;
     visibility: hidden;
   }
-
   to {
     opacity: 1;
     visibility: visible;
   }
 }
-
 @keyframes hidden-visible {
   to {
     visibility: visible;
   }
 }
-
 @keyframes jump {
   0% {
     top: 0px;
   }
-
   /* start position */
   30% {
     top: 500px;
   }
-
   /* jump up */
   60% {
     top: 500px;
   }
-
   /* hang in the air */
   100% {
     top: 450px;
   }
-
   /* land on the viewport */
 }
 @keyframes left-right {
   0% {
     transform: translateX(0px);
   }
-
   30% {
     transform: translateX(200px);
   }
-
   70% {
     transform: translateX(200px);
   }
-
   100% {
     transform: translateX(0px);
   }
 }
-
 @keyframes walking {
   0% {
     transform: translate(0, 0) translateX(0px);
   }
-
   10% {
     transform: translate(0, 15px) translateX(20px);
   }
-
   20% {
     transform: translate(0, 0) translateX(40px);
   }
-
   30% {
     transform: translate(0, 15px) translateX(60px);
   }
-
   40% {
     transform: translate(0, 0) translateX(80px);
   }
-
   50% {
     transform: translate(0, 15px) translateX(100px);
   }
-
   60% {
     transform: translate(0, 0) translateX(120px);
   }
-
   70% {
     transform: translate(0, 15px) translateX(140px);
   }
-
   80% {
     transform: translate(0, 0) translateX(160px);
   }
-
   90% {
     transform: translate(0, 15px) translateX(180px);
   }
-
   100% {
     transform: translate(0, 0) translateX(200px);
   }
 }
-
 @keyframes right-left {
   0% {
     transform: translateX(0px);
@@ -265,54 +232,42 @@
     transform: translateY(537px) scale(1);
   }
 }
-
 @keyframes rotate {
   to {
     transform: rotate(360deg);
   }
 }
-
 @keyframes walking {
   0% {
     transform: translate(0, 0) translateX(0);
   }
-
   10% {
     transform: translate(0, 15px) translateX(40px);
   }
-
   20% {
     transform: translate(0, 0) translateX(80px);
   }
-
   30% {
     transform: translate(0, 15px) translateX(120px);
   }
-
   40% {
     transform: translate(0, 0) translateX(160px);
   }
-
   50% {
     transform: translate(0, 15px) translateX(200px);
   }
-
   60% {
     transform: translate(0, 0) translateX(240px);
   }
-
   70% {
     transform: translate(0, 15px) translateX(280px);
   }
-
   80% {
     transform: translate(0, 0) translateX(320px);
   }
-
   9% {
     transform: translate(0, 15px) translateX(360px);
   }
-
   100% {
     transform: translate(0, 0) translateX(400px);
   }
@@ -564,120 +519,4 @@
   background-color: #F99D25;
 }
 
-/* Scene 7 */
-
-.scene:nth-child(7) {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: center;
-  background-color: rgb(189, 219, 230);
-  width: 100vw;
-  height: 844px;
-}
-
-.scene:nth-child(7) .clouds {
-  height: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.scene:nth-child(7) .article__img--cloud {
-  width: 500px;
-  position: relative;
-  left: 100px;
-  z-index: 3;
-}
-
-.scene:nth-child(7) .article__img--other--cloud {
-  width: 500px;
-  position: relative;
-  z-index: 3;
-}
-
-
-.scene:nth-child(7) .article__img--tent {
-  position: relative;
-  z-index: 2;
-  width: 230px;
-  right: 170px;
-  bottom: 120px;
-  animation-name: move-down;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  transition-timing-function: ease-in;
-}
-
-.scene:nth-child(7) .article__img--red--cross--person {
-  width: 60px;
-  position: relative;
-  z-index: 2;
-  right: 70px;
-  bottom: 210px;
-  animation-name: move-down;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  transition-timing-function: ease-in;
-}
-
-.scene:nth-child(7) .article__img--table {
-  width: 90px;
-  position: relative;
-  z-index: 2;
-  top: 250px;
-  left: 20px;
-}
-
-.scene:nth-child(7) .sandwiches {
-  position: relative;
-  width: 100px;
-  bottom: 200px;
-  left: 25px;
-  bottom: 225px;
-  z-index: 2;
-}
-
-.scene:nth-child(7) .sandwiches .article__img--sandwich {
-  width: 50px;
-}
-
-.scene:nth-child(7) .bottles {
-  position: relative;
-  width: 50px;
-  height: 0;
-  bottom: 200px;
-  left: 48px;
-  bottom: 410px;
-  z-index: 2;
-}
-
-.scene:nth-child(7) .bottles .article__img--bottles {
-  width: 17px;
-}
-
-.scene:nth-child(7) .article__img--person {
-  width: 58px;
-  position: relative;
-  z-index: 2;
-  left: 110px;
-  top: 140px;
-}
-
-.scene:nth-child(7) .article__img--other--person {
-  width: 58px;
-  position: relative;
-  z-index: 2;
-  left: 170px;
-  top: 40px;
-}
-
-
-.scene:nth-child(7) .article__div--ground {
-  background-color: #f99d25;
-  width: 100vw;
-  height: 200px;
-  position: relative;
-  z-index: 1;
-  bottom: 200px;
-}
 /*# sourceMappingURL=styles.css.map */
