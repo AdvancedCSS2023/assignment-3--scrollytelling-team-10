@@ -122,145 +122,263 @@
   }
 }
 
-
 /* Scene 6 */
 .scene:nth-child(6) {
-  animation: bgChange 20s 1;
+  animation: bgChange 20s 1 forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .scene__img {
-    &--sun {
-      background: $sun;
-      box-shadow: 0px 0px 30px 15px $sun;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      position: relative;
-      left: 200px;
-      top: 200px;
-      animation: pulse 2s infinite, sunRising 20s 1 forwards;
-      transition: background-color 5s;
-    }
+.scene:nth-child(6) .scene__img--sun {
+  background: #FFF054;
+  box-shadow: 0px 0px 30px 15px #FFF054;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  left: 200px;
+  animation: pulse 2s infinite, sunRising 20s 1 forwards;
+  transition: background-color 5s;
+}
 
-    &--cloud {
-      width: 200px;
-      height: 60px;
-      background: $white;
-      position: relative;
-      border-radius: 200px;
-      top: -90px;
-      animation: moveclouds 5s linear alternate infinite;
+.scene:nth-child(6) .scene__img--cloud {
+  width: 200px;
+  height: 60px;
+  background: #FFF;
+  bottom: 230px;
+  position: relative;
+  border-radius: 200px;
+  animation: moveclouds 6s linear alternate infinite;
+}
 
-      &:before,
-      &:after {
-        content: '';
-        background: $white;
-        position: absolute;
-        width: 100px;
-        height: 80px;
-        top: -15px;
-        left: 10px;
-        border-radius: 100px;
-        transform: rotate(30deg);
-      }
+.scene:nth-child(6) .scene__img--cloud:before,
+.scene:nth-child(6) .scene__img--cloud:after {
+  content: "";
+  background: #FFF;
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  top: -15px;
+  left: 10px;
+  border-radius: 100px;
+  transform: rotate(30deg);
+}
 
-      &:after {
-        width: 120px;
-        height: 120px;
-        top: -55px;
-        left: auto;
-        right: 15px;
-      }
-    }
+.scene:nth-child(6) .scene__img--cloud:after {
+  width: 120px;
+  height: 120px;
+  top: -55px;
+  left: auto;
+  right: 15px;
+}
 
-    &--table {
-      width: 150px;
-      position: relative;
-      top: 550px;
-      left: 30px;
-      z-index: 1;
-    }
+.scene:nth-child(6) .scene__img--table {
+  width: 150px;
+  position: relative;
+  top: 210px;
+  left: 40px;
+  z-index: 1;
+}
 
-    &--sandwitch,
-    &--waterbottle {
-      position: relative;
-      z-index: 3;
-      opacity: 0;
-      animation: fade-in 1s 6s forwards;
-      visibility: hidden;
-    }
+.scene:nth-child(6) .scene__img--sandwitch,
+.scene:nth-child(6) .scene__img--waterbottle {
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  animation: fade-in 1s 6s forwards;
+  visibility: hidden;
+}
 
-    &--sandwitch {
-      width: 70px;
+.scene:nth-child(6) .scene__img--sandwitch {
+  width: 70px;
+}
 
-      &:nth-child(1) {
-        top: 240px;
-        left: 110px;
-      }
+.scene:nth-child(6) .scene__img--sandwitch:nth-child(1) {
+  left: 120px;
+  top: 90px;
+}
 
-      &:nth-child(2) {
-        top: 215px;
-        left: 40px;
-      }
+.scene:nth-child(6) .scene__img--sandwitch:nth-child(2) {
+  top: 65px;
+  left: 60px;
+}
 
-      &:nth-child(3) {
-        top: 190px;
-        left: -30px;
-      }
-    }
+.scene:nth-child(6) .scene__img--sandwitch:nth-child(3) {
+  right: 20px;
+  top: 40px;
+}
 
-    &--waterbottle {
-      width: 30px;
-      z-index: 2;
+.scene:nth-child(6) .scene__img--waterbottle {
+  width: 30px;
+  z-index: 2;
+}
 
-      &:nth-child(1) {
-        top: 170px;
-        left: 60px;
-      }
+.scene:nth-child(6) .scene__img--waterbottle:nth-child(1) {
+  left: 50px;
+  top: 20px;
+}
 
-      &:nth-child(2) {
-        top: 170px;
-        left: 60px;
-      }
+.scene:nth-child(6) .scene__img--waterbottle:nth-child(2) {
+  top: 20px;
+  left: 60px;
+}
 
-      &:nth-child(3) {
-        top: 180px;
-        left: 10px;
-      }
-    }
+.scene:nth-child(6) .scene__img--waterbottle:nth-child(3) {
+  top: 30px;
+  left: 10px;
+}
 
-    &--person1,
-    &--person2 {
-      position: relative;
-      width: 80px;
-      animation: walking 2.5s linear forwards;
-    }
+.scene:nth-child(6) .scene__img--person1,
+.scene:nth-child(6) .scene__img--person2 {
+  position: relative;
+  width: 80px;
+  animation: walking 2.5s linear forwards;
+}
 
-    &--person1 {
-      top: 210px;
-      left: -120px;
-      z-index: 3;
-    }
+.scene:nth-child(6) .scene__img--person1 {
+  top: 50px;
+  left: -210px;
+  z-index: 3;
+}
 
-    &--person2 {
-      left: -190px;
-      animation-delay: 0.4s;
-    }
+.scene:nth-child(6) .scene__img--person2 {
+  left: -200px;
+  animation-delay: 0.4s;
+}
 
-    &--car {
-      position: relative;
-      width: 300px;
-      right: 300px;
-      bottom: 180px;
-      animation: left-right 4s ease-in-out 4s 1 forwards;
-      z-index: 3;
-    }
-  }
+.scene:nth-child(6) .scene__img--car {
+  position: relative;
+  width: 300px;
+  left: -300px;
+  bottom: 200px;
+  animation: left-right 4s ease-in-out 4s 1 forwards;
+  z-index: 3;
+}
 
-  .scene__ground {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    top: 170px;
-    background-color: $orange;
-  }
+.scene:nth-child(6) .scene__ground {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  top: 650px;
+  background-color: #F99D25;
+}
+
+/* Scene 7 */
+
+.scene:nth-child(7) {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-color: rgb(189, 219, 230);
+  width: 100vw;
+  height: 844px;
+}
+
+.scene:nth-child(7) .clouds {
+  height: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.scene:nth-child(7) .article__img--cloud {
+  width: 500px;
+  position: relative;
+  left: 100px;
+  z-index: 3;
+}
+
+.scene:nth-child(7) .article__img--other--cloud {
+  width: 500px;
+  position: relative;
+  z-index: 3;
+}
+
+
+.scene:nth-child(7) .article__img--tent {
+  position: relative;
+  z-index: 2;
+  width: 230px;
+  right: 170px;
+  bottom: 120px;
+  animation-name: move-down;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
+}
+
+.scene:nth-child(7) .article__img--red--cross--person {
+  width: 60px;
+  position: relative;
+  z-index: 2;
+  right: 70px;
+  bottom: 210px;
+  animation-name: move-down;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
+}
+
+.scene:nth-child(7) .article__img--table {
+  width: 90px;
+  position: relative;
+  z-index: 2;
+  top: 250px;
+  left: 20px;
+}
+
+.scene:nth-child(7) .sandwiches {
+  position: relative;
+  width: 100px;
+  bottom: 200px;
+  left: 25px;
+  bottom: 225px;
+  z-index: 2;
+}
+
+.scene:nth-child(7) .sandwiches .article__img--sandwich {
+  width: 50px;
+}
+
+.scene:nth-child(7) .bottles {
+  position: relative;
+  width: 50px;
+  height: 0;
+  bottom: 200px;
+  left: 48px;
+  bottom: 410px;
+  z-index: 2;
+}
+
+.scene:nth-child(7) .bottles .article__img--bottles {
+  width: 17px;
+}
+
+.scene:nth-child(7) .article__img--person {
+  width: 58px;
+  position: relative;
+  z-index: 2;
+  left: 110px;
+  top: 140px;
+}
+
+.scene:nth-child(7) .article__img--other--person {
+  width: 58px;
+  position: relative;
+  z-index: 2;
+  left: 170px;
+  top: 40px;
+}
+
+
+.scene:nth-child(7) .article__div--ground {
+  background-color: #f99d25;
+  width: 100vw;
+  height: 200px;
+  position: relative;
+  z-index: 1;
+  bottom: 200px;
 }
