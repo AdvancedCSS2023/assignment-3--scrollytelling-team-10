@@ -357,23 +357,27 @@
   right: -300px;
   animation: right-left 3s ease-in 4s 1 forwards;
 }
-.scene:nth-child(1) .scene__shake {
-  position: relative;
-  animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;
-}
 .scene:nth-child(1) .animation {
   animation: center-right 3s 4s ease-in 1 forwards;
 }
-.scene:nth-child(1) .ground--line {
+
+.ground--line {
   background-color: #FFF;
   height: 5px;
   width: 100%;
 }
-.scene:nth-child(1) .scene__shake__img--small {
+
+.scene__shake {
+  position: relative;
+  animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;
+}
+
+.scene__shake__img--small {
   width: 60px;
   padding-top: 92px;
 }
-.scene:nth-child(1) .scene__shake__img--tall {
+
+.scene__shake__img--tall {
   width: 100px;
   margin-left: 20px;
 }
@@ -662,6 +666,4 @@
   position: relative;
   z-index: 1;
   bottom: 200px;
-}
-/*# sourceMappingURL=styles.css.map */
-
+}/*# sourceMappingURL=styles.css.map */
