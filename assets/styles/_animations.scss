@@ -1,0 +1,342 @@
+@keyframes moveclouds {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -50%;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-5px, -5px) rotate(-5deg);
+    }
+
+    20% {
+        transform: translate(5px, -5px) rotate(5deg);
+    }
+
+    30% {
+        transform: translate(-5px, -5px) rotate(-5deg);
+    }
+
+    40% {
+        transform: translate(5px, -5px) rotate(5deg);
+    }
+
+    50% {
+        transform: translate(-5px, 5px) rotate(-5deg);
+    }
+
+    60% {
+        transform: translate(5px, 5px) rotate(5deg);
+    }
+
+    70% {
+        transform: translate(-5px, 5px) rotate(-5deg);
+    }
+
+    80% {
+        transform: translate(5px, 5px) rotate(5deg);
+    }
+
+    90% {
+        transform: translate(-5px, -5px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+@keyframes center-right {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(800px);
+    }
+}
+
+@keyframes bgChange {
+    0% {
+        background: $orange;
+    }
+
+    50% {
+        background: lightblue;
+    }
+
+    100% {
+        background: $white;
+    }
+}
+
+@keyframes sunRising {
+    0% {
+        top: 70%;
+        left: -10%;
+    }
+
+    25% {
+        top: 30%;
+        left: 25%;
+    }
+
+    50% {
+        top: 5%;
+        left: 50%;
+    }
+
+    75% {
+        top: 30%;
+        left: 75%;
+    }
+
+    100% {
+        top: 70%;
+        left: 110%;
+    }
+}
+
+/* Sun animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        transform: scale(1.2);
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes hidden-visible {
+    to {
+        visibility: visible;
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: 0px;
+    }
+
+    /* start position */
+    30% {
+        top: 500px;
+    }
+
+    /* jump up */
+    60% {
+        top: 500px;
+    }
+
+    /* hang in the air */
+    100% {
+        top: 450px;
+    }
+
+    /* land on the viewport */
+}
+
+@keyframes left-right {
+    0% {
+        transform: translateX(0px);
+    }
+
+    30% {
+        transform: translateX(200px);
+    }
+
+    70% {
+        transform: translateX(200px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes walking {
+
+    0% {
+        transform: translate(0, 0) translateX(0px);
+    }
+
+    10% {
+        transform: translate(0, 15px) translateX(20px);
+    }
+
+    20% {
+        transform: translate(0, 0) translateX(40px);
+    }
+
+    30% {
+        transform: translate(0, 15px) translateX(60px);
+    }
+
+    40% {
+        transform: translate(0, 0) translateX(80px);
+    }
+
+    50% {
+        transform: translate(0, 15px) translateX(100px);
+    }
+
+    60% {
+        transform: translate(0, 0) translateX(120px);
+    }
+
+    70% {
+        transform: translate(0, 15px) translateX(140px);
+    }
+
+    80% {
+        transform: translate(0, 0) translateX(160px);
+    }
+
+    90% {
+        transform: translate(0, 15px) translateX(180px);
+    }
+
+    100% {
+        transform: translate(0, 0) translateX(200px);
+    }
+}
+
+@keyframes right-left {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-800px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes grow {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+
+    to {
+        width: 390px;
+        height: 390px;
+    }
+}
+
+@keyframes move-up {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-180px);
+    }
+}
+
+@keyframes move-down {
+    from {
+        transform: translateY(0) scale(0);
+    }
+
+    to {
+        transform: translateY(537px) scale(1);
+    }
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes walking {
+    0% {
+        transform: translate(0, 0) translateX(0);
+    }
+
+    10% {
+        transform: translate(0, 15px) translateX(40px);
+    }
+
+    20% {
+        transform: translate(0, 0) translateX(80px);
+    }
+
+    30% {
+        transform: translate(0, 15px) translateX(120px);
+    }
+
+    40% {
+        transform: translate(0, 0) translateX(160px);
+    }
+
+    50% {
+        transform: translate(0, 15px) translateX(200px);
+    }
+
+    60% {
+        transform: translate(0, 0) translateX(240px);
+    }
+
+    70% {
+        transform: translate(0, 15px) translateX(280px);
+    }
+
+    80% {
+        transform: translate(0, 0) translateX(320px);
+    }
+
+    9% {
+        transform: translate(0, 15px) translateX(360px);
+    }
+
+    100% {
+        transform: translate(0, 0) translateX(400px);
+    }
+
+}
