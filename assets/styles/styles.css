@@ -633,6 +633,10 @@
 }
 
 
+.scene:nth-child(7) .ground {
+  height: 0;
+}
+
 .scene:nth-child(7) .article__div--ground {
   background-color: #f99d25;
   width: 100vw;
