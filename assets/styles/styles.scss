@@ -1,5 +1,6 @@
 @import "reset";
 @import "colors";
+@import "fonts";
 @import "animations";
 @import "desktop";
 
@@ -90,7 +91,7 @@
   .scene__img--car {
     width: 100px;
     position: relative;
-    right: -300px;
+    right: -800px;
     animation: right-left 3s ease-in 4s 1 forwards;
   }
 
@@ -164,14 +165,14 @@
 }
 
 .scene:nth-child(6) .scene__img--sun {
-  background: #FFF054;
-  box-shadow: 0px 0px 30px 15px #FFF054;
+  background: $sun;
+  box-shadow: 0px 0px 30px 15px $sun;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   position: relative;
   left: 200px;
-  animation: pulse 2s infinite, sunRising 20s 1 forwards;
+  animation: pulse 2s infinite, sunRising 12s ease-out forwards;
   transition: background-color 5s;
 }
 
@@ -179,10 +180,10 @@
   width: 200px;
   height: 60px;
   background: #FFF;
-  bottom: 230px;
+  bottom: 200px;
   position: relative;
   border-radius: 200px;
-  animation: moveclouds 6s linear alternate infinite;
+  animation: moveclouds 7s linear alternate infinite;
 }
 
 .scene:nth-child(6) .scene__img--cloud:before,
@@ -209,7 +210,7 @@
 .scene:nth-child(6) .scene__img--table {
   width: 150px;
   position: relative;
-  top: 210px;
+  top: 310px;
   left: 40px;
   z-index: 1;
 }
@@ -219,7 +220,7 @@
   position: relative;
   z-index: 3;
   opacity: 0;
-  animation: fade-in 1s 6s forwards;
+  animation: fade-in 1s 13s forwards;
   visibility: hidden;
 }
 
@@ -229,17 +230,17 @@
 
 .scene:nth-child(6) .scene__img--sandwitch:nth-child(1) {
   left: 120px;
-  top: 90px;
+  top: 190px;
 }
 
 .scene:nth-child(6) .scene__img--sandwitch:nth-child(2) {
-  top: 65px;
+  top: 165px;
   left: 60px;
 }
 
 .scene:nth-child(6) .scene__img--sandwitch:nth-child(3) {
   right: 20px;
-  top: 40px;
+  top: 140px;
 }
 
 .scene:nth-child(6) .scene__img--waterbottle {
@@ -249,16 +250,16 @@
 
 .scene:nth-child(6) .scene__img--waterbottle:nth-child(1) {
   left: 50px;
-  top: 20px;
+  top: 120px;
 }
 
 .scene:nth-child(6) .scene__img--waterbottle:nth-child(2) {
-  top: 20px;
+  top: 120px;
   left: 60px;
 }
 
 .scene:nth-child(6) .scene__img--waterbottle:nth-child(3) {
-  top: 30px;
+  top: 130px;
   left: 10px;
 }
 
@@ -266,35 +267,46 @@
 .scene:nth-child(6) .scene__img--person2 {
   position: relative;
   width: 80px;
-  animation: walking 2.5s linear forwards;
+  animation: walking1 4s linear forwards;
 }
 
 .scene:nth-child(6) .scene__img--person1 {
-  top: 50px;
-  left: -210px;
+  top: 100px;
+  animation-delay: 6s;
   z-index: 3;
+  left: -600px;
 }
 
 .scene:nth-child(6) .scene__img--person2 {
-  left: -200px;
-  animation-delay: 0.4s;
+  top: 80px;
+  animation-delay: 6.4s;
+  z-index: 2;
+  left: -770px;
 }
 
 .scene:nth-child(6) .scene__img--car {
   position: relative;
   width: 300px;
-  left: -300px;
-  bottom: 200px;
-  animation: left-right 4s ease-in-out 4s 1 forwards;
+  left: -1000px;
+  bottom: 100px;
+  animation: left-right 5s ease-in-out 10s 1 forwards;
   z-index: 3;
+}
+
+@media only screen and (min-width: 400px) {
+  .scene:nth-child(6) .scene__img--car {
+    top: 30px;
+    animation: left-right-desktop 6s ease-in-out 10s 1 forwards;
+  }
 }
 
 .scene:nth-child(6) .scene__ground {
   position: relative;
+  height: 150px;
   width: 100%;
-  height: 200px;
-  top: 650px;
-  background-color: #F99D25;
+  top: 700px;
+  background-color: $orange;
+  z-index: 1;
 }
 
 /* Scene 7 */
@@ -304,7 +316,7 @@
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  background-color: rgb(189, 219, 230);
+  background-color: $sky;
   width: 100vw;
   height: 844px;
 }
@@ -407,10 +419,49 @@
 
 
 .scene:nth-child(7) .article__div--ground {
-  background-color: #f99d25;
+  background-color: $orange;
   width: 100vw;
   height: 200px;
   position: relative;
   z-index: 1;
   bottom: 200px;
+}
+
+/* Last scene */
+.scene:nth-child(8) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $orange;
+  color: $white;
+  font-family: $primary-font;
+}
+
+/* Last scene */
+.scene:nth-child(9) .scene__img--logo {
+  width: 400px;
+  width: 0;
+  height: 0;
+  animation: grow 5s forwards, alt-move 3s forwards;
+}
+
+.scene:nth-child(9) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $orange;
+  color: $white;
+  font-family: "Arimo", sans-serif;
+}
+
+.scene:nth-child(9) p {
+  margin-bottom: 100px;
+  color: $white;
+  font-size: 32px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 7s;
 }
