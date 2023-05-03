@@ -39,8 +39,8 @@
   - Animations with keyframe
   - Transitions
   - Transformations
-  - Scrollytelling with Intersection Observer
-  - Accessibility features such as prefers-reduced-motion, prefers-color-scheme, and orientation.
+  - Scrollytelling with Intersection Observer, Javascript
+  - Accessibility features such as prefers-reduced-motion, prefers-color-scheme, and orientation
 
 - The use of these technologies ensures that the project is visually stunning, informative, and accessible to a wide range of users. The website's responsive design also makes it viewable on mobile devices, further emphasizing the project's commitment to inclusivity and sustainability.
 
