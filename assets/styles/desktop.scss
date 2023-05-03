@@ -1,0 +1,41 @@
+
+@media only screen and (min-width: 600px) {
+  .scene__img--bigcar {
+    position: relative;
+    animation: rightstopleft 6s;
+    top: 280px;
+    left: 100vw;
+  }
+
+  .scene__img--houses {
+    animation: 8s fadeIn;
+  }
+
+  .scene__img--houses {
+    position: initial;
+  }
+
+  .article__div--wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+   
+
+  @keyframes rightstopleft {
+    0% {
+      transform: translateX(0%);
+    }
+
+    50% {
+      transform: translateX(-102vw);
+    }
+    100% {
+      transform: translateX(-200vw);
+    }
+  }
+  
+
+}
+

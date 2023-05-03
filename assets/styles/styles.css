@@ -270,6 +270,37 @@ body {
     transform: translateX(-300%);
   }
 }
+@media only screen and (min-width: 600px) {
+  .scene__img--bigcar {
+    position: relative;
+    animation: rightstopleft 6s;
+    top: 280px;
+    left: 100vw;
+  }
+  .scene__img--houses {
+    animation: 8s fadeIn;
+  }
+  .scene__img--houses {
+    position: initial;
+  }
+  .article__div--wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @keyframes rightstopleft {
+    0% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(-102vw);
+    }
+    100% {
+      transform: translateX(-200vw);
+    }
+  }
+}
 .scene {
   width: 100vw;
   height: 844px;
@@ -287,7 +318,7 @@ body {
 .scene__img--bigcar {
   width: 410px;
   position: relative;
-  left: 510px;
+  left: 810px;
   top: 200px;
   animation: rightstopleft 4s;
   z-index: 2;
@@ -660,17 +691,43 @@ body {
   bottom: 200px;
 }
 
-/* Last scene */
-.scene:nth-child(8) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #F99D25;
-  color: #FFF;
-  font-family: "Arimo", sans-serif;
-}
+@media only screen and (min-width: 600px) {
+  .scene__img--bigcar {
+    position: relative;
+    animation: rightstopleft 6s;
+    top: 280px;
+    left: 100vw;
+  }
 
+  .scene__img--houses {
+    animation: 8s fadeIn;
+  }
+
+  .scene__img--houses {
+    position: initial;
+  }
+
+  .article__div--wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+   
+
+  @keyframes rightstopleft {
+    0% {
+      transform: translateX(0%);
+    }
+
+    50% {
+      transform: translateX(-102vw);
+    }
+    100% {
+      transform: translateX(-200vw);
+    }
+  }
+  
 /* Last scene */
 .scene:nth-child(9) .scene__img--logo {
   width: 400px;

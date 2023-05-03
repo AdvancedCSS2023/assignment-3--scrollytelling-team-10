@@ -2,6 +2,9 @@
 @import "colors";
 @import "fonts";
 @import "animations";
+@import "desktop";
+
+
 
 // General
 .scene {
@@ -21,7 +24,7 @@
 .scene__img--bigcar {
   width: 410px;
   position: relative;
-  left: 510px;
+  left: 810px;
   top: 200px;
   animation: rightstopleft 4s;
   z-index: 2;
