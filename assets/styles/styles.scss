@@ -1,6 +1,8 @@
 @import "reset";
 @import "colors";
+@import "fonts";
 @import "animations";
+@import "desktop";
 
 // General
 .scene {
@@ -87,7 +89,7 @@
   .scene__img--car {
     width: 100px;
     position: relative;
-    right: -300px;
+    right: -800px;
     animation: right-left 3s ease-in 4s 1 forwards;
   }
 
@@ -168,7 +170,7 @@
   border-radius: 50%;
   position: relative;
   left: 200px;
-  animation: pulse 2s infinite, sunRising 20s 1 forwards;
+  animation: pulse 2s infinite, sunRising 12s ease-out forwards;
   transition: background-color 5s;
 }
 
@@ -176,10 +178,10 @@
   width: 200px;
   height: 60px;
   background: #FFF;
-  bottom: 230px;
+  bottom: 200px;
   position: relative;
   border-radius: 200px;
-  animation: moveclouds 6s linear alternate infinite;
+  animation: moveclouds 7s linear alternate infinite;
 }
 
 .scene:nth-child(6) .scene__img--cloud:before,
@@ -216,7 +218,7 @@
   position: relative;
   z-index: 3;
   opacity: 0;
-  animation: fade-in 1s 6s forwards;
+  animation: fade-in 1s 13s forwards;
   visibility: hidden;
 }
 
@@ -263,29 +265,37 @@
 .scene:nth-child(6) .scene__img--person2 {
   position: relative;
   width: 80px;
-  animation: walking 2.5s linear forwards;
+  animation: walking1 4s linear forwards;
 }
 
 .scene:nth-child(6) .scene__img--person1 {
   top: 100px;
-  left: -210px;
+  animation-delay: 6s;
   z-index: 3;
+  left: -600px;
 }
 
 .scene:nth-child(6) .scene__img--person2 {
   top: 80px;
-  left: -200px;
-  animation-delay: 0.4s;
+  animation-delay: 6.4s;
   z-index: 2;
+  left: -770px;
 }
 
 .scene:nth-child(6) .scene__img--car {
   position: relative;
   width: 300px;
-  left: -300px;
+  left: -1000px;
   bottom: 100px;
-  animation: left-right 4s ease-in-out 4s 1 forwards;
+  animation: left-right 5s ease-in-out 10s 1 forwards;
   z-index: 3;
+}
+
+@media only screen and (min-width: 400px) {
+  .scene:nth-child(6) .scene__img--car {
+    top: 30px;
+    animation: left-right-desktop 6s ease-in-out 10s 1 forwards;
+  }
 }
 
 .scene:nth-child(6) .scene__ground {
@@ -294,6 +304,7 @@
   width: 100%;
   top: 700px;
   background-color: #F99D25;
+  z-index: 1;
 }
 
 /* Scene 7 */
