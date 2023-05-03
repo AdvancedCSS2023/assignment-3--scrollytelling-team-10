@@ -264,10 +264,10 @@ body {
     transform: translateX(0%);
   }
   50% {
-    transform: translateX(-205%);
+    transform: translateX(-130%);
   }
   100% {
-    transform: translateX(-400%);
+    transform: translateX(-300%);
   }
 }
 @media only screen and (min-width: 600px) {
@@ -402,6 +402,7 @@ body {
   position: relative;
   right: -800px;
   animation: right-left 3s ease-in 4s 1 forwards;
+  overflow: hidden;
 }
 .scene:nth-child(1) .animation {
   animation: center-right 3s 4s ease-in 1 forwards;
@@ -724,11 +725,51 @@ body {
   bottom: 200px;
 }
 
+/* Last scene */
+.scene:nth-child(8) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F99D25;
+  color: #FFF;
+  font-family: "Arimo", sans-serif;
+}
+
+/* Last scene */
+.scene:nth-child(9) .scene__img--logo {
+  width: 400px;
+  width: 0;
+  height: 0;
+  animation: grow 5s forwards, alt-move 3s forwards;
+}
+
+.scene:nth-child(9) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F99D25;
+  color: #FFF;
+  font-family: "Arimo", sans-serif;
+}
+
+.scene:nth-child(9) p {
+  margin-bottom: 100px;
+  color: #FFF;
+  font-size: 32px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 7s;
+}
+
+
 @media only screen and (min-width: 600px) {
   .scene__img--bigcar {
     position: relative;
     animation: rightstopleft 6s;
-    top: 250px;
+    top: 280px;
     left: 100vw;
   }
 
@@ -736,6 +777,45 @@ body {
     animation: 8s fadeIn;
   }
 
+  @media only screen and (min-width: 600px) {
+    .scene__img--bigcar {
+      position: relative;
+      animation: rightstopleft 6s;
+      top: 250px;
+      left: 100vw;
+    }
+  
+    .scene__img--houses {
+      animation: 8s fadeIn;
+    }
+  
+    .scene__img--houses {
+      position: initial;
+    }
+  
+    .article__div--wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+     
+  
+    @keyframes rightstopleft {
+      0% {
+        transform: translateX(0%);
+      }
+  
+      50% {
+        transform: translateX(-100vw);
+      }
+      100% {
+        transform: translateX(-200vw);
+      }
+    }
+    
+  
+  }
   .scene__img--houses {
     position: initial;
   }
@@ -754,42 +834,15 @@ body {
     }
 
     50% {
-      transform: translateX(-100vw);
+      transform: translateX(-102vw);
     }
     100% {
       transform: translateX(-200vw);
     }
   }
   
-/* Last scene */
-.scene:nth-child(9) .scene__img--logo {
-  width: 400px;
-  width: 0;
-  height: 0;
-  animation: grow 5s forwards, alt-move 3s forwards;
+
 }
 
-.scene:nth-child(9) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #F99D25;
-  color: #FFF;
-  font-family: "Arimo", sans-serif;
-}
-<<<<<<< HEAD
-=======
 
-.scene:nth-child(9) p {
-  margin-bottom: 100px;
-  color: #FFF;
-  font-size: 32px;
-  width: 300px;
-  text-align: center;
-  position: relative;
-  animation: fadeIn 7s;
-}
-
->>>>>>> 926e995e13b025549cd79c64883a2dc828cb2992
 /*# sourceMappingURL=styles.css.map */
