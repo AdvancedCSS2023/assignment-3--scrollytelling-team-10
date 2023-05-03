@@ -2,7 +2,6 @@
 @import "colors";
 @import "fonts";
 @import "animations";
-@import "desktop";
 
 // General
 .scene {
@@ -163,8 +162,8 @@
 }
 
 .scene:nth-child(6) .scene__img--sun {
-  background: #FFF054;
-  box-shadow: 0px 0px 30px 15px #FFF054;
+  background: $sun;
+  box-shadow: 0px 0px 30px 15px $sun;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -303,7 +302,7 @@
   height: 150px;
   width: 100%;
   top: 700px;
-  background-color: #F99D25;
+  background-color: $orange;
   z-index: 1;
 }
 
@@ -314,7 +313,7 @@
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  background-color: rgb(189, 219, 230);
+  background-color: $sky;
   width: 100vw;
   height: 844px;
 }
@@ -417,7 +416,7 @@
 
 
 .scene:nth-child(7) .article__div--ground {
-  background-color: #f99d25;
+  background-color: $orange;
   width: 100vw;
   height: 200px;
   position: relative;
@@ -431,75 +430,35 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #F99D25;
-  color: white;
+  background-color: $orange;
+  color: $white;
   font-family: $primary-font;
 }
 
-.scene:nth-child(8) .scene__img--logo {
-  width: 400px;
-}
-
 /* Last scene */
-.scene:nth-child(8) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #F99D25;
-  color: white;
-  font-family: $primary-font;
-}
-
-.scene:nth-child(8) .scene__img--logo {
-  width: 400px;
-}
-
-/* Last scene */
-.scene:nth-child(8) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #F99D25;
-  color: white;
-  font-family: $primary-font;
-}
-
-.scene:nth-child(8) .scene__img--logo {
-  width: 400px;
-}
-
-/* Last scene */
-.scene:nth-child(9) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #F99D25;
-  color: white;
-  font-family: "Arimo", sans-serif;
-}
-
 .scene:nth-child(9) .scene__img--logo {
   width: 400px;
-  margin-top: 180px;
   width: 0;
   height: 0;
   animation: grow 5s forwards, alt-move 3s forwards;
 }
 
-/* Last scene */
-.scene:nth-child(8) {
+.scene:nth-child(9) {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #F99D25;
-  color: white;
+  background-color: $orange;
+  color: $white;
   font-family: "Arimo", sans-serif;
 }
 
-.scene:nth-child(8) .scene__img--logo {
-  width: 400px;
+.scene:nth-child(9) p {
+  margin-bottom: 100px;
+  color: $white;
+  font-size: 32px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 7s;
 }

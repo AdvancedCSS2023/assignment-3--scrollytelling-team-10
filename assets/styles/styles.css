@@ -66,7 +66,7 @@ body {
     background: #F99D25;
   }
   100% {
-    background: lightblue;
+    background: #ADD8E6;
   }
 }
 @keyframes sunRising {
@@ -107,24 +107,6 @@ body {
   to {
     visibility: visible;
   }
-}
-@keyframes jump {
-  0% {
-    top: 0px;
-  }
-  /* start position */
-  30% {
-    top: 500px;
-  }
-  /* jump up */
-  60% {
-    top: 500px;
-  }
-  /* hang in the air */
-  100% {
-    top: 450px;
-  }
-  /* land on the viewport */
 }
 @keyframes left-right {
   0% {
@@ -286,11 +268,6 @@ body {
   }
   100% {
     transform: translateX(-300%);
-  }
-}
-@media only screen and (min-width: 400px) {
-  .scene:nth-child(6) .scene__img--car {
-    bottom: 200px;
   }
 }
 .scene {
@@ -574,7 +551,7 @@ body {
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  background-color: rgb(189, 219, 230);
+  background-color: #ADD8E6;
   width: 100vw;
   height: 844px;
 }
@@ -675,7 +652,7 @@ body {
 }
 
 .scene:nth-child(7) .article__div--ground {
-  background-color: #f99d25;
+  background-color: #F99D25;
   width: 100vw;
   height: 200px;
   position: relative;
@@ -690,76 +667,36 @@ body {
   justify-content: center;
   flex-direction: column;
   background-color: #F99D25;
-  color: white;
+  color: #FFF;
   font-family: "Arimo", sans-serif;
 }
 
-.scene:nth-child(8) .scene__img--logo {
-  width: 400px;
-}
-
 /* Last scene */
-.scene:nth-child(8) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #F99D25;
-  color: white;
-  font-family: "Arimo", sans-serif;
-}
-
-.scene:nth-child(8) .scene__img--logo {
+.scene:nth-child(9) .scene__img--logo {
   width: 400px;
+  width: 0;
+  height: 0;
+  animation: grow 5s forwards, alt-move 3s forwards;
 }
 
-/* Last scene */
-.scene:nth-child(8) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #F99D25;
-  color: white;
-  font-family: "Arimo", sans-serif;
-}
-
-.scene:nth-child(8) .scene__img--logo {
-  width: 400px;
-}
-
-/* Last scene */
 .scene:nth-child(9) {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: #F99D25;
-  color: white;
+  color: #FFF;
   font-family: "Arimo", sans-serif;
 }
 
-.scene:nth-child(9) .scene__img--logo {
-  width: 400px;
-  margin-top: 180px;
-  width: 0;
-  height: 0;
-  animation: grow 5s forwards, alt-move 3s forwards;
-}
-
-/* Last scene */
-.scene:nth-child(8) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #F99D25;
-  color: white;
-  font-family: "Arimo", sans-serif;
-}
-
-.scene:nth-child(8) .scene__img--logo {
-  width: 400px;
+.scene:nth-child(9) p {
+  margin-bottom: 100px;
+  color: #FFF;
+  font-size: 32px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 7s;
 }
 
 /*# sourceMappingURL=styles.css.map */
