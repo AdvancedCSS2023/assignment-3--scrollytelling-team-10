@@ -264,10 +264,10 @@ body {
     transform: translateX(0%);
   }
   50% {
-    transform: translateX(-205%);
+    transform: translateX(-130%);
   }
   100% {
-    transform: translateX(-400%);
+    transform: translateX(-300%);
   }
 }
 @media only screen and (min-width: 600px) {
@@ -724,43 +724,17 @@ body {
   bottom: 200px;
 }
 
-@media only screen and (min-width: 600px) {
-  .scene__img--bigcar {
-    position: relative;
-    animation: rightstopleft 6s;
-    top: 250px;
-    left: 100vw;
-  }
+/* Last scene */
+.scene:nth-child(8) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F99D25;
+  color: #FFF;
+  font-family: "Arimo", sans-serif;
+}
 
-  .scene__img--houses {
-    animation: 8s fadeIn;
-  }
-
-  .scene__img--houses {
-    position: initial;
-  }
-
-  .article__div--wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-   
-
-  @keyframes rightstopleft {
-    0% {
-      transform: translateX(0%);
-    }
-
-    50% {
-      transform: translateX(-100vw);
-    }
-    100% {
-      transform: translateX(-200vw);
-    }
-  }
-  
 /* Last scene */
 .scene:nth-child(9) .scene__img--logo {
   width: 400px;
@@ -778,8 +752,6 @@ body {
   color: #FFF;
   font-family: "Arimo", sans-serif;
 }
-<<<<<<< HEAD
-=======
 
 .scene:nth-child(9) p {
   margin-bottom: 100px;
@@ -791,5 +763,4 @@ body {
   animation: fadeIn 7s;
 }
 
->>>>>>> 926e995e13b025549cd79c64883a2dc828cb2992
 /*# sourceMappingURL=styles.css.map */
