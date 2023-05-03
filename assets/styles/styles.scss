@@ -412,32 +412,24 @@
   bottom: 200px;
 }
 
+
+
+
 /* Last scene */
-.scene:nth-child(8) {
+.scene:nth-child(9) {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: #F99D25;
   color: white;
-  font-family: $primary-font;
 }
 
-.scene:nth-child(8) .scene__img--logo {
+.scene:nth-child(9) .scene__img--logo {
   width: 400px;
 }
 
-/* Last scene */
-.scene:nth-child(8) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #F99D25;
-  color: white;
-  font-family: $primary-font;
-}
-
-.scene:nth-child(8) .scene__img--logo {
-  width: 400px;
+.scene:nth-child(9) p {
+  width: 350px;
+  text-align: center;
 }
