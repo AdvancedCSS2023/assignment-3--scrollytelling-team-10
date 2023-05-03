@@ -70,7 +70,7 @@
     }
 
     100% {
-        background: lightblue;
+        background: $sky;
     }
 }
 
@@ -121,28 +121,6 @@
     }
 }
 
-@keyframes jump {
-    0% {
-        top: 0px;
-    }
-
-    /* start position */
-    30% {
-        top: 500px;
-    }
-
-    /* jump up */
-    60% {
-        top: 500px;
-    }
-
-    /* hang in the air */
-    100% {
-        top: 450px;
-    }
-
-    /* land on the viewport */
-}
 
 @keyframes left-right {
     0% {
