@@ -110,6 +110,7 @@
 .scene__shake {
   position: relative;
   animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;
+  overflow: hidden
 }
 
 .scene__shake__img--small {
