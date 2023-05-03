@@ -425,11 +425,19 @@
   color: white;
 }
 
+
 .scene:nth-child(9) .scene__img--logo {
   width: 400px;
+  margin-top: 180px;
+  width: 0;
+  height: 0;
+  animation: grow 5s forwards, alt-move 3s forwards;
 }
 
 .scene:nth-child(9) p {
-  width: 350px;
+  color: #FFF;
+  font-size: 32px;
+  width: 300px;
   text-align: center;
+  animation: fadeIn 2s;
 }
