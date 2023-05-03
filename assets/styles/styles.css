@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 @keyframes moveclouds {
   0% {
     left: 100%;
@@ -59,11 +64,8 @@
   0% {
     background: #F99D25;
   }
-  50% {
-    background: lightblue;
-  }
   100% {
-    background: #FFF;
+    background: lightblue;
   }
 }
 /*
@@ -465,7 +467,7 @@
 .scene:nth-child(6) .scene__img--table {
   width: 150px;
   position: relative;
-  top: 210px;
+  top: 310px;
   left: 40px;
   z-index: 1;
 }
@@ -485,17 +487,17 @@
 
 .scene:nth-child(6) .scene__img--sandwitch:nth-child(1) {
   left: 120px;
-  top: 90px;
+  top: 190px;
 }
 
 .scene:nth-child(6) .scene__img--sandwitch:nth-child(2) {
-  top: 65px;
+  top: 165px;
   left: 60px;
 }
 
 .scene:nth-child(6) .scene__img--sandwitch:nth-child(3) {
   right: 20px;
-  top: 40px;
+  top: 140px;
 }
 
 .scene:nth-child(6) .scene__img--waterbottle {
@@ -505,16 +507,16 @@
 
 .scene:nth-child(6) .scene__img--waterbottle:nth-child(1) {
   left: 50px;
-  top: 20px;
+  top: 120px;
 }
 
 .scene:nth-child(6) .scene__img--waterbottle:nth-child(2) {
-  top: 20px;
+  top: 120px;
   left: 60px;
 }
 
 .scene:nth-child(6) .scene__img--waterbottle:nth-child(3) {
-  top: 30px;
+  top: 130px;
   left: 10px;
 }
 
@@ -526,30 +528,32 @@
 }
 
 .scene:nth-child(6) .scene__img--person1 {
-  top: 50px;
+  top: 100px;
   left: -210px;
   z-index: 3;
 }
 
 .scene:nth-child(6) .scene__img--person2 {
+  top: 80px;
   left: -200px;
   animation-delay: 0.4s;
+  z-index: 2;
 }
 
 .scene:nth-child(6) .scene__img--car {
   position: relative;
   width: 300px;
   left: -300px;
-  bottom: 200px;
+  bottom: 100px;
   animation: left-right 4s ease-in-out 4s 1 forwards;
   z-index: 3;
 }
 
 .scene:nth-child(6) .scene__ground {
   position: relative;
+  height: 150px;
   width: 100%;
-  height: 200px;
-  top: 650px;
+  top: 700px;
   background-color: #F99D25;
 }
 
