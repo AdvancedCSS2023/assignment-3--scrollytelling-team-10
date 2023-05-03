@@ -312,7 +312,6 @@
 }
 
 /* Scene 7 */
-
 .scene:nth-child(7) {
   display: flex;
   flex-direction: column;
@@ -331,25 +330,27 @@
 }
 
 .scene:nth-child(7) .article__img--cloud {
-  width: 500px;
+  width: 350px;
   position: relative;
-  left: 100px;
+  top: 200px;
+  right: 40px;
   z-index: 3;
 }
 
 .scene:nth-child(7) .article__img--other--cloud {
-  width: 500px;
+  width: 350px;
   position: relative;
+  top: 180px;
+  right: 170px;
   z-index: 3;
 }
-
 
 .scene:nth-child(7) .article__img--tent {
   position: relative;
   z-index: 2;
   width: 230px;
   right: 170px;
-  bottom: 120px;
+  bottom: 20px;
   animation-name: move-down;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -361,7 +362,7 @@
   position: relative;
   z-index: 2;
   right: 70px;
-  bottom: 210px;
+  bottom: 100px;
   animation-name: move-down;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -369,19 +370,18 @@
 }
 
 .scene:nth-child(7) .article__img--table {
-  width: 90px;
+  width: 110px;
   position: relative;
   z-index: 2;
-  top: 250px;
+  top: 350px;
   left: 20px;
 }
 
 .scene:nth-child(7) .sandwiches {
   position: relative;
-  width: 100px;
-  bottom: 200px;
+  width: 80px;
+  bottom: 140px;
   left: 25px;
-  bottom: 225px;
   z-index: 2;
 }
 
@@ -393,9 +393,8 @@
   position: relative;
   width: 50px;
   height: 0;
-  bottom: 200px;
+  bottom: 325px;
   left: 48px;
-  bottom: 410px;
   z-index: 2;
 }
 
@@ -408,7 +407,7 @@
   position: relative;
   z-index: 2;
   left: 110px;
-  top: 140px;
+  top: 250px;
 }
 
 .scene:nth-child(7) .article__img--other--person {
@@ -416,17 +415,20 @@
   position: relative;
   z-index: 2;
   left: 170px;
-  top: 40px;
+  top: 150px;
 }
-
 
 .scene:nth-child(7) .article__div--ground {
   background-color: $orange;
   width: 100vw;
-  height: 200px;
-  position: relative;
+  height: 100px;
   z-index: 1;
-  bottom: 200px;
+}
+
+.scene:nth-child(7) .ground {
+  display: flex;
+  align-items: flex-end;
+  height: 0;
 }
 
 /* Last scene */
