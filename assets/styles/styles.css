@@ -264,10 +264,10 @@ body {
     transform: translateX(0%);
   }
   50% {
-    transform: translateX(-130%);
+    transform: translateX(-205%);
   }
   100% {
-    transform: translateX(-300%);
+    transform: translateX(-400%);
   }
 }
 @media only screen and (min-width: 600px) {
@@ -280,6 +280,39 @@ body {
   .scene__img--houses {
     animation: 8s fadeIn;
   }
+}
+@media only screen and (min-width: 600px) and (min-width: 600px) {
+  .scene__img--bigcar {
+    position: relative;
+    animation: rightstopleft 6s;
+    top: 250px;
+    left: 100vw;
+  }
+  .scene__img--houses {
+    animation: 8s fadeIn;
+  }
+  .scene__img--houses {
+    position: initial;
+  }
+  .article__div--wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @keyframes rightstopleft {
+    0% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(-100vw);
+    }
+    100% {
+      transform: translateX(-200vw);
+    }
+  }
+}
+@media only screen and (min-width: 600px) {
   .scene__img--houses {
     position: initial;
   }
@@ -326,10 +359,10 @@ body {
 
 .scene__img--houses {
   width: 340px;
-  animation: 3.5s fadeIn;
+  animation: 4s fadeIn;
   animation-fill-mode: forwards;
   z-index: 1;
-  padding-left: 20px;
+  padding-left: 50px;
 }
 
 .scene:nth-child(1), .scene:nth-child(4), .scene:nth-child(6),
@@ -695,7 +728,7 @@ body {
   .scene__img--bigcar {
     position: relative;
     animation: rightstopleft 6s;
-    top: 280px;
+    top: 250px;
     left: 100vw;
   }
 
@@ -721,7 +754,7 @@ body {
     }
 
     50% {
-      transform: translateX(-102vw);
+      transform: translateX(-100vw);
     }
     100% {
       transform: translateX(-200vw);
@@ -745,6 +778,8 @@ body {
   color: #FFF;
   font-family: "Arimo", sans-serif;
 }
+<<<<<<< HEAD
+=======
 
 .scene:nth-child(9) p {
   margin-bottom: 100px;
@@ -756,4 +791,5 @@ body {
   animation: fadeIn 7s;
 }
 
+>>>>>>> 926e995e13b025549cd79c64883a2dc828cb2992
 /*# sourceMappingURL=styles.css.map */

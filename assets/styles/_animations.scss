@@ -320,6 +320,17 @@
 
 @keyframes rightstopleft {
     0% {
+<<<<<<< HEAD
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(-205%);
+    }
+    100% {
+      transform: translateX(-400%);
+    }
+  }
+=======
         transform: translateX(0%);
     }
 
@@ -331,3 +342,4 @@
         transform: translateX(-300%);
     }
 }
+>>>>>>> 926e995e13b025549cd79c64883a2dc828cb2992
