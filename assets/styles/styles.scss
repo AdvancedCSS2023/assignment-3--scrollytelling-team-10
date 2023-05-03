@@ -413,3 +413,33 @@
   z-index: 1;
   bottom: 200px;
 }
+
+/* Last scene */
+.scene:nth-child(8) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F99D25;
+  color: white;
+  font-family: $primary-font;
+}
+
+.scene:nth-child(8) .scene__img--logo {
+  width: 400px;
+}
+
+/* Last scene */
+.scene:nth-child(8) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F99D25;
+  color: white;
+  font-family: $primary-font;
+}
+
+.scene:nth-child(8) .scene__img--logo {
+  width: 400px;
+}
