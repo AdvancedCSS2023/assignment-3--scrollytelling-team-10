@@ -14,14 +14,6 @@
 
 .scene6 {
   height: 844px;
-/*
-article{
-  overflow: hidden;
-}
-
-.article__rebuild {
-  height: 800px;
-*/
   background-color: $orange;
 }
 
@@ -33,13 +25,6 @@ article{
   left: 600px;
   top: 170px;
   animation: rightstopleft 5s;
-/*
-  width: 340px;
-  position: relative;
-  left: 102vw;
-  top: 200px;
-  animation: rightstopleft 4s;
-*/
   z-index: 2;
 }
 
@@ -214,6 +199,18 @@ article{
   }
 }
 
+.scene:nth-child(2) .story {
+  left: 1200px;
+}
+
+.story {
+  position: absolute;
+  width: 400px;
+  font-family: $primary-font;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
 /* Scene 6 */
 .scene:nth-child(6) {
   animation: bgChange 20s 1 forwards;
@@ -529,66 +526,30 @@ article{
   animation: fadeIn 7s;
 }
 
-@media only screen and (min-width: 600px) {
-
-  .scene__img--bigcar {
-    animation: rightstopleft 6s;
-    top: 230px;
-    left: 104vw;
-  }
-
-  .scene__img--houses {
-    animation: 8s fadeIn;
-    position: initial;
-  }
-
-  @keyframes rightstopleft {
-    0% {
-      transform: translateX(0%);
-    }
-
-    50% {
-      transform: translateX(-100vw);
-    }
-    100% {
-      transform: translateX(-200vw);
-    }
-  }
-
-  .scene__img--houses {
-    position: initial;
-    width: 300px;
-    padding-top: 20px;
-  }
-
-  .article__div--wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  @keyframes rightstopleft {
-    0% {
-      transform: translateX(0%);
-    }
-
-    50% {
-      transform: translateX(-102vw);
-    }
-    100% {
-      transform: translateX(-200vw);
-    }
-  }
+.story {
+  position: absolute;
+  width: 450px;
+  font-family: $primary-font;
+  color: white;
+  font-size: 32px;
+  text-align: center;
 }
-@media only screen and (min-width: 1700px) {
-  .scene__img--bigcar {
-    animation: rightstopleft 7s;
-    width: 500px;
-  }
 
-  .scene__img--houses {
-    animation: 10s fadeIn;
-  }
+.scene .story {
+  left: 1000px;
+}
 
+
+.scene:nth-child(4) .story {
+  top: 2000px;
+}
+
+.scene:nth-child(7) .story {
+  position: absolute;
+  top: 3800px;
+}
+
+.scene:nth-child(7) p {
+  position: relative;
+  z-index: 3;
 }
