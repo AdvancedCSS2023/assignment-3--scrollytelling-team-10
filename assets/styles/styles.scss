@@ -3,6 +3,8 @@
 @import "colors";
 @import "desktop";
 @import "fonts";
+@import "intersection";
+// @import "intersectionwanimation";
 @import "reset";
 @import "story";
 
@@ -55,10 +57,6 @@
   overflow: hidden
 }
 
-.animation {
-  animation: center-right 3s 4s ease-in 1 forwards;
-}
-
 .ground--line {
   background-color: $white;
   height: 5px;
@@ -84,10 +82,6 @@
   z-index: 1;
 }
 
-.scene2__buildings--animation {
-  animation: move-down 3s ease-in forwards;
-}
-
 .scene2__building__img--small {
   width: 40px;
 }
@@ -100,14 +94,8 @@
 /* Scene 3 */
 .scene3__shake {
   position: relative;
-  /*animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;*/
   overflow: hidden;
-  top: 575px;
-  left: 650px;
-}
-
-.scene3_shake--animation {
-  animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;
+  top: 280px;
 }
 
 .scene3__shake__img--small {
@@ -129,6 +117,10 @@
   align-items: center;
 }
 
+.scene4--animation {
+  animation: bgChange 20s 1 forwards;
+}
+
 .scene4__img--sun {
   background: $sun;
   box-shadow: 0px 0px 30px 15px $sun;
@@ -137,12 +129,6 @@
   border-radius: 50%;
   position: relative;
   left: 200px;
-  /*animation: pulse 2s infinite, sunRising 12s ease-out forwards;*/
-  transition: background-color 5s;
-}
-
-.scene4__img--sun--animation {
-  animation: pulse 2s infinite, sunRising 12s ease-out forwards;
 }
 
 .scene4__img--cloud {
@@ -152,7 +138,6 @@
   bottom: 200px;
   position: relative;
   border-radius: 200px;
-  animation: moveclouds 7s linear alternate infinite;
 }
 
 .scene4__img--cloud:before,
@@ -184,12 +169,10 @@
   z-index: 1;
 }
 
-.scene4__img--sandwitch,
-.scene4__img--waterbottle {
+.scene4__food {
   position: relative;
   z-index: 3;
   opacity: 0;
-  animation: fade-in 1s 13s forwards;
   visibility: hidden;
 }
 
@@ -232,11 +215,8 @@
   left: 10px;
 }
 
-.scene4__img--person1,
-.scene4__img--person2 {
+.scene4__persons {
   position: relative;
-  width: 80px;
-  animation: walking1 4s linear forwards;
 }
 
 .scene4__img--person1 {
@@ -244,6 +224,7 @@
   animation-delay: 6s;
   z-index: 3;
   left: -610px;
+  width: 80px;
 }
 
 .scene4__img--person2 {
@@ -251,6 +232,7 @@
   animation-delay: 6.4s;
   z-index: 2;
   left: -770px;
+  width: 80px;
 }
 
 .scene4__img--car {
@@ -258,15 +240,7 @@
   width: 300px;
   left: -1000px;
   bottom: 100px;
-  animation: left-right 5s ease-in-out 10s 1 forwards;
   z-index: 3;
-}
-
-@media only screen and (min-width: 400px) {
-  .scene4__img--car {
-    top: 30px;
-    animation: left-right-desktop 6s ease-in-out 10s 1 forwards;
-  }
 }
 
 .scene4__ground {
@@ -302,7 +276,6 @@
   top: 200px;
   right: 40px;
   z-index: 3;
-  animation: moveclouds2 4s linear alternate infinite;
 }
 
 .scene5__img--other--cloud {
@@ -311,7 +284,6 @@
   top: 180px;
   right: 170px;
   z-index: 3;
-  animation: moveclouds2 4s linear alternate-reverse infinite;
 }
 
 .scene5__img--tent {
@@ -320,10 +292,6 @@
   width: 230px;
   right: 170px;
   bottom: 20px;
-  animation-name: move-down;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  transition-timing-function: ease-in;
 }
 
 .scene5__img--red--cross--person {
@@ -332,10 +300,6 @@
   z-index: 2;
   right: 70px;
   bottom: 100px;
-  animation-name: move-down;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  transition-timing-function: ease-in;
 }
 
 .scene5__img--table {
@@ -400,24 +364,12 @@
   height: 0;
 }
 
-/* Last scene */
-.scene:nth-child(8) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: $orange;
-  color: $white;
-  font-family: $primary-font;
-}
-
 /* Scene 6 */
 .scene6__img--bigcar {
   width: 348px;
   position: relative;
   left: 600px;
   top: 170px;
-  animation: rightstopleft 5s;
   z-index: 2;
 }
 
@@ -426,7 +378,6 @@
   position: relative;
   z-index: 1;
   left: 45px;
-  animation: fade-in 1s 2s forwards, shake 2s ease-in 5s forwards;
   opacity: 0;
   visibility: hidden;
 }
@@ -439,30 +390,7 @@
   width: 50px;
   z-index: 3;
   opacity: 0;
-  animation: fade-in 2s 8s forwards, beat 1s ease infinite;
   visibility: hidden;
-}
-
-@media only screen and (min-width: 400px) {
-  .scene6__img--bigcar {
-    left: 1500px;
-    top: 60px;
-    animation: rightstopleft-desktop 7s;
-  }
-
-  .scene6__img--houses {
-    position: relative;
-    left: -180px;
-    width: 300px;
-    animation: fade-in 1s 3.5s forwards, shake 2s ease-in 6.5s forwards;
-  }
-
-  .scene6__svg--heart {
-    bottom: 200px;
-    right: 740px;
-    width: 50px;
-    animation: fade-in 2s 9.5s forwards, beat 1s ease infinite;
-  }
 }
 
 /* Scene 7 */
@@ -480,7 +408,7 @@
   flex-direction: column;
   background-color: $orange;
   color: $white;
-  font-family: "Arimo", sans-serif;
+  font-family: $primary-font;
 }
 
 .scene7 p {
@@ -492,4 +420,3 @@
   position: relative;
   animation: fadeIn 7s;
 }
-
