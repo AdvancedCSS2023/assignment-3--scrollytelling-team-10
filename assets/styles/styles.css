@@ -371,6 +371,44 @@ body {
   overflow-x: hidden;
 }
 
+.story {
+  width: 450px;
+  font-family: "Arimo", sans-serif;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+.story p {
+  position: relative;
+  left: 80px;
+  width: 300px;
+}
+
+.story2 p {
+  position: relative;
+  top: 50px;
+}
+
+.story4 p {
+  position: relative;
+  top: 320px;
+  color: black;
+}
+
+.story5 p {
+  position: relative;
+  top: 400px;
+  color: black;
+}
+
+.story6 p {
+  position: relative;
+  top: 50px;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
 .scene {
   width: 100vw;
   height: 844px;
@@ -848,51 +886,6 @@ body {
   text-align: center;
   position: relative;
   animation: fadeIn 7s;
-}
-
-.story {
-  position: absolute;
-  width: 450px;
-  font-family: "Arimo", sans-serif;
-  color: white;
-  font-size: 32px;
-  text-align: center;
-}
-
-.scene .story {
-  position: absolute;
-}
-
-.scene:nth-child(2) .story {
-  top: 1200px;
-  left: 100px;
-}
-
-.scene:nth-child(4) .story {
-  top: 2000px;
-  right: 100px;
-}
-
-.scene:nth-child(6) .story {
-  left: 100px;
-}
-
-.scene:nth-child(7) .story {
-  top: 3800px;
-  right: 100px;
-}
-
-.scene:nth-child(7) p {
-  position: relative;
-  z-index: 3;
-}
-
-.scene:nth-child(8) .story {
-  left: 100px;
-}
-
-.scene:nth-child(9) .story {
-  right: 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */
