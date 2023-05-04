@@ -14,14 +14,6 @@
 
 .scene6 {
   height: 844px;
-/*
-article{
-  overflow: hidden;
-}
-
-.article__rebuild {
-  height: 800px;
-*/
   background-color: $orange;
 }
 
@@ -33,13 +25,6 @@ article{
   left: 600px;
   top: 170px;
   animation: rightstopleft 5s;
-/*
-  width: 340px;
-  position: relative;
-  left: 102vw;
-  top: 200px;
-  animation: rightstopleft 4s;
-*/
   z-index: 2;
 }
 
@@ -540,7 +525,6 @@ article{
   position: relative;
   animation: fadeIn 7s;
 }
-
 
 .story {
   position: absolute;
