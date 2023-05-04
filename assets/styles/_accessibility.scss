@@ -1,13 +1,64 @@
+@import "colors";
+@import "animations";
+
 @media (prefer-reduced-motion) {
     .scene {
-      animation: none;
+        animation: none;
     }
-  }
-  
-  @media (prefer-color-scheme) {
-    .square {
-      background: black;
+}
+
+@media (prefer-color-scheme) {
+    body {
+        background-color: $dark-sky;
     }
-  }
-  
-  @media (orientation: landscape) {}
+
+    @keyframes bgChange {
+        0% {
+            background: $dark-orange;
+        }
+
+        100% {
+            background: $dark-sky;
+        }
+    }
+}
+
+@media (orientation: landscape) {
+    .scene4__img--car {
+        bottom: 90px;
+    }
+
+    .scene4__img--car {
+        animation: left-right-desktop3 6s ease-in-out 10s 1 forwards;
+    }
+
+    .scene6__img--bigcar {
+        position: relative;
+        left: 150px;
+        top: 240px;
+    }
+
+    .scene6__img--bigcar--animation {
+        animation: left-right-desktop2 5s ease-in-out 1 forwards;
+    }
+
+    .scene6__img--houses {
+        position: relative;
+        left: 200px;
+        width: 300px;
+    }
+
+    .scene6__img--houses--animation {
+        animation: fade-in 1s 3.5s forwards, shake 2s ease-in 6.5s forwards;
+    }
+
+    .scene6__svg--heart {
+        bottom: 200px;
+        left: 670px;
+        width: 50px;
+    }
+
+    .scene6__svg--heart--animation {
+        animation: fade-in 2s 9.5s forwards, beat 1s ease infinite;
+    }
+}

@@ -1,14 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&display=swap");
-@media (prefer-reduced-motion) {
-  .scene {
-    animation: none;
-  }
-}
-@media (prefer-color-scheme) {
-  .square {
-    background: black;
-  }
-}
 @keyframes right-left {
   0% {
     transform: translateX(0);
@@ -136,15 +126,15 @@
     transform: translateX(0px);
   }
 }
-@keyframes left-right-desktop {
+@keyframes left-right-desktop3 {
   0% {
     transform: translateX(0px);
   }
   30% {
-    transform: translateX(750px);
+    transform: translateX(900px);
   }
   70% {
-    transform: translateX(750px);
+    transform: translateX(900px);
   }
   100% {
     transform: translateX(0px);
@@ -277,52 +267,325 @@
     transform: scale(0.92, 0.95);
   }
 }
-/*@media only screen and (min-width: 400px) {
+@media (prefer-reduced-motion) {
+  .scene {
+    animation: none;
+  }
+}
+@media (prefer-color-scheme) {
+  body {
+    background-color: #3537B5;
+  }
+  @keyframes bgChange {
+    0% {
+      background: #AB5214;
+    }
+    100% {
+      background: #3537B5;
+    }
+  }
+}
+@media (orientation: landscape) {
   .scene4__img--car {
     bottom: 90px;
   }
-
-  .scene4__img--car--animation {
-    animation: left-right-desktop 6s ease-in-out 10s 1 forwards;
+  .scene4__img--car {
+    animation: left-right-desktop3 6s ease-in-out 10s 1 forwards;
   }
-
   .scene6__img--bigcar {
     position: relative;
-    left: 1500px;
-    top: 60px;
+    left: 150px;
+    top: 240px;
   }
-
   .scene6__img--bigcar--animation {
-    animation: rightstopleft-desktop 7s;
+    animation: left-right-desktop2 5s ease-in-out 1 forwards;
   }
-
   .scene6__img--houses {
     position: relative;
-    left: 800px;
+    left: 200px;
     width: 300px;
   }
-
   .scene6__img--houses--animation {
     animation: fade-in 1s 3.5s forwards, shake 2s ease-in 6.5s forwards;
   }
-
   .scene6__svg--heart {
     bottom: 200px;
-    right: 400px;
+    left: 670px;
     width: 50px;
   }
-
   .scene6__svg--heart--animation {
     animation: fade-in 2s 9.5s forwards, beat 1s ease infinite;
   }
-*/
-  .story6 {
-    position: absolute;
-    left: 600px;
+}
+@keyframes right-left {
+  0% {
+    transform: translateX(0);
   }
-
-@import "intersection";
-.scene1__img--logo--animation, .scene1__img--logo {
+  100% {
+    transform: translateX(-1700px);
+  }
+}
+@keyframes moveclouds2 {
+  0% {
+    left: -5%;
+  }
+  100% {
+    left: 20%;
+  }
+}
+@keyframes moveclouds {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -50%;
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  10% {
+    transform: translate(-5px, -5px) rotate(-5deg);
+  }
+  20% {
+    transform: translate(5px, -5px) rotate(5deg);
+  }
+  30% {
+    transform: translate(-5px, -5px) rotate(-5deg);
+  }
+  40% {
+    transform: translate(5px, -5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  60% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  70% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  80% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  90% {
+    transform: translate(-5px, -5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes center-right {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(900px);
+  }
+}
+@keyframes bgChange {
+  0% {
+    background: #F99D25;
+  }
+  100% {
+    background: #ADD8E6;
+  }
+}
+@keyframes sunRising {
+  0% {
+    top: 90%;
+    left: -10%;
+  }
+  100% {
+    top: 5%;
+    left: 50%;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: scale(1.2);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes hidden-visible {
+  to {
+    visibility: visible;
+  }
+}
+@keyframes left-right {
+  0% {
+    transform: translateX(0px);
+  }
+  30% {
+    transform: translateX(890px);
+  }
+  70% {
+    transform: translateX(890px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes left-right-desktop3 {
+  0% {
+    transform: translateX(0px);
+  }
+  30% {
+    transform: translateX(900px);
+  }
+  70% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes left-right-desktop2 {
+  0% {
+    transform: translateX(0px);
+  }
+  30% {
+    transform: translateX(400px);
+  }
+  70% {
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes walking1 {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  10% {
+    transform: translateY(15px) translateX(90px);
+  }
+  20% {
+    transform: translateY(0) translateX(180px);
+  }
+  30% {
+    transform: translateY(15px) translateX(270px);
+  }
+  40% {
+    transform: translateY(0) translateX(360px);
+  }
+  50% {
+    transform: translateY(15px) translateX(450px);
+  }
+  60% {
+    transform: translateY(0) translateX(540px);
+  }
+  70% {
+    transform: translateY(15px) translateX(630px);
+  }
+  80% {
+    transform: translateY(0) translateX(720px);
+  }
+  89% {
+    transform: translateY(15px) translateX(810px);
+  }
+  100% {
+    transform: translateY(0) translateX(900px);
+  }
+}
+@keyframes grow {
+  from {
+    width: 0px;
+    height: 0px;
+  }
+  to {
+    width: 390px;
+    height: 390px;
+  }
+}
+@keyframes move-up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-180px);
+  }
+}
+@keyframes move-down {
+  from {
+    transform: translateY(0) scale(0);
+  }
+  to {
+    transform: translateY(380px) scale(1);
+  }
+}
+@keyframes move-down2 {
+  from {
+    transform: translateY(0) scale(0);
+  }
+  to {
+    transform: translateY(530px) scale(1);
+  }
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rightstopleft {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-580px);
+  }
+  60% {
+    transform: translateX(-580px);
+  }
+  100% {
+    transform: translateX(-1000px);
+  }
+}
+@keyframes rightstopleft-desktop {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-580px);
+  }
+  60% {
+    transform: translateX(-580px);
+  }
+  100% {
+    transform: translateX(-1000px);
+  }
+}
+@keyframes beat {
+  0%, 50%, 100% {
+    transform: scale(1, 1);
+  }
+  30%, 80% {
+    transform: scale(0.92, 0.95);
+  }
+}
+.scene1__img--logo--animation {
   animation: grow 2s forwards, move-up 4s forwards;
 }
 
@@ -408,82 +671,6 @@
   animation: grow 5s forwards, alt-move 3s forwards;
 }
 
-.scene1__img--logo--animation, .scene1__img--logo {
-  animation: grow 2s forwards, move-up 4s forwards;
-}
-
-.scene2__buildings--animation, .scene2__buildings {
-  animation: move-down 3s ease-in forwards;
-}
-
-.scene3_shake--animation, .scene3_shake {
-  animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;
-}
-
-.scene4__img--sun--animation, .scene4__img--sun {
-  animation: pulse 2s infinite, sunRising 12s ease-out forwards;
-}
-
-.scene4__img--cloud--animation, .scene4__img--cloud {
-  animation: moveclouds 7s linear alternate infinite;
-}
-
-.scene4--animation, .scene4 {
-  animation: bgChange 20s 1 forwards;
-}
-
-.scene4__food--animation, .scene4__food {
-  animation: fade-in 1s 13s forwards;
-}
-
-.scene4__img--person1--animation, .scene4__img--person1 {
-  animation: walking1 4s linear 6s forwards;
-}
-
-.scene4__img--person2--animation, .scene4__img--person2 {
-  animation: walking1 4s linear 6.4s forwards;
-}
-
-.scene4__img--car--animation, .scene4__img--car {
-  animation: left-right 5s ease-in-out 10s 1 forwards;
-}
-
-.scene5__img--cloud--animation, .scene5__img--cloud {
-  animation: moveclouds2 4s linear alternate infinite;
-}
-
-.scene5__img--other--cloud--animation, .scene5__img--other--cloud {
-  animation: moveclouds2 4s linear alternate-reverse infinite;
-}
-
-.scene5__img--tent--animation, .scene5__img--tent {
-  animation: move-down 3s ease-in forwards;
-}
-
-.scene5__img--red--cross--person--animation, .scene5__img--red--cross--person {
-  animation: move-down 3s ease-in forwards;
-}
-
-.scene6__img--bigcar--animation, .scene6__img--bigcar {
-  animation: rightstopleft 5s;
-}
-
-.scene6__img--houses--animation, .scene6__img--houses {
-  animation: fade-in 1s 2s forwards, shake 2s ease-in 5s forwards;
-}
-
-.scene6__svg--heart--animation, .scene6__svg--heart {
-  animation: fade-in 2s 8s forwards, beat 1s ease infinite;
-}
-
-.scene7__img--logo--animation, .scene7__img--logo {
-  animation: grow 5s forwards, alt-move 3s forwards;
-}
-
-.scene7__img--logo--animation, .scene7__img--logo {
-  animation: grow 5s forwards, alt-move 3s forwards;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -493,6 +680,7 @@
 body {
   overflow-y: scroll;
   overflow-x: hidden;
+  background-color: #ADD8E6;
 }
 
 .story {
@@ -617,7 +805,6 @@ body {
   margin-left: 20px;
 }
 
-/* Scene 3 */
 .scene3__shake {
   position: relative;
   overflow: hidden;
@@ -634,7 +821,6 @@ body {
   margin-left: 20px;
 }
 
-/* Scene 4 */
 .scene4 {
   animation: bgChange 20s 1 forwards;
   display: flex;
@@ -773,16 +959,14 @@ body {
   z-index: 3;
 }
 
-.scene4__ground {
+.scene5__ground--line {
   position: relative;
-  height: 150px;
+  bottom: 150px;
+  height: 200px;
   width: 100%;
-  top: 200px;
   background-color: #F99D25;
-  z-index: 1;
 }
 
-/* Scene 5 */
 .scene5 {
   display: flex;
   flex-direction: column;
@@ -894,7 +1078,6 @@ body {
   height: 0;
 }
 
-/* Scene 6 */
 .scene6__img--bigcar {
   width: 348px;
   position: relative;
@@ -914,7 +1097,7 @@ body {
 }
 
 .scene6__svg--heart {
-  fill: red;
+  fill: #FF0000;
   position: relative;
   top: 10px;
   left: 170px;
@@ -924,7 +1107,6 @@ body {
   visibility: hidden;
 }
 
-/* Scene 7 */
 .scene7__img--logo {
   width: 400px;
   width: 0;
@@ -952,13 +1134,20 @@ body {
   animation: fadeIn 7s;
 }
 
-/* Desktop */
 @media only screen and (min-width: 400px) {
   .scene4__img--car {
     bottom: 90px;
   }
-  .scene4__img--car--animation {
-    animation: left-right-desktop 6s ease-in-out 10s 1 forwards;
+  .scene4__img--car {
+    animation: left-right-desktop3 6s ease-in-out 10s 1 forwards;
+  }
+  .scene6__img--bigcar {
+    position: relative;
+    left: 150px;
+    top: 240px;
+  }
+  .scene6__img--bigcar--animation {
+    animation: left-right-desktop2 5s ease-in-out 1 forwards;
   }
   .scene6__img--houses {
     position: relative;
@@ -976,15 +1165,12 @@ body {
   .scene6__svg--heart--animation {
     animation: fade-in 2s 9.5s forwards, beat 1s ease infinite;
   }
-}
-@media only screen and (min-width: 400px) {
-  .scene6__img--bigcar {
-    position: relative;
-    left: 150px;
-    top: 240px;
+  .story6 {
+    position: absolute;
+    left: 800px;
   }
-  .scene6__img--bigcar--animation {
-    animation: left-right-desktop2 5s ease-in-out 1 forwards;
+  .story6 p {
+    top: 0;
   }
 }
 
