@@ -747,7 +747,7 @@ article {
   z-index: 2;
   width: 230px;
   right: 170px;
-  bottom: 20px;
+  bottom: 15px;
   animation-name: move-down;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -828,7 +828,7 @@ article {
   height: 0;
 }
 
-/* Last scene */
+
 .scene:nth-child(8) {
   display: flex;
   align-items: center;
@@ -865,6 +865,34 @@ article {
   text-align: center;
   position: relative;
   animation: fadeIn 7s;
+}
+
+.story {
+  position: absolute;
+  width: 450px;
+  font-family: $primary-font;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+.scene .story {
+  left: 1000px;
+}
+
+
+.scene:nth-child(4) .story {
+  top: 2000px;
+}
+
+.scene:nth-child(7) .story {
+  position: absolute;
+  top: 3800px;
+}
+
+.scene:nth-child(7) p {
+  position: relative;
+  z-index: 3;
 }
 
 /*# sourceMappingURL=styles.css.map */
