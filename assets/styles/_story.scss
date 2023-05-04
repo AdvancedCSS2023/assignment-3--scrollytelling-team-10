@@ -1,0 +1,32 @@
+.story {
+    position: absolute;
+    width: 450px;
+    font-family: $primary-font;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+  
+.story2 {
+    top: 1200px;
+    left: 100px;
+}
+  
+.story3 {
+    top: 2000px;
+    right: 100px;
+  }
+  
+.story4 {
+    left: 100px;
+  }
+  
+.story7 {
+    top: 3800px;
+    right: 100px;
+  }
+  
+.story7 p {
+    position: relative;
+    z-index: 3;
+  }
