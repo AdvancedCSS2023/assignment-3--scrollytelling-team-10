@@ -44,7 +44,7 @@ scene2__buildings.forEach((scene2__buildings) => {
 
 /* scene 3 */
 
-const scene3__shake = document.querySelectorAll(".scene3__shake");
+const scene3__shake = document.querySelectorAll(".scene3__shake")
 
 const observer3 = new IntersectionObserver(
   function (entries, observer3) {
@@ -82,7 +82,7 @@ const observer4 = new IntersectionObserver(
   options
 );
 
-scene4__img.forEach((scene4__img__sun) => {
+scene4__img__sun.forEach((scene4__img__sun) => {
   observer4.observe(scene4__img__sun);
 });
 
@@ -170,7 +170,7 @@ const observer8 = new IntersectionObserver(
   options
 );
 
-scene4__img_person1.forEach((scene4__img__person1) => {
+scene4__img__person1.forEach((scene4__img__person1) => {
   observer8.observe(scene4__img__person1);
 });
 
