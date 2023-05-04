@@ -10,10 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-article{
-  overflow: hidden;
-}
-
 @keyframes moveclouds {
   0% {
     left: 100%;
@@ -277,6 +273,10 @@ article{
 .scene {
   width: 100vw;
   height: 844px;
+}
+
+article {
+  overflow: hidden;
 }
 
 .article__rebuild {
@@ -766,11 +766,11 @@ article{
 @media only screen and (min-width: 1700px) {
   .scene__img--bigcar {
     animation: rightstopleft 7s;
-    width: 400px;
+    width: 500px;
   }
 
   .scene__img--houses {
-    animation: 11s fadeIn;
+    animation: 10s fadeIn;
   }
 
 }
