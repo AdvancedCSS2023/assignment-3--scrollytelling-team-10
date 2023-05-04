@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
 }
 
+article{
+  overflow: hidden;
+}
+
 @keyframes moveclouds {
   0% {
     left: 100%;
@@ -298,7 +302,6 @@ body {
   animation: 5s fadeIn;
   animation-fill-mode: forwards;
   z-index: 1;
-  padding-left: 50px;
 }
 
 .scene:nth-child(1), .scene:nth-child(4), .scene:nth-child(6),
@@ -707,20 +710,10 @@ body {
 }
 
 /*# sourceMappingURL=styles.css.map */
-@media only screen and (min-width: 600px) {
-  .scene__img--bigcar {
-    position: relative;
-    animation: rightstopleft 6s;
-    width: 340px;
-    top: 280px;
-    left: 100vw;
-  }
 
-  .scene__img--houses {
-    animation: 8s fadeIn;
-  }
+@media only screen and (min-width: 600px) {
+
   .scene__img--bigcar {
-    position: relative;
     animation: rightstopleft 6s;
     top: 230px;
     left: 104vw;
@@ -728,6 +721,20 @@ body {
 
   .scene__img--houses {
     animation: 8s fadeIn;
+    position: initial;
+  }
+
+  @keyframes rightstopleft {
+    0% {
+      transform: translateX(0%);
+    }
+
+    50% {
+      transform: translateX(-100vw);
+    }
+    100% {
+      transform: translateX(-200vw);
+    }
   }
 
   .scene__img--houses {
@@ -749,109 +756,21 @@ body {
     }
 
     50% {
-      transform: translateX(-100vw);
+      transform: translateX(-102vw);
     }
     100% {
       transform: translateX(-200vw);
     }
   }
 }
-.scene__img--houses {
-  position: initial;
-}
-
-.article__div--wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@keyframes rightstopleft {
-  0% {
-    transform: translateX(0%);
-  }
-
-  50% {
-    transform: translateX(-102vw);
-  }
-  100% {
-    transform: translateX(-200vw);
-  }
-}
-
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1700px) {
   .scene__img--bigcar {
-    position: relative;
-    animation: rightstopleft 6s;
-    top: 280px;
-    left: 100vw;
+    animation: rightstopleft 7s;
+    width: 400px;
   }
 
   .scene__img--houses {
-    animation: 8s fadeIn;
+    animation: 11s fadeIn;
   }
-  .scene__img--bigcar {
-    position: relative;
-    animation: rightstopleft 6s;
-    top: 230px;
-    left: 104vw;
-  }
-
-  .scene__img--houses {
-    animation: 8s fadeIn;
-  }
-
-  .scene__img--houses {
-    position: initial;
-  }
-
-  .article__div--wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  @keyframes rightstopleft {
-    0% {
-      transform: translateX(0%);
-    }
-
-    50% {
-      transform: translateX(-100vw);
-    }
-    100% {
-      transform: translateX(-200vw);
-    }
-  }
-
-
-.scene__img--houses {
-  position: initial;
-  width: 300px;
-  padding-top: 20px;
-}
-
-.article__div--wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@keyframes rightstopleft {
-  0% {
-    transform: translateX(0%);
-  }
-
-  50% {
-    transform: translateX(-102vw);
-  }
-  100% {
-    transform: translateX(-200vw);
-  }
-}
 
 }
-
