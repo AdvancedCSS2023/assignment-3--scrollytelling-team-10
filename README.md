@@ -12,14 +12,15 @@
 
 - The project is useful because it promotes awareness and education about sustainability goal 11, which is a critical component of creating a sustainable future. By showcasing advanced CSS features and CSS architecture, the project not only educates users about sustainability but also demonstrates the power of technology and design in promoting positive change. - The visually stunning animations, scrollytelling, and accessibility features make the project engaging and informative, ensuring that users will be inspired to take action towards creating sustainable cities and communities.
 - Additionally, the project's responsive design makes it accessible to a wide range of users, further promoting its message of sustainability and inclusivity. Overall, the project serves as a valuable resource for anyone interested in learning about sustainability and taking action towards a more sustainable future.
+- The projects is also useful to understand how basic css animations and javascript intersection observer works with html in styling with keyframes and scrollytelling. This project have given the group a good insight on how to work well with fun features like intersection observer, css animation and scrollytelling.
 
 ## How can users get started with the project?
 
 - Users can get started with the project by visiting the GitHub Pages link where it is published. Once on the website, users can scroll through the pages to experience the visually stunning animations and informative content that promote sustainability goal 11.
-
 - From a developer's perspective, to contribute to the project, you can first fork the project repository and clone it to your local machine. After cloning the repository, you can create a new branch for the feature you want to work on and make changes to the code. Once you have made changes, push the branch to the forked repository and create a pull request to merge the changes into the original repository. The pull request will be reviewed and approved by the group members before merging it into the master branch.
-
 - Overall, the project is accessible to both users and developers, providing a valuable resource for learning about sustainability and promoting positive change.
+- You can also look at the project on the repository pages website. This is a project that have been created inside github classroom, but it's easy to click the github pages link to show the website on both mobile and desktop.
+- Github pages: https://advancedcss2023.github.io/assignment-3--scrollytelling-team-10/
 
 ## Where can users get help with your project?
 
@@ -41,11 +42,11 @@
   - Transformations
   - Scrollytelling with Intersection Observer, Javascript
   - Accessibility features such as prefers-reduced-motion, prefers-color-scheme, and orientation
-
 - The use of these technologies ensures that the project is visually stunning, informative, and accessible to a wide range of users. The website's responsive design also makes it viewable on mobile devices, further emphasizing the project's commitment to inclusivity and sustainability.
+- Intersection observer gives us ability to show scrollable website to our users. This means that animations start when article is in the veiwport. Intersection observer checks if the user is looking at an article (on our website we use article) and plays the style or animation for the current one.
 
 ## Who maintains and contributes to the project?
 
-- The project is maintained and contributed to by the team members listed in the GitHub repository contributors. Elina, Hannah, and Jon-Helge are the developers who created the project and continue to maintain and contribute to it.
+- The project is maintained and contributed to by the team members listed in the GitHub repository contributors. Elina, Hannah, and Jon Helge are the developers who created the project and continue to maintain and contribute to it.
 - They work collaboratively by creating individual branches per implemented feature and merging changes through pull requests that are reviewed and approved by the group members. The owner of the branch merges the changes to the master branch.
 - Additionally, the project may also accept contributions from other developers who fork the project repository and make changes to the code via pull requests. However, these contributions will be reviewed and approved by the team members before being merged into the master branch.
