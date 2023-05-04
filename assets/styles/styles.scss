@@ -11,6 +11,10 @@
   height: 844px;
 }
 
+article{
+  overflow: hidden;
+}
+
 .article__rebuild {
   height: 800px;
   background-color: $orange;
