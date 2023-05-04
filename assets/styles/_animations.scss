@@ -320,14 +320,12 @@
 
 @keyframes rightstopleft {
     0% {
-        transform: translateX(0%);
+      transform: translateX(0%);
     }
-
     50% {
-        transform: translateX(-130%)
+      transform: translateX(-100vw);
     }
-
     100% {
-        transform: translateX(-300%);
+      transform: translateX(-200vw);
     }
-}
+  }
