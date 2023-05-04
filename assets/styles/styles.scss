@@ -2,7 +2,6 @@
 @import "colors";
 @import "fonts";
 @import "animations";
-@import "desktop";
 
 
 
@@ -12,22 +11,40 @@
   height: 844px;
 }
 
+
 .scene6 {
   height: 844px;
+/*
+article{
+  overflow: hidden;
+}
+
+.article__rebuild {
+  height: 800px;
+*/
   background-color: $orange;
 }
 
 
 .scene__img--bigcar {
+
   width: 348px;
   position: relative;
   left: 600px;
   top: 170px;
   animation: rightstopleft 5s;
+/*
+  width: 340px;
+  position: relative;
+  left: 102vw;
+  top: 200px;
+  animation: rightstopleft 4s;
+*/
   z-index: 2;
 }
 
 .scene__img--houses {
+
   width: 300px;
   position: relative;
   z-index: 1;
@@ -70,6 +87,12 @@
     animation: fade-in 2s 9.5s forwards, beat 1s ease infinite;
   }
 
+/*
+  width: 340px;
+  animation: 5s fadeIn;
+  animation-fill-mode: forwards;
+  z-index: 1;
+*/
 }
 
 
