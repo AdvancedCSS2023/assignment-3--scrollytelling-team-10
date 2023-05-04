@@ -264,74 +264,10 @@ body {
     transform: translateX(0%);
   }
   50% {
-    transform: translateX(-130%);
+    transform: translateX(-100vw);
   }
   100% {
-    transform: translateX(-300%);
-  }
-}
-@media only screen and (min-width: 600px) {
-  .scene__img--bigcar {
-    position: relative;
-    animation: rightstopleft 6s;
-    top: 280px;
-    left: 100vw;
-  }
-  .scene__img--houses {
-    animation: 8s fadeIn;
-  }
-}
-@media only screen and (min-width: 600px) and (min-width: 600px) {
-  .scene__img--bigcar {
-    position: relative;
-    animation: rightstopleft 6s;
-    top: 250px;
-    left: 100vw;
-  }
-  .scene__img--houses {
-    animation: 8s fadeIn;
-  }
-  .scene__img--houses {
-    position: initial;
-  }
-  .article__div--wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  @keyframes rightstopleft {
-    0% {
-      transform: translateX(0%);
-    }
-    50% {
-      transform: translateX(-100vw);
-    }
-    100% {
-      transform: translateX(-200vw);
-    }
-  }
-}
-@media only screen and (min-width: 600px) {
-  .scene__img--houses {
-    position: initial;
-  }
-  .article__div--wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  @keyframes rightstopleft {
-    0% {
-      transform: translateX(0%);
-    }
-    50% {
-      transform: translateX(-102vw);
-    }
-    100% {
-      transform: translateX(-200vw);
-    }
+    transform: translateX(-200vw);
   }
 }
 .scene {
@@ -349,9 +285,9 @@ body {
 }
 
 .scene__img--bigcar {
-  width: 410px;
+  width: 340px;
   position: relative;
-  left: 810px;
+  left: 102vw;
   top: 200px;
   animation: rightstopleft 4s;
   z-index: 2;
@@ -359,7 +295,7 @@ body {
 
 .scene__img--houses {
   width: 340px;
-  animation: 4s fadeIn;
+  animation: 5s fadeIn;
   animation-fill-mode: forwards;
   z-index: 1;
   padding-left: 50px;
@@ -417,7 +353,7 @@ body {
 .scene__shake {
   position: relative;
   animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .scene__shake__img--small {
@@ -770,6 +706,79 @@ body {
   animation: fadeIn 7s;
 }
 
+/*# sourceMappingURL=styles.css.map */
+@media only screen and (min-width: 600px) {
+  .scene__img--bigcar {
+    position: relative;
+    animation: rightstopleft 6s;
+    width: 340px;
+    top: 280px;
+    left: 100vw;
+  }
+
+  .scene__img--houses {
+    animation: 8s fadeIn;
+  }
+  .scene__img--bigcar {
+    position: relative;
+    animation: rightstopleft 6s;
+    top: 230px;
+    left: 104vw;
+  }
+
+  .scene__img--houses {
+    animation: 8s fadeIn;
+  }
+
+  .scene__img--houses {
+    position: initial;
+    width: 300px;
+    padding-top: 20px;
+  }
+
+  .article__div--wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes rightstopleft {
+    0% {
+      transform: translateX(0%);
+    }
+
+    50% {
+      transform: translateX(-100vw);
+    }
+    100% {
+      transform: translateX(-200vw);
+    }
+  }
+}
+.scene__img--houses {
+  position: initial;
+}
+
+.article__div--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes rightstopleft {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(-102vw);
+  }
+  100% {
+    transform: translateX(-200vw);
+  }
+}
 
 @media only screen and (min-width: 600px) {
   .scene__img--bigcar {
@@ -782,57 +791,27 @@ body {
   .scene__img--houses {
     animation: 8s fadeIn;
   }
-
-  @media only screen and (min-width: 600px) {
-    .scene__img--bigcar {
-      position: relative;
-      animation: rightstopleft 6s;
-      top: 250px;
-      left: 100vw;
-    }
-  
-    .scene__img--houses {
-      animation: 8s fadeIn;
-    }
-  
-    .scene__img--houses {
-      position: initial;
-    }
-  
-    .article__div--wrapper{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-     
-  
-    @keyframes rightstopleft {
-      0% {
-        transform: translateX(0%);
-      }
-  
-      50% {
-        transform: translateX(-100vw);
-      }
-      100% {
-        transform: translateX(-200vw);
-      }
-    }
-    
-  
+  .scene__img--bigcar {
+    position: relative;
+    animation: rightstopleft 6s;
+    top: 230px;
+    left: 104vw;
   }
+
+  .scene__img--houses {
+    animation: 8s fadeIn;
+  }
+
   .scene__img--houses {
     position: initial;
   }
 
-  .article__div--wrapper{
+  .article__div--wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-   
 
   @keyframes rightstopleft {
     0% {
@@ -840,14 +819,39 @@ body {
     }
 
     50% {
-      transform: translateX(-102vw);
+      transform: translateX(-100vw);
     }
     100% {
       transform: translateX(-200vw);
     }
   }
 
+
+.scene__img--houses {
+  position: initial;
+  width: 300px;
+  padding-top: 20px;
 }
 
+.article__div--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-/*# sourceMappingURL=styles.css.map */
+@keyframes rightstopleft {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(-102vw);
+  }
+  100% {
+    transform: translateX(-200vw);
+  }
+}
+
+}
+

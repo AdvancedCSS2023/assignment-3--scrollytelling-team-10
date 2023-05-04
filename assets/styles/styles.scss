@@ -2,7 +2,6 @@
 @import "colors";
 @import "fonts";
 @import "animations";
-@import "desktop";
 
 
 
@@ -22,9 +21,9 @@
 }
 
 .scene__img--bigcar {
-  width: 410px;
+  width: 340px;
   position: relative;
-  left: 810px;
+  left: 102vw;
   top: 200px;
   animation: rightstopleft 4s;
   z-index: 2;
@@ -32,10 +31,9 @@
 
 .scene__img--houses {
   width: 340px;
-  animation: 4s fadeIn;
+  animation: 5s fadeIn;
   animation-fill-mode: forwards;
   z-index: 1;
-  padding-left: 50px;
 }
 
 
