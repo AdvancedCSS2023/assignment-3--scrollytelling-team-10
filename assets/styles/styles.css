@@ -410,7 +410,6 @@ body {
 }
 
 .story {
-  position: absolute;
   width: 450px;
   font-family: "Arimo", sans-serif;
   color: white;
@@ -418,28 +417,39 @@ body {
   text-align: center;
 }
 
-.story2 {
-  top: 1200px;
-  left: 100px;
-}
-
-.story3 {
-  top: 2000px;
-  right: 100px;
-}
-
-.story4 {
-  left: 100px;
-}
-
-.story7 {
-  top: 3800px;
-  right: 100px;
-}
-
-.story7 p {
+.story p {
   position: relative;
-  z-index: 3;
+  left: 80px;
+  width: 300px;
+}
+
+.story2 p {
+  position: relative;
+  top: 50px;
+}
+
+.story4 p {
+  position: relative;
+  top: 320px;
+  color: black;
+}
+
+.story5 p {
+  position: relative;
+  top: 400px;
+  color: black;
+}
+
+.story6 {
+  position: relative;
+  right: 30px;
+}
+
+.story6 p {
+  position: relative;
+  top: 50px;
+  padding-bottom: 10px;
+  font-size: 30px;
 }
 
 .scene {
