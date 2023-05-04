@@ -3,7 +3,7 @@
 @import "colors";
 @import "desktop";
 @import "fonts";
-@import "intersection";
+/*@import "intersection";*/
 @import "intersectionwanimation";
 @import "reset";
 @import "story";
@@ -95,7 +95,7 @@
 .scene3__shake {
   position: relative;
   overflow: hidden;
-  top: 280px;
+  top: 160px;
 }
 
 .scene3__shake__img--small {
@@ -251,7 +251,7 @@
   position: relative;
   height: 150px;
   width: 100%;
-  top: 700px;
+  top: 100px;
   background-color: $orange;
   z-index: 1;
 }
@@ -303,7 +303,7 @@
   position: relative;
   z-index: 2;
   right: 70px;
-  bottom: 100px;
+  bottom: 0px;
 }
 
 .scene5__img--table {
