@@ -1,21 +1,18 @@
 @import "accessibility";
 @import "animations";
 @import "colors";
-@import "desktop";
 @import "fonts";
 @import "intersection";
 //@import "intersectionwanimation";
 @import "reset";
 @import "story";
 
-// General
 .scene {
   width: 100vw;
   height: 844px;
   background-color: $orange;
 }
 
-// Common
 .scene1,
 .scene2,
 .scene3 {
@@ -30,7 +27,6 @@
   justify-content: center;
 }
 
-// Scene 1
 .scene1 p {
   color: $white;
   font-size: 32px;
@@ -63,7 +59,6 @@
   width: 100%;
 }
 
-// Scene 2
 .scene2 {
   justify-content: flex-start;
 }
@@ -91,7 +86,6 @@
   margin-left: 20px;
 }
 
-/* Scene 3 */
 .scene3__shake {
   position: relative;
   overflow: hidden;
@@ -108,7 +102,6 @@
   margin-left: 20px;
 }
 
-/* Scene 4 */
 .scene4 {
   animation: bgChange 20s 1 forwards;
   display: flex;
@@ -247,16 +240,14 @@
   z-index: 3;
 }
 
-.scene4__ground {
+.scene5__ground--line {
   position: relative;
-  height: 150px;
+  bottom: 150px;
+  height: 200px;
   width: 100%;
-  top: 200px;
   background-color: $orange;
-  z-index: 1;
 }
 
-/* Scene 5 */
 .scene5 {
   display: flex;
   flex-direction: column;
@@ -368,7 +359,6 @@
   height: 0;
 }
 
-/* Scene 6 */
 .scene6__img--bigcar {
   width: 348px;
   position: relative;
@@ -388,7 +378,7 @@
 }
 
 .scene6__svg--heart {
-  fill: red;
+  fill: $red;
   position: relative;
   top: 10px;
   left: 170px;
@@ -398,7 +388,6 @@
   visibility: hidden;
 }
 
-/* Scene 7 */
 .scene7__img--logo {
   width: 400px;
   width: 0;
@@ -426,14 +415,14 @@
   animation: fadeIn 7s;
 }
 
-/* Desktop */
+
 @media only screen and (min-width: 400px) {
   .scene4__img--car {
     bottom: 90px;
   }
 
-  .scene4__img--car--animation {
-    animation: left-right-desktop 6s ease-in-out 10s 1 forwards;
+  .scene4__img--car {
+    animation: left-right-desktop3 6s ease-in-out 10s 1 forwards;
   }
 
   .scene6__img--bigcar {
@@ -465,4 +454,14 @@
   .scene6__svg--heart--animation {
     animation: fade-in 2s 9.5s forwards, beat 1s ease infinite;
   }
+
+  .story6 {
+    position: absolute;
+    left: 800px;
+  }
+
+  .story6 p {
+    top: 0;
+  }
+
 }
