@@ -1,7 +1,9 @@
 /* scene 1 */
 const scene1__img__logo = document.querySelectorAll(".scene1__img--logo");
 
-const options = {};
+const options = {
+  threshold: 0.5,
+};
 
 const observer1 = new IntersectionObserver(
   function (entries, observer1) {
@@ -44,7 +46,7 @@ scene2__buildings.forEach((scene2__buildings) => {
 
 /* scene 3 */
 
-const scene3__shake = document.querySelectorAll(".scene3__shake")
+const scene3__shake = document.querySelectorAll(".scene3__shake");
 
 const observer3 = new IntersectionObserver(
   function (entries, observer3) {

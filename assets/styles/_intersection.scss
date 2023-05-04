@@ -18,23 +18,28 @@
     animation: moveclouds 7s linear alternate infinite;
 }
 
-.scene4--animation {
+.scene4--animation,
+.scene4 {
     animation: bgChange 20s 1 forwards;
 }
 
-.scene4__food--animation {
+.scene4__food--animation,
+.scene4__food {
     animation: fade-in 1s 13s forwards;
 }
 
-.scene4__img--person1--animation {
+.scene4__img--person1--animation,
+.scene4__img--person1 {
     animation: walking1 4s linear 6s forwards;
 }
 
-.scene4__img--person2--animation {
+.scene4__img--person2--animation,
+.scene4__img--person2 {
     animation: walking1 4s linear 6.4s forwards;
 }
 
-.scene4__img--car--animation {
+.scene4__img--car--animation,
+.scene4__img--car {
     animation: left-right 5s ease-in-out 10s 1 forwards;
 }
 
@@ -46,23 +51,28 @@
     animation: moveclouds2 4s linear alternate-reverse infinite;
 }
 
-.scene5__img--tent--animation {
-    animation: move-down 3s ease-in forwards;
+.scene5__img--tent--animation,
+.scene5__img--tent {
+    animation: move-down2 3s ease-in forwards;
 }
 
+.scene5__img--red--cross--person--animation,
 .scene5__img--red--cross--person {
-    animation: move-down 3s ease-in forwards;
+    animation: move-down2 3s ease-in forwards;
 }
 
-.scene6__img--bigcar--animation {
+.scene6__img--bigcar--animation,
+.scene6__img--bigcar {
     animation: rightstopleft 5s;
 }
 
-.scene6__img--houses--animation {
+.scene6__img--houses--animation,
+.scene6__img--houses {
     animation: fade-in 1s 2s forwards, shake 2s ease-in 5s forwards;
 }
 
-.scene6__svg--heart--animation {
+.scene6__svg--heart--animation,
+.scene6__svg--heart {
     animation: fade-in 2s 8s forwards, beat 1s ease infinite;
 }
 

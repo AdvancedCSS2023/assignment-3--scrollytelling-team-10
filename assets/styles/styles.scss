@@ -3,8 +3,8 @@
 @import "colors";
 @import "desktop";
 @import "fonts";
-/*@import "intersection";*/
-@import "intersectionwanimation";
+@import "intersection";
+//@import "intersectionwanimation";
 @import "reset";
 @import "story";
 
@@ -251,7 +251,7 @@
   position: relative;
   height: 150px;
   width: 100%;
-  top: 100px;
+  top: 200px;
   background-color: $orange;
   z-index: 1;
 }
@@ -303,7 +303,7 @@
   position: relative;
   z-index: 2;
   right: 70px;
-  bottom: 0px;
+  bottom: 100px;
 }
 
 .scene5__img--table {
@@ -424,4 +424,45 @@
   text-align: center;
   position: relative;
   animation: fadeIn 7s;
+}
+
+/* Desktop */
+@media only screen and (min-width: 400px) {
+  .scene4__img--car {
+    bottom: 90px;
+  }
+
+  .scene4__img--car--animation {
+    animation: left-right-desktop 6s ease-in-out 10s 1 forwards;
+  }
+
+  .scene6__img--bigcar {
+    position: relative;
+    left: 150px;
+    top: 240px;
+  }
+
+  .scene6__img--bigcar--animation {
+    animation: left-right-desktop2 5s ease-in-out 1 forwards;
+  }
+
+  .scene6__img--houses {
+    position: relative;
+    left: 200px;
+    width: 300px;
+  }
+
+  .scene6__img--houses--animation {
+    animation: fade-in 1s 3.5s forwards, shake 2s ease-in 6.5s forwards;
+  }
+
+  .scene6__svg--heart {
+    bottom: 200px;
+    left: 670px;
+    width: 50px;
+  }
+
+  .scene6__svg--heart--animation {
+    animation: fade-in 2s 9.5s forwards, beat 1s ease infinite;
+  }
 }
