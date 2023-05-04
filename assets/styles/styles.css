@@ -94,7 +94,6 @@
     left: 50%;
   }
 }
-/* Sun animation */
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -220,41 +219,6 @@
     transform: rotate(360deg);
   }
 }
-@keyframes walking {
-  0% {
-    transform: translate(0, 0) translateX(0);
-  }
-  10% {
-    transform: translate(0, 15px) translateX(40px);
-  }
-  20% {
-    transform: translate(0, 0) translateX(80px);
-  }
-  30% {
-    transform: translate(0, 15px) translateX(120px);
-  }
-  40% {
-    transform: translate(0, 0) translateX(160px);
-  }
-  50% {
-    transform: translate(0, 15px) translateX(200px);
-  }
-  60% {
-    transform: translate(0, 0) translateX(240px);
-  }
-  70% {
-    transform: translate(0, 15px) translateX(280px);
-  }
-  80% {
-    transform: translate(0, 0) translateX(320px);
-  }
-  9% {
-    transform: translate(0, 15px) translateX(360px);
-  }
-  100% {
-    transform: translate(0, 0) translateX(400px);
-  }
-}
 @keyframes rightstopleft {
   0% {
     transform: translateX(0);
@@ -293,12 +257,13 @@
 }
 @media only screen and (min-width: 400px) {
   .scene4__img--car {
-    top: 30px;
+    bottom: 90px;
   }
   .scene4__img--car--animation {
     animation: left-right-desktop 6s ease-in-out 10s 1 forwards;
   }
   .scene6__img--bigcar {
+    position: relative;
     left: 1500px;
     top: 60px;
   }
@@ -307,7 +272,7 @@
   }
   .scene6__img--houses {
     position: relative;
-    left: -180px;
+    left: 200px;
     width: 300px;
   }
   .scene6__img--houses--animation {
@@ -315,7 +280,7 @@
   }
   .scene6__svg--heart {
     bottom: 200px;
-    right: 740px;
+    right: 400px;
     width: 50px;
   }
   .scene6__svg--heart--animation {
@@ -687,18 +652,21 @@ body {
 }
 
 .scene4__img--sandwitch:nth-child(1) {
+  position: relative;
   left: 120px;
   top: 190px;
 }
 
 .scene4__img--sandwitch:nth-child(2) {
+  position: relative;
   top: 165px;
   left: 60px;
 }
 
 .scene4__img--sandwitch:nth-child(3) {
+  position: relative;
   right: 20px;
-  top: 140px;
+  top: 145px;
 }
 
 .scene4__img--waterbottle {
@@ -707,37 +675,38 @@ body {
 }
 
 .scene4__img--waterbottle:nth-child(1) {
+  position: relative;
   left: 50px;
   top: 120px;
 }
 
 .scene4__img--waterbottle:nth-child(2) {
+  position: relative;
   top: 120px;
   left: 60px;
 }
 
 .scene4__img--waterbottle:nth-child(3) {
-  top: 130px;
+  position: relative;
+  top: 135px;
   left: 10px;
 }
 
-.scene4__persons {
-  position: relative;
-}
-
 .scene4__img--person1 {
+  position: relative;
   top: 100px;
   animation-delay: 6s;
   z-index: 3;
-  left: -610px;
+  left: -650px;
   width: 80px;
 }
 
 .scene4__img--person2 {
+  position: relative;
   top: 80px;
   animation-delay: 6.4s;
   z-index: 2;
-  left: -770px;
+  left: -785px;
   width: 80px;
 }
 
@@ -875,12 +844,13 @@ body {
   width: 348px;
   position: relative;
   left: 600px;
-  top: 170px;
+  top: 370px;
   z-index: 2;
 }
 
 .scene6__img--houses {
   width: 300px;
+  top: 200px;
   position: relative;
   z-index: 1;
   left: 45px;
@@ -891,8 +861,8 @@ body {
 .scene6__svg--heart {
   fill: red;
   position: relative;
-  bottom: 200px;
-  left: 10px;
+  top: 10px;
+  left: 170px;
   width: 50px;
   z-index: 3;
   opacity: 0;

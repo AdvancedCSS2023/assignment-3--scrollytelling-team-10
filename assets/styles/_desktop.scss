@@ -1,6 +1,6 @@
 @media only screen and (min-width: 400px) {
   .scene4__img--car {
-    top: 30px;
+    bottom: 90px;
   }
 
   .scene4__img--car--animation {
@@ -8,6 +8,7 @@
   }
 
   .scene6__img--bigcar {
+    position: relative;
     left: 1500px;
     top: 60px;
   }
@@ -18,7 +19,7 @@
 
   .scene6__img--houses {
     position: relative;
-    left: -180px;
+    left: 200px;
     width: 300px;
   }
 
@@ -28,7 +29,7 @@
 
   .scene6__svg--heart {
     bottom: 200px;
-    right: 740px;
+    right: 400px;
     width: 50px;
   }
 

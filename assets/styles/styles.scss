@@ -4,7 +4,7 @@
 @import "desktop";
 @import "fonts";
 @import "intersection";
-/*@import "intersectionwanimation";*/
+@import "intersectionwanimation";
 @import "reset";
 @import "story";
 
@@ -181,18 +181,21 @@
 }
 
 .scene4__img--sandwitch:nth-child(1) {
+  position: relative;
   left: 120px;
   top: 190px;
 }
 
 .scene4__img--sandwitch:nth-child(2) {
+  position: relative;
   top: 165px;
   left: 60px;
 }
 
 .scene4__img--sandwitch:nth-child(3) {
+  position: relative;
   right: 20px;
-  top: 140px;
+  top: 145px;
 }
 
 .scene4__img--waterbottle {
@@ -201,37 +204,38 @@
 }
 
 .scene4__img--waterbottle:nth-child(1) {
+  position: relative;
   left: 50px;
   top: 120px;
 }
 
 .scene4__img--waterbottle:nth-child(2) {
+  position: relative;
   top: 120px;
   left: 60px;
 }
 
 .scene4__img--waterbottle:nth-child(3) {
-  top: 130px;
+  position: relative;
+  top: 135px;
   left: 10px;
 }
 
-.scene4__persons {
-  position: relative;
-}
-
 .scene4__img--person1 {
+  position: relative;
   top: 100px;
   animation-delay: 6s;
   z-index: 3;
-  left: -610px;
+  left: -650px;
   width: 80px;
 }
 
 .scene4__img--person2 {
+  position: relative;
   top: 80px;
   animation-delay: 6.4s;
   z-index: 2;
-  left: -770px;
+  left: -785px;
   width: 80px;
 }
 
@@ -369,12 +373,13 @@
   width: 348px;
   position: relative;
   left: 600px;
-  top: 170px;
+  top: 370px;
   z-index: 2;
 }
 
 .scene6__img--houses {
   width: 300px;
+  top: 200px;
   position: relative;
   z-index: 1;
   left: 45px;
@@ -385,8 +390,8 @@
 .scene6__svg--heart {
   fill: red;
   position: relative;
-  bottom: 200px;
-  left: 10px;
+  top: 10px;
+  left: 170px;
   width: 50px;
   z-index: 3;
   opacity: 0;
