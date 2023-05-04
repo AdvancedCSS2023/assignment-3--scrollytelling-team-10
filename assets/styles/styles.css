@@ -709,26 +709,20 @@ article {
   animation: fadeIn 7s;
 }
 
-/*# sourceMappingURL=styles.css.map */
-
 @media only screen and (min-width: 600px) {
-
   .scene__img--bigcar {
     animation: rightstopleft 6s;
     top: 230px;
     left: 104vw;
   }
-
   .scene__img--houses {
     animation: 8s fadeIn;
     position: initial;
   }
-
   @keyframes rightstopleft {
     0% {
       transform: translateX(0%);
     }
-
     50% {
       transform: translateX(-100vw);
     }
@@ -736,25 +730,21 @@ article {
       transform: translateX(-200vw);
     }
   }
-
   .scene__img--houses {
     position: initial;
     width: 300px;
     padding-top: 20px;
   }
-
   .article__div--wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   @keyframes rightstopleft {
     0% {
       transform: translateX(0%);
     }
-
     50% {
       transform: translateX(-102vw);
     }
@@ -768,9 +758,9 @@ article {
     animation: rightstopleft 7s;
     width: 500px;
   }
-
   .scene__img--houses {
     animation: 10s fadeIn;
   }
-
 }
+
+/*# sourceMappingURL=styles.css.map */
