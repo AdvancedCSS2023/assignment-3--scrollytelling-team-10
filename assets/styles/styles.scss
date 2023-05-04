@@ -540,3 +540,32 @@ article{
   position: relative;
   animation: fadeIn 7s;
 }
+
+
+.story {
+  position: absolute;
+  width: 450px;
+  font-family: $primary-font;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+.scene .story {
+  left: 1000px;
+}
+
+
+.scene:nth-child(4) .story {
+  top: 2000px;
+}
+
+.scene:nth-child(7) .story {
+  position: absolute;
+  top: 3800px;
+}
+
+.scene:nth-child(7) p {
+  position: relative;
+  z-index: 3;
+}

@@ -553,18 +553,6 @@ article {
   margin-left: 20px;
 }
 
-.scene:nth-child(2) .story {
-  left: 1200px;
-}
-
-.story {
-  position: absolute;
-  width: 400px;
-  font-family: $primary-font;
-  color: white;
-  font-size: 32px;
-  text-align: center;
-}
 /* Scene 6 */
 .scene:nth-child(6) {
   animation: bgChange 20s 1 forwards;
@@ -877,6 +865,34 @@ article {
   text-align: center;
   position: relative;
   animation: fadeIn 7s;
+}
+
+.story {
+  position: absolute;
+  width: 450px;
+  font-family: $primary-font;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+.scene .story {
+  left: 1000px;
+}
+
+
+.scene:nth-child(4) .story {
+  top: 2000px;
+}
+
+.scene:nth-child(7) .story {
+  position: absolute;
+  top: 3800px;
+}
+
+.scene:nth-child(7) p {
+  position: relative;
+  z-index: 3;
 }
 
 /*# sourceMappingURL=styles.css.map */
