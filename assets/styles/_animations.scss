@@ -1,3 +1,5 @@
+@import "colors";
+
 @keyframes right-left {
     0% {
         transform: translateX(0);
@@ -344,6 +346,7 @@
     60% {
         transform: translateX(-1380px)
     }
+
     100% {
 
         transform: translateX(-2500px);
@@ -363,5 +366,3 @@
         transform: scale(0.92, 0.95);
     }
 }
-
-     

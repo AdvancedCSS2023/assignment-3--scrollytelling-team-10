@@ -1,0 +1,13 @@
+@media (prefer-reduced-motion) {
+    .scene {
+      animation: none;
+    }
+  }
+  
+  @media (prefer-color-scheme) {
+    .square {
+      background: black;
+    }
+  }
+  
+  @media (orientation: landscape) {}
