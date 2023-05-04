@@ -1,0 +1,75 @@
+.scene1__img--logo--animation {
+    animation: grow 2s forwards, move-up 4s forwards;
+}
+
+.scene2__buildings--animation {
+    animation: move-down 3s ease-in forwards;
+}
+
+.scene3_shake--animation {
+    animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;
+}
+
+.scene4__img--sun--animation {
+    animation: pulse 2s infinite, sunRising 12s ease-out forwards;
+}
+
+.scene4__img--cloud--animation {
+    animation: moveclouds 7s linear alternate infinite;
+}
+
+.scene4--animation {
+    animation: bgChange 20s 1 forwards;
+}
+
+.scene4__food--animation {
+    animation: fade-in 1s 13s forwards;
+}
+
+.scene4__img--person1--animation {
+    animation: walking1 4s linear 6s forwards;
+}
+
+.scene4__img--person2--animation {
+    animation: walking1 4s linear 6.4s forwards;
+}
+
+.scene4__img--car--animation {
+    animation: left-right 5s ease-in-out 10s 1 forwards;
+}
+
+.scene5__img--cloud--animation {
+    animation: moveclouds2 4s linear alternate infinite;
+}
+
+.scene5__img--other--cloud--animation {
+    animation: moveclouds2 4s linear alternate-reverse infinite;
+}
+
+.scene5__img--tent--animation {
+    animation: move-down 3s ease-in forwards;
+}
+
+.scene5__img--red--cross--person {
+    animation: move-down 3s ease-in forwards;
+}
+
+.scene6__img--bigcar--animation {
+    animation: rightstopleft 5s;
+}
+
+.scene6__img--houses--animation {
+    animation: fade-in 1s 2s forwards, shake 2s ease-in 5s forwards;
+}
+
+.scene6__svg--heart--animation {
+    animation: fade-in 2s 8s forwards, beat 1s ease infinite;
+}
+
+.scene7__img--logo--animation {
+    animation: grow 5s forwards, alt-move 3s forwards;
+}
+
+.scene7__img--logo--animation {
+    animation: grow 5s forwards, alt-move 3s forwards;
+}
