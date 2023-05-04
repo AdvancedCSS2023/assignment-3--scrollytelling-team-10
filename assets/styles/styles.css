@@ -291,75 +291,189 @@
     transform: scale(0.92, 0.95);
   }
 }
-/*@media only screen and (min-width: 600px) {
-
-  .scene__img--bigcar {
-    animation: rightstopleft 6s;
-    top: 230px;
-    left: 104vw;
+@media only screen and (min-width: 400px) {
+  .scene4__img--car {
+    top: 30px;
   }
-
-  .scene__img--houses {
-    animation: 8s fadeIn;
-    position: initial;
+  .scene4__img--car--animation {
+    animation: left-right-desktop 6s ease-in-out 10s 1 forwards;
   }
-
-  @keyframes rightstopleft {
-    0% {
-      transform: translateX(0%);
-    }
-
-    50% {
-      transform: translateX(-100vw);
-    }
-    100% {
-      transform: translateX(-200vw);
-    }
+  .scene6__img--bigcar {
+    left: 1500px;
+    top: 60px;
   }
-
-  .scene__img--houses {
-    position: initial;
+  .scene6__img--bigcar--animation {
+    animation: rightstopleft-desktop 7s;
+  }
+  .scene6__img--houses {
+    position: relative;
+    left: -180px;
     width: 300px;
-    padding-top: 20px;
   }
-
-  .article__div--wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .scene6__img--houses--animation {
+    animation: fade-in 1s 3.5s forwards, shake 2s ease-in 6.5s forwards;
   }
-
-  @keyframes rightstopleft {
-    0% {
-      transform: translateX(0%);
-    }
-
-    50% {
-      transform: translateX(-102vw);
-    }
-    100% {
-      transform: translateX(-200vw);
-    }
+  .scene6__svg--heart {
+    bottom: 200px;
+    right: 740px;
+    width: 50px;
   }
-
-
-
+  .scene6__svg--heart--animation {
+    animation: fade-in 2s 9.5s forwards, beat 1s ease infinite;
+  }
+}
+.scene1__img--logo--animation {
+  animation: grow 2s forwards, move-up 4s forwards;
 }
 
+.scene2__buildings--animation {
+  animation: move-down 3s ease-in forwards;
 }
-@media only screen and (min-width: 1700px) {
-  .scene__img--bigcar {
-    animation: rightstopleft 7s;
-    width: 500px;
-  }
 
-  .scene__img--houses {
-    animation: 10s fadeIn;
-  }
-
+.scene3_shake--animation {
+  animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;
 }
-*/
+
+.scene4__img--sun--animation {
+  animation: pulse 2s infinite, sunRising 12s ease-out forwards;
+}
+
+.scene4__img--cloud--animation {
+  animation: moveclouds 7s linear alternate infinite;
+}
+
+.scene4--animation {
+  animation: bgChange 20s 1 forwards;
+}
+
+.scene4__food--animation {
+  animation: fade-in 1s 13s forwards;
+}
+
+.scene4__img--person1--animation {
+  animation: walking1 4s linear 6s forwards;
+}
+
+.scene4__img--person2--animation {
+  animation: walking1 4s linear 6.4s forwards;
+}
+
+.scene4__img--car--animation {
+  animation: left-right 5s ease-in-out 10s 1 forwards;
+}
+
+.scene5__img--cloud--animation {
+  animation: moveclouds2 4s linear alternate infinite;
+}
+
+.scene5__img--other--cloud--animation {
+  animation: moveclouds2 4s linear alternate-reverse infinite;
+}
+
+.scene5__img--tent--animation {
+  animation: move-down 3s ease-in forwards;
+}
+
+.scene5__img--red--cross--person {
+  animation: move-down 3s ease-in forwards;
+}
+
+.scene6__img--bigcar--animation {
+  animation: rightstopleft 5s;
+}
+
+.scene6__img--houses--animation {
+  animation: fade-in 1s 2s forwards, shake 2s ease-in 5s forwards;
+}
+
+.scene6__svg--heart--animation {
+  animation: fade-in 2s 8s forwards, beat 1s ease infinite;
+}
+
+.scene7__img--logo--animation {
+  animation: grow 5s forwards, alt-move 3s forwards;
+}
+
+.scene7__img--logo--animation {
+  animation: grow 5s forwards, alt-move 3s forwards;
+}
+
+.scene1__img--logo--animation, .scene1__img--logo {
+  animation: grow 2s forwards, move-up 4s forwards;
+}
+
+.scene2__buildings--animation, .scene2__buildings {
+  animation: move-down 3s ease-in forwards;
+}
+
+.scene3_shake--animation, .scene3_shake {
+  animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;
+}
+
+.scene4__img--sun--animation, .scene4__img--sun {
+  animation: pulse 2s infinite, sunRising 12s ease-out forwards;
+}
+
+.scene4__img--cloud--animation, .scene4__img--cloud {
+  animation: moveclouds 7s linear alternate infinite;
+}
+
+.scene4--animation, .scene4 {
+  animation: bgChange 20s 1 forwards;
+}
+
+.scene4__food--animation, .scene4__food {
+  animation: fade-in 1s 13s forwards;
+}
+
+.scene4__img--person1--animation, .scene4__img--person1 {
+  animation: walking1 4s linear 6s forwards;
+}
+
+.scene4__img--person2--animation, .scene4__img--person2 {
+  animation: walking1 4s linear 6.4s forwards;
+}
+
+.scene4__img--car--animation, .scene4__img--car {
+  animation: left-right 5s ease-in-out 10s 1 forwards;
+}
+
+.scene5__img--cloud--animation, .scene5__img--cloud {
+  animation: moveclouds2 4s linear alternate infinite;
+}
+
+.scene5__img--other--cloud--animation, .scene5__img--other--cloud {
+  animation: moveclouds2 4s linear alternate-reverse infinite;
+}
+
+.scene5__img--tent--animation, .scene5__img--tent {
+  animation: move-down 3s ease-in forwards;
+}
+
+.scene5__img--red--cross--person--animation, .scene5__img--red--cross--person {
+  animation: move-down 3s ease-in forwards;
+}
+
+.scene6__img--bigcar--animation, .scene6__img--bigcar {
+  animation: rightstopleft 5s;
+}
+
+.scene6__img--houses--animation, .scene6__img--houses {
+  animation: fade-in 1s 2s forwards, shake 2s ease-in 5s forwards;
+}
+
+.scene6__svg--heart--animation, .scene6__svg--heart {
+  animation: fade-in 2s 8s forwards, beat 1s ease infinite;
+}
+
+.scene7__img--logo--animation, .scene7__img--logo {
+  animation: grow 5s forwards, alt-move 3s forwards;
+}
+
+.scene7__img--logo--animation, .scene7__img--logo {
+  animation: grow 5s forwards, alt-move 3s forwards;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -369,6 +483,39 @@
 body {
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.story {
+  position: absolute;
+  width: 450px;
+  font-family: "Arimo", sans-serif;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+.story2 {
+  top: 1200px;
+  left: 100px;
+}
+
+.story3 {
+  top: 2000px;
+  right: 100px;
+}
+
+.story4 {
+  left: 100px;
+}
+
+.story7 {
+  top: 3800px;
+  right: 100px;
+}
+
+.story7 p {
+  position: relative;
+  z-index: 3;
 }
 
 .scene {
@@ -417,10 +564,6 @@ body {
   overflow: hidden;
 }
 
-.animation {
-  animation: center-right 3s 4s ease-in 1 forwards;
-}
-
 .ground--line {
   background-color: #FFF;
   height: 5px;
@@ -445,10 +588,6 @@ body {
   z-index: 1;
 }
 
-.scene2__buildings--animation {
-  animation: move-down 3s ease-in forwards;
-}
-
 .scene2__building__img--small {
   width: 40px;
 }
@@ -461,14 +600,8 @@ body {
 /* Scene 3 */
 .scene3__shake {
   position: relative;
-  /*animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;*/
   overflow: hidden;
-  top: 575px;
-  left: 650px;
-}
-
-.scene3_shake--animation {
-  animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;
+  top: 280px;
 }
 
 .scene3__shake__img--small {
@@ -490,6 +623,10 @@ body {
   align-items: center;
 }
 
+.scene4--animation {
+  animation: bgChange 20s 1 forwards;
+}
+
 .scene4__img--sun {
   background: #FFF054;
   box-shadow: 0px 0px 30px 15px #FFF054;
@@ -498,12 +635,6 @@ body {
   border-radius: 50%;
   position: relative;
   left: 200px;
-  /*animation: pulse 2s infinite, sunRising 12s ease-out forwards;*/
-  transition: background-color 5s;
-}
-
-.scene4__img--sun--animation {
-  animation: pulse 2s infinite, sunRising 12s ease-out forwards;
 }
 
 .scene4__img--cloud {
@@ -513,7 +644,6 @@ body {
   bottom: 200px;
   position: relative;
   border-radius: 200px;
-  animation: moveclouds 7s linear alternate infinite;
 }
 
 .scene4__img--cloud:before,
@@ -545,12 +675,10 @@ body {
   z-index: 1;
 }
 
-.scene4__img--sandwitch,
-.scene4__img--waterbottle {
+.scene4__food {
   position: relative;
   z-index: 3;
   opacity: 0;
-  animation: fade-in 1s 13s forwards;
   visibility: hidden;
 }
 
@@ -593,11 +721,8 @@ body {
   left: 10px;
 }
 
-.scene4__img--person1,
-.scene4__img--person2 {
+.scene4__persons {
   position: relative;
-  width: 80px;
-  animation: walking1 4s linear forwards;
 }
 
 .scene4__img--person1 {
@@ -605,6 +730,7 @@ body {
   animation-delay: 6s;
   z-index: 3;
   left: -610px;
+  width: 80px;
 }
 
 .scene4__img--person2 {
@@ -612,6 +738,7 @@ body {
   animation-delay: 6.4s;
   z-index: 2;
   left: -770px;
+  width: 80px;
 }
 
 .scene4__img--car {
@@ -619,16 +746,9 @@ body {
   width: 300px;
   left: -1000px;
   bottom: 100px;
-  animation: left-right 5s ease-in-out 10s 1 forwards;
   z-index: 3;
 }
 
-@media only screen and (min-width: 400px) {
-  .scene4__img--car {
-    top: 30px;
-    animation: left-right-desktop 6s ease-in-out 10s 1 forwards;
-  }
-}
 .scene4__ground {
   position: relative;
   height: 150px;
@@ -662,7 +782,6 @@ body {
   top: 200px;
   right: 40px;
   z-index: 3;
-  animation: moveclouds2 4s linear alternate infinite;
 }
 
 .scene5__img--other--cloud {
@@ -671,7 +790,6 @@ body {
   top: 180px;
   right: 170px;
   z-index: 3;
-  animation: moveclouds2 4s linear alternate-reverse infinite;
 }
 
 .scene5__img--tent {
@@ -680,10 +798,6 @@ body {
   width: 230px;
   right: 170px;
   bottom: 20px;
-  animation-name: move-down;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  transition-timing-function: ease-in;
 }
 
 .scene5__img--red--cross--person {
@@ -692,10 +806,6 @@ body {
   z-index: 2;
   right: 70px;
   bottom: 100px;
-  animation-name: move-down;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  transition-timing-function: ease-in;
 }
 
 .scene5__img--table {
@@ -760,24 +870,12 @@ body {
   height: 0;
 }
 
-/* Last scene */
-.scene:nth-child(8) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #F99D25;
-  color: #FFF;
-  font-family: "Arimo", sans-serif;
-}
-
 /* Scene 6 */
 .scene6__img--bigcar {
   width: 348px;
   position: relative;
   left: 600px;
   top: 170px;
-  animation: rightstopleft 5s;
   z-index: 2;
 }
 
@@ -786,7 +884,6 @@ body {
   position: relative;
   z-index: 1;
   left: 45px;
-  animation: fade-in 1s 2s forwards, shake 2s ease-in 5s forwards;
   opacity: 0;
   visibility: hidden;
 }
@@ -799,29 +896,9 @@ body {
   width: 50px;
   z-index: 3;
   opacity: 0;
-  animation: fade-in 2s 8s forwards, beat 1s ease infinite;
   visibility: hidden;
 }
 
-@media only screen and (min-width: 400px) {
-  .scene6__img--bigcar {
-    left: 1500px;
-    top: 60px;
-    animation: rightstopleft-desktop 7s;
-  }
-  .scene6__img--houses {
-    position: relative;
-    left: -180px;
-    width: 300px;
-    animation: fade-in 1s 3.5s forwards, shake 2s ease-in 6.5s forwards;
-  }
-  .scene6__svg--heart {
-    bottom: 200px;
-    right: 740px;
-    width: 50px;
-    animation: fade-in 2s 9.5s forwards, beat 1s ease infinite;
-  }
-}
 /* Scene 7 */
 .scene7__img--logo {
   width: 400px;
@@ -848,51 +925,6 @@ body {
   text-align: center;
   position: relative;
   animation: fadeIn 7s;
-}
-
-.story {
-  position: absolute;
-  width: 450px;
-  font-family: "Arimo", sans-serif;
-  color: white;
-  font-size: 32px;
-  text-align: center;
-}
-
-.scene .story {
-  position: absolute;
-}
-
-.scene:nth-child(2) .story {
-  top: 1200px;
-  left: 100px;
-}
-
-.scene:nth-child(4) .story {
-  top: 2000px;
-  right: 100px;
-}
-
-.scene:nth-child(6) .story {
-  left: 100px;
-}
-
-.scene:nth-child(7) .story {
-  top: 3800px;
-  right: 100px;
-}
-
-.scene:nth-child(7) p {
-  position: relative;
-  z-index: 3;
-}
-
-.scene:nth-child(8) .story {
-  left: 100px;
-}
-
-.scene:nth-child(9) .story {
-  right: 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */
