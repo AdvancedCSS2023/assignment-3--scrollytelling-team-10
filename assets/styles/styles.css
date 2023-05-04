@@ -286,8 +286,88 @@
   .scene6__svg--heart--animation {
     animation: fade-in 2s 9.5s forwards, beat 1s ease infinite;
   }
+  .story6 {
+    position: absolute;
+    left: 600px;
+  }
 }
 /*@import "intersection";*/
+.scene1__img--logo--animation, .scene1__img--logo {
+  animation: grow 2s forwards, move-up 4s forwards;
+}
+
+.scene2__buildings--animation, .scene2__buildings {
+  animation: move-down 3s ease-in forwards;
+}
+
+.scene3_shake--animation, .scene3_shake {
+  animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;
+}
+
+.scene4__img--sun--animation, .scene4__img--sun {
+  animation: pulse 2s infinite, sunRising 12s ease-out forwards;
+}
+
+.scene4__img--cloud--animation, .scene4__img--cloud {
+  animation: moveclouds 7s linear alternate infinite;
+}
+
+.scene4--animation, .scene4 {
+  animation: bgChange 20s 1 forwards;
+}
+
+.scene4__food--animation, .scene4__food {
+  animation: fade-in 1s 13s forwards;
+}
+
+.scene4__img--person1--animation, .scene4__img--person1 {
+  animation: walking1 4s linear 6s forwards;
+}
+
+.scene4__img--person2--animation, .scene4__img--person2 {
+  animation: walking1 4s linear 6.4s forwards;
+}
+
+.scene4__img--car--animation, .scene4__img--car {
+  animation: left-right 5s ease-in-out 10s 1 forwards;
+}
+
+.scene5__img--cloud--animation, .scene5__img--cloud {
+  animation: moveclouds2 4s linear alternate infinite;
+}
+
+.scene5__img--other--cloud--animation, .scene5__img--other--cloud {
+  animation: moveclouds2 4s linear alternate-reverse infinite;
+}
+
+.scene5__img--tent--animation, .scene5__img--tent {
+  animation: move-down 3s ease-in forwards;
+}
+
+.scene5__img--red--cross--person--animation, .scene5__img--red--cross--person {
+  animation: move-down 3s ease-in forwards;
+}
+
+.scene6__img--bigcar--animation, .scene6__img--bigcar {
+  animation: rightstopleft 5s;
+}
+
+.scene6__img--houses--animation, .scene6__img--houses {
+  animation: fade-in 1s 2s forwards, shake 2s ease-in 5s forwards;
+}
+
+.scene6__svg--heart--animation, .scene6__svg--heart {
+  animation: fade-in 2s 8s forwards, beat 1s ease infinite;
+}
+
+.scene7__img--logo--animation, .scene7__img--logo {
+  animation: grow 5s forwards, alt-move 3s forwards;
+}
+
+.scene7__img--logo--animation, .scene7__img--logo {
+  animation: grow 5s forwards, alt-move 3s forwards;
+}
+
 .scene1__img--logo--animation, .scene1__img--logo {
   animation: grow 2s forwards, move-up 4s forwards;
 }
