@@ -159,6 +159,18 @@ article{
   }
 }
 
+.scene:nth-child(2) .story {
+  left: 1200px;
+}
+
+.story {
+  position: absolute;
+  width: 400px;
+  font-family: $primary-font;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
 /* Scene 6 */
 .scene:nth-child(6) {
   animation: bgChange 20s 1 forwards;
