@@ -12,30 +12,64 @@
   height: 844px;
 }
 
-.article__rebuild {
-  height: 800px;
+.scene6 {
+  height: 844px;
   background-color: $orange;
 }
 
-.article__div--wrapper {
-  padding-top: 200px;
-}
 
 .scene__img--bigcar {
-  width: 410px;
+  width: 348px;
   position: relative;
-  left: 810px;
-  top: 200px;
-  animation: rightstopleft 4s;
+  left: 600px;
+  top: 170px;
+  animation: rightstopleft 5s;
   z-index: 2;
 }
 
 .scene__img--houses {
-  width: 340px;
-  animation: 4s fadeIn;
-  animation-fill-mode: forwards;
+  width: 300px;
+  position: relative;
   z-index: 1;
-  padding-left: 50px;
+  left: 45px;
+  animation: fade-in 1s 2s forwards, shake 2s ease-in 5s forwards;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scene__svg--heart {
+  fill: red;
+  position: relative;
+  bottom: 200px;
+  left: 10px;
+  width: 50px;
+  z-index: 3;
+  opacity: 0;
+  animation: fade-in 2s 8s forwards, beat 1s ease infinite;
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 400px) {
+  .scene6 .scene__img--bigcar {
+    left: 1500px;
+    top: 60px;
+    animation: rightstopleft-desktop 7s;
+  }
+
+  .scene6 .scene__img--houses {
+    position: relative;
+    left: -180px;
+    width: 300px;
+    animation: fade-in 1s 3.5s forwards, shake 2s ease-in 6.5s forwards;
+  }
+
+  .scene__svg--heart {
+    bottom: 200px;
+    right: 740px;
+    width: 50px;
+    animation: fade-in 2s 9.5s forwards, beat 1s ease infinite;
+  }
+
 }
 
 
@@ -276,7 +310,7 @@
   top: 100px;
   animation-delay: 6s;
   z-index: 3;
-  left: -600px;
+  left: -610px;
 }
 
 .scene:nth-child(6) .scene__img--person2 {
@@ -335,6 +369,7 @@
   top: 200px;
   right: 40px;
   z-index: 3;
+  animation: moveclouds2 4s linear alternate infinite;
 }
 
 .scene:nth-child(7) .article__img--other--cloud {
@@ -343,6 +378,7 @@
   top: 180px;
   right: 170px;
   z-index: 3;
+  animation: moveclouds2 4s linear alternate-reverse infinite;
 }
 
 .scene:nth-child(7) .article__img--tent {
@@ -381,7 +417,7 @@
   position: relative;
   width: 80px;
   bottom: 140px;
-  left: 25px;
+  left: 20px;
   z-index: 2;
 }
 
@@ -393,7 +429,7 @@
   position: relative;
   width: 50px;
   height: 0;
-  bottom: 325px;
+  bottom: 320px;
   left: 48px;
   z-index: 2;
 }
