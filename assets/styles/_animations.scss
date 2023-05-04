@@ -178,6 +178,24 @@
     }
 }
 
+@keyframes left-right-desktop2 {
+    0% {
+        transform: translateX(0px);
+    }
+
+    30% {
+        transform: translateX(400px);
+    }
+
+    70% {
+        transform: translateX(400px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
 @keyframes walking1 {
 
     0% {
@@ -261,6 +279,16 @@
     }
 }
 
+@keyframes move-down2 {
+    from {
+        transform: translateY(0) scale(0);
+    }
+
+    to {
+        transform: translateY(530px) scale(1);
+    }
+}
+
 @keyframes rotate {
     to {
         transform: rotate(360deg);
@@ -291,16 +319,15 @@
     }
 
     40% {
-        transform: translateX(-1380px)
+        transform: translateX(-580px)
     }
 
     60% {
-        transform: translateX(-1380px)
+        transform: translateX(-580px)
     }
 
     100% {
-
-        transform: translateX(-2500px);
+        transform: translateX(-1000px);
     }
 }
 
