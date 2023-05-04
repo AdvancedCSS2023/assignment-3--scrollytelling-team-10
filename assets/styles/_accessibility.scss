@@ -2,7 +2,9 @@
 @import "animations";
 
 @media (prefer-reduced-motion) {
-    .scene {
+
+    *, .scene,
+    .scene1__img--logo {
         animation: none;
     }
 }
