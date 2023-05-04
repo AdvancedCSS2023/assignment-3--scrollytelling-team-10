@@ -445,8 +445,7 @@ body {
   z-index: 1;
 }
 
-.scene2__building__img--small,
-.scene2__building__img--tall {
+.scene2__buildings--animation {
   animation: move-down 3s ease-in forwards;
 }
 
