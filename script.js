@@ -82,7 +82,7 @@ const observer4 = new IntersectionObserver(
   options
 );
 
-scene4__img.forEach((scene4__img__sun) => {
+scene4__img__sun.forEach((scene4__img__sun) => {
   observer4.observe(scene4__img__sun);
 });
 
@@ -170,7 +170,7 @@ const observer8 = new IntersectionObserver(
   options
 );
 
-scene4__img_person1.forEach((scene4__img__person1) => {
+scene4__img__person1.forEach((scene4__img__person1) => {
   observer8.observe(scene4__img__person1);
 });
 
@@ -376,7 +376,7 @@ scene6__svg__heart.forEach((scene6__svg__heart) => {
 });
 
 /* scene 7 - logo */
-const scene7__img__logo= document.querySelectorAll(".scene7__img--logo");
+const scene7__img__logo = document.querySelectorAll(".scene7__img--logo");
 
 const observer18 = new IntersectionObserver(
   function (entries, observer18) {
