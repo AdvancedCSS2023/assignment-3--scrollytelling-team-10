@@ -1,0 +1,855 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&display=swap");
+@media (prefer-reduced-motion) {
+  .scene {
+    animation: none;
+  }
+}
+@media (prefer-color-scheme) {
+  .square {
+    background: black;
+  }
+}
+@keyframes right-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1700px);
+  }
+}
+@keyframes moveclouds2 {
+  0% {
+    left: -5%;
+  }
+  100% {
+    left: 20%;
+  }
+}
+@keyframes moveclouds {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -50%;
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  10% {
+    transform: translate(-5px, -5px) rotate(-5deg);
+  }
+  20% {
+    transform: translate(5px, -5px) rotate(5deg);
+  }
+  30% {
+    transform: translate(-5px, -5px) rotate(-5deg);
+  }
+  40% {
+    transform: translate(5px, -5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  60% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  70% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  80% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  90% {
+    transform: translate(-5px, -5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes center-right {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(900px);
+  }
+}
+@keyframes bgChange {
+  0% {
+    background: #F99D25;
+  }
+  100% {
+    background: #ADD8E6;
+  }
+}
+@keyframes sunRising {
+  0% {
+    top: 90%;
+    left: -10%;
+  }
+  100% {
+    top: 5%;
+    left: 50%;
+  }
+}
+/* Sun animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: scale(1.2);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes hidden-visible {
+  to {
+    visibility: visible;
+  }
+}
+@keyframes left-right {
+  0% {
+    transform: translateX(0px);
+  }
+  30% {
+    transform: translateX(890px);
+  }
+  70% {
+    transform: translateX(890px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes left-right-desktop {
+  0% {
+    transform: translateX(0px);
+  }
+  30% {
+    transform: translateX(750px);
+  }
+  70% {
+    transform: translateX(750px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes walking1 {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  10% {
+    transform: translateY(15px) translateX(90px);
+  }
+  20% {
+    transform: translateY(0) translateX(180px);
+  }
+  30% {
+    transform: translateY(15px) translateX(270px);
+  }
+  40% {
+    transform: translateY(0) translateX(360px);
+  }
+  50% {
+    transform: translateY(15px) translateX(450px);
+  }
+  60% {
+    transform: translateY(0) translateX(540px);
+  }
+  70% {
+    transform: translateY(15px) translateX(630px);
+  }
+  80% {
+    transform: translateY(0) translateX(720px);
+  }
+  89% {
+    transform: translateY(15px) translateX(810px);
+  }
+  100% {
+    transform: translateY(0) translateX(900px);
+  }
+}
+@keyframes grow {
+  from {
+    width: 0px;
+    height: 0px;
+  }
+  to {
+    width: 390px;
+    height: 390px;
+  }
+}
+@keyframes move-up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-180px);
+  }
+}
+@keyframes move-down {
+  from {
+    transform: translateY(0) scale(0);
+  }
+  to {
+    transform: translateY(537px) scale(1);
+  }
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes walking {
+  0% {
+    transform: translate(0, 0) translateX(0);
+  }
+  10% {
+    transform: translate(0, 15px) translateX(40px);
+  }
+  20% {
+    transform: translate(0, 0) translateX(80px);
+  }
+  30% {
+    transform: translate(0, 15px) translateX(120px);
+  }
+  40% {
+    transform: translate(0, 0) translateX(160px);
+  }
+  50% {
+    transform: translate(0, 15px) translateX(200px);
+  }
+  60% {
+    transform: translate(0, 0) translateX(240px);
+  }
+  70% {
+    transform: translate(0, 15px) translateX(280px);
+  }
+  80% {
+    transform: translate(0, 0) translateX(320px);
+  }
+  9% {
+    transform: translate(0, 15px) translateX(360px);
+  }
+  100% {
+    transform: translate(0, 0) translateX(400px);
+  }
+}
+@keyframes rightstopleft {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-580px);
+  }
+  60% {
+    transform: translateX(-580px);
+  }
+  100% {
+    transform: translateX(-1000px);
+  }
+}
+@keyframes rightstopleft-desktop {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-1380px);
+  }
+  60% {
+    transform: translateX(-1380px);
+  }
+  100% {
+    transform: translateX(-2500px);
+  }
+}
+@keyframes beat {
+  0%, 50%, 100% {
+    transform: scale(1, 1);
+  }
+  30%, 80% {
+    transform: scale(0.92, 0.95);
+  }
+}
+@media only screen and (min-width: 400px) {
+  .scene4__img--car {
+    top: 30px;
+  }
+  .scene4__img--car--animation {
+    animation: left-right-desktop 6s ease-in-out 10s 1 forwards;
+  }
+  .scene6__img--bigcar {
+    left: 1500px;
+    top: 60px;
+  }
+  .scene6__img--bigcar--animation {
+    animation: rightstopleft-desktop 7s;
+  }
+  .scene6__img--houses {
+    position: relative;
+    left: -180px;
+    width: 300px;
+  }
+  .scene6__img--houses--animation {
+    animation: fade-in 1s 3.5s forwards, shake 2s ease-in 6.5s forwards;
+  }
+  .scene6__svg--heart {
+    bottom: 200px;
+    right: 740px;
+    width: 50px;
+  }
+  .scene6__svg--heart--animation {
+    animation: fade-in 2s 9.5s forwards, beat 1s ease infinite;
+  }
+}
+.scene1__img--logo--animation {
+  animation: grow 2s forwards, move-up 4s forwards;
+}
+
+.scene2__buildings--animation {
+  animation: move-down 3s ease-in forwards;
+}
+
+.scene3_shake--animation {
+  animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;
+}
+
+.scene4__img--sun--animation {
+  animation: pulse 2s infinite, sunRising 12s ease-out forwards;
+}
+
+.scene4__img--cloud--animation {
+  animation: moveclouds 7s linear alternate infinite;
+}
+
+.scene4--animation {
+  animation: bgChange 20s 1 forwards;
+}
+
+.scene4__food--animation {
+  animation: fade-in 1s 13s forwards;
+}
+
+.scene4__img--person1--animation {
+  animation: walking1 4s linear 6s forwards;
+}
+
+.scene4__img--person2--animation {
+  animation: walking1 4s linear 6.4s forwards;
+}
+
+.scene4__img--car--animation {
+  animation: left-right 5s ease-in-out 10s 1 forwards;
+}
+
+.scene5__img--cloud--animation {
+  animation: moveclouds2 4s linear alternate infinite;
+}
+
+.scene5__img--other--cloud--animation {
+  animation: moveclouds2 4s linear alternate-reverse infinite;
+}
+
+.scene5__img--tent--animation {
+  animation: move-down 3s ease-in forwards;
+}
+
+.scene5__img--red--cross--person {
+  animation: move-down 3s ease-in forwards;
+}
+
+.scene6__img--bigcar--animation {
+  animation: rightstopleft 5s;
+}
+
+.scene6__img--houses--animation {
+  animation: fade-in 1s 2s forwards, shake 2s ease-in 5s forwards;
+}
+
+.scene6__svg--heart--animation {
+  animation: fade-in 2s 8s forwards, beat 1s ease infinite;
+}
+
+.scene7__img--logo--animation {
+  animation: grow 5s forwards, alt-move 3s forwards;
+}
+
+.scene7__img--logo--animation {
+  animation: grow 5s forwards, alt-move 3s forwards;
+}
+
+/*@import "intersectionwanimation";*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.story {
+  position: absolute;
+  width: 450px;
+  font-family: "Arimo", sans-serif;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+.story2 {
+  top: 1200px;
+  left: 100px;
+}
+
+.story3 {
+  top: 2000px;
+  right: 100px;
+}
+
+.story4 {
+  left: 100px;
+}
+
+.story7 {
+  top: 3800px;
+  right: 100px;
+}
+
+.story7 p {
+  position: relative;
+  z-index: 3;
+}
+
+.scene {
+  width: 100vw;
+  height: 844px;
+  background-color: #F99D25;
+}
+
+.scene1,
+.scene2,
+.scene3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scene1,
+.scene2,
+.scene3 {
+  justify-content: center;
+}
+
+.scene1 p {
+  color: #FFF;
+  font-size: 32px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  bottom: 100px;
+  opacity: 0;
+  animation: fade-in 2s 3.5s ease-in forwards;
+}
+
+.scene1__img--logo {
+  margin-top: 180px;
+  width: 0;
+  height: 0;
+  animation: grow 2s forwards, move-up 4s forwards;
+}
+
+.scene1__img--car {
+  width: 100px;
+  position: relative;
+  right: -800px;
+  animation: right-left 3s ease-in 4s 1 forwards;
+  overflow: hidden;
+}
+
+.ground--line {
+  background-color: #FFF;
+  height: 5px;
+  width: 100%;
+}
+
+.scene2 {
+  justify-content: flex-start;
+}
+
+.scene2__img--cloud {
+  height: 300px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.scene2__buildings {
+  position: relative;
+  left: 160px;
+  bottom: 210px;
+  z-index: 1;
+}
+
+.scene2__building__img--small {
+  width: 40px;
+}
+
+.scene2__building__img--tall {
+  width: 60px;
+  margin-left: 20px;
+}
+
+/* Scene 3 */
+.scene3__shake {
+  position: relative;
+  overflow: hidden;
+  top: 280px;
+}
+
+.scene3__shake__img--small {
+  width: 60px;
+  padding-top: 92px;
+}
+
+.scene3__shake__img--tall {
+  width: 100px;
+  margin-left: 20px;
+}
+
+/* Scene 4 */
+.scene4 {
+  animation: bgChange 20s 1 forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scene4--animation {
+  animation: bgChange 20s 1 forwards;
+}
+
+.scene4__img--sun {
+  background: #FFF054;
+  box-shadow: 0px 0px 30px 15px #FFF054;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  left: 200px;
+}
+
+.scene4__img--cloud {
+  width: 200px;
+  height: 60px;
+  background: #FFF;
+  bottom: 200px;
+  position: relative;
+  border-radius: 200px;
+}
+
+.scene4__img--cloud:before,
+.scene4__img--cloud:after {
+  content: "";
+  background: #FFF;
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  top: -15px;
+  left: 10px;
+  border-radius: 100px;
+  transform: rotate(30deg);
+}
+
+.scene4__img--cloud:after {
+  width: 120px;
+  height: 120px;
+  top: -55px;
+  left: auto;
+  right: 15px;
+}
+
+.scene4__img--table {
+  width: 150px;
+  position: relative;
+  top: 310px;
+  left: 40px;
+  z-index: 1;
+}
+
+.scene4__food {
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scene4__img--sandwitch {
+  width: 70px;
+}
+
+.scene4__img--sandwitch:nth-child(1) {
+  left: 120px;
+  top: 190px;
+}
+
+.scene4__img--sandwitch:nth-child(2) {
+  top: 165px;
+  left: 60px;
+}
+
+.scene4__img--sandwitch:nth-child(3) {
+  right: 20px;
+  top: 140px;
+}
+
+.scene4__img--waterbottle {
+  width: 30px;
+  z-index: 2;
+}
+
+.scene4__img--waterbottle:nth-child(1) {
+  left: 50px;
+  top: 120px;
+}
+
+.scene4__img--waterbottle:nth-child(2) {
+  top: 120px;
+  left: 60px;
+}
+
+.scene4__img--waterbottle:nth-child(3) {
+  top: 130px;
+  left: 10px;
+}
+
+.scene4__persons {
+  position: relative;
+}
+
+.scene4__img--person1 {
+  top: 100px;
+  animation-delay: 6s;
+  z-index: 3;
+  left: -610px;
+  width: 80px;
+}
+
+.scene4__img--person2 {
+  top: 80px;
+  animation-delay: 6.4s;
+  z-index: 2;
+  left: -770px;
+  width: 80px;
+}
+
+.scene4__img--car {
+  position: relative;
+  width: 300px;
+  left: -1000px;
+  bottom: 100px;
+  z-index: 3;
+}
+
+.scene4__ground {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  top: 700px;
+  background-color: #F99D25;
+  z-index: 1;
+}
+
+/* Scene 5 */
+.scene5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-color: #ADD8E6;
+  width: 100vw;
+  height: 844px;
+}
+
+.scene5__clouds {
+  height: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.scene5__img--cloud {
+  width: 350px;
+  position: relative;
+  top: 200px;
+  right: 40px;
+  z-index: 3;
+}
+
+.scene5__img--other--cloud {
+  width: 350px;
+  position: relative;
+  top: 180px;
+  right: 170px;
+  z-index: 3;
+}
+
+.scene5__img--tent {
+  position: relative;
+  z-index: 2;
+  width: 230px;
+  right: 170px;
+  bottom: 20px;
+}
+
+.scene5__img--red--cross--person {
+  width: 60px;
+  position: relative;
+  z-index: 2;
+  right: 70px;
+  bottom: 100px;
+}
+
+.scene5__img--table {
+  width: 110px;
+  position: relative;
+  z-index: 2;
+  top: 350px;
+  left: 20px;
+}
+
+.scene5__sandwiches {
+  position: relative;
+  width: 80px;
+  bottom: 140px;
+  left: 20px;
+  z-index: 2;
+}
+
+.scene5__sandwiches .scene5__img--sandwich {
+  width: 50px;
+}
+
+.scene5__bottles {
+  position: relative;
+  width: 50px;
+  height: 0;
+  bottom: 320px;
+  left: 48px;
+  z-index: 2;
+}
+
+.scene5__bottles .scene5__img--bottles {
+  width: 17px;
+}
+
+.scene5__img--person {
+  width: 58px;
+  position: relative;
+  z-index: 2;
+  left: 110px;
+  top: 250px;
+}
+
+.scene5__img--other--person {
+  width: 58px;
+  position: relative;
+  z-index: 2;
+  left: 170px;
+  top: 150px;
+}
+
+.scene5__div--ground {
+  background-color: #F99D25;
+  width: 100vw;
+  height: 100px;
+  z-index: 1;
+}
+
+.scene5__ground {
+  display: flex;
+  align-items: flex-end;
+  height: 0;
+}
+
+/* Scene 6 */
+.scene6__img--bigcar {
+  width: 348px;
+  position: relative;
+  left: 600px;
+  top: 170px;
+  z-index: 2;
+}
+
+.scene6__img--houses {
+  width: 300px;
+  position: relative;
+  z-index: 1;
+  left: 45px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scene6__svg--heart {
+  fill: red;
+  position: relative;
+  bottom: 200px;
+  left: 10px;
+  width: 50px;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Scene 7 */
+.scene7__img--logo {
+  width: 400px;
+  width: 0;
+  height: 0;
+  animation: grow 5s forwards, alt-move 3s forwards;
+}
+
+.scene7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F99D25;
+  color: #FFF;
+  font-family: "Arimo", sans-serif;
+}
+
+.scene7 p {
+  margin-bottom: 100px;
+  color: #FFF;
+  font-size: 32px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 7s;
+}
+
+/*# sourceMappingURL=style.css.map */
