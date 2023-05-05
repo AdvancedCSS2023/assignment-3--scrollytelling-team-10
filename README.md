@@ -11,6 +11,7 @@ An animated, scrollable website that focuses on promoting sustainability goal 11
 - [Why is the project useful?](#why-is-the-project-useful?)
 - [Technologies Used](#technologies-used)
 - [Contributors and Maintainers](#contributors-and-maintainers)
+- [Problems we faced and what we could do better](#problems-we-faced-and-what-we-could-do-better)
 
 ## Overview
 
@@ -87,6 +88,6 @@ Keyframes and intersection observer should work really well together when we add
 We had based our website around movable svg images/files to make the website more fun to look at, but after finding out that the intersection observer did not work as we wanted to we had to remove some of the animations that we arleady added. Even without these animations we could show the story in the way that we wanted to showcase it to the users. 
 
 Problem:
-https://github.com/w3c/IntersectionObserver/issues/376
+[Intersection Observer issues](https://github.com/w3c/IntersectionObserver/issues/376)
 
 ### How could we improve with the next scrollable website that we create
