@@ -63,6 +63,6 @@ This project is an animated, scrollable website that promotes sustainability goa
 
 ## Contributors and Maintainers
 
-The project is maintained and contributed to by the team members listed in the GitHub repository contributors: Elina, Hannah, and Jon Helge. They work collaboratively by creating individual branches per implemented feature and merging changes through pull requests that are reviewed and approved by the group members. The owner of the branch merges the changes to the master branch.
-
-The project may also accept contributions from other developers who fork the project repository and make changes to the code via pull requests. However, these contributions will be reviewed and approved by the team members before being merged into the master branch.
+- The project is maintained and contributed to by the team members listed in the GitHub repository contributors. Elina, Hannah, and Jon Helge are the developers who created the project and continue to maintain and contribute to it.
+- They work collaboratively by creating individual branches per implemented feature and merging changes through pull requests that are reviewed and approved by the group members. The owner of the branch merges the changes to the master branch.
+- Additionally, the project may also accept contributions from other developers who fork the project repository and make changes to the code via pull requests. However, these contributions will be reviewed and approved by the team members before being merged into the master branch.
