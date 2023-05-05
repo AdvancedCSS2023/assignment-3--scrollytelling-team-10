@@ -2,6 +2,11 @@
     animation: grow 2s forwards, move-up 4s forwards;
 }
 
+.scene2__img--cloud,
+.scene2__img--cloud--animation {
+    animation: horizontal-shaking 3s ease-out;
+}
+
 .scene2__buildings--animation {
     animation: move-down 3s ease-in forwards;
 }
@@ -82,4 +87,8 @@
 
 .scene7__img--logo--animation {
     animation: grow 5s forwards, alt-move 3s forwards;
+}
+
+.story--animation {
+    animation: fade-in 2s ease-in forwards;
 }

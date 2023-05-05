@@ -275,7 +275,7 @@
     }
 
     to {
-        transform: translateY(380px) scale(1);
+        transform: translateY(600px) scale(.5);
     }
 }
 
@@ -342,5 +342,27 @@
     30%,
     80% {
         transform: scale(0.92, 0.95);
+    }
+}
+
+@keyframes horizontal-shaking {
+    0% {
+        transform: translateX(0)
+    }
+
+    25% {
+        transform: translateX(15px)
+    }
+
+    50% {
+        transform: translateX(-15px)
+    }
+
+    75% {
+        transform: translateX(15px)
+    }
+
+    100% {
+        transform: translateX(0)
     }
 }

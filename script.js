@@ -23,7 +23,29 @@ scene1__img__logo.forEach((scene1__img__logo) => {
   observer1.observe(scene1__img__logo);
 });
 
-/* scene 2 */
+/* scene 2 - cloud */
+
+const scene2__img__cloud = document.querySelectorAll(".scene2__img--cloud");
+
+const observer19 = new IntersectionObserver(
+  function (entries, observer19) {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+
+      entry.target.classList.toggle("scene2__img--cloud--animation");
+    });
+  },
+
+  options
+);
+
+scene2__img__cloud.forEach((scene2__img__cloud) => {
+  observer19.observe(scene2__img__cloud);
+});
+
+/* scene 2 - buildings */
 const scene2__buildings = document.querySelectorAll(".scene2__buildings");
 
 const observer2 = new IntersectionObserver(
@@ -396,4 +418,25 @@ const observer18 = new IntersectionObserver(
 
 scene7__img__logo.forEach((scene7__img__logo) => {
   observer18.observe(scene7__img__logo);
+});
+
+/* story */
+const story = document.querySelectorAll(".story");
+
+const observer20 = new IntersectionObserver(
+  function (entries, observe20) {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+
+      entry.target.classList.toggle("story--animation");
+    });
+  },
+
+  options
+);
+
+story.forEach((story) => {
+  observer20.observe(story);
 });
