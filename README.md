@@ -16,7 +16,7 @@ An animated, scrollable website that focuses on promoting sustainability goal 11
 
 ## Overview📖
 
-This project is an animated, scrollable website that promotes sustainability goal 11, which aims to create sustainable cities and communities. The project utilizes advanced CSS features, CSS architecture, Sass, BEM, SVG, animations with keyframes, transitions, and transformations. The website implements scrollytelling with Intersection Observer and accessibility features such as prefers-reduced-motion, prefers-color-scheme, and orientation. The project educates users about sustainability goal 11 through storytelling, animations, layout, and typography. Additionally, the project is fully responsive and can be viewed on mobile devices, making it accessible to a wide range of users.
+This project is an animated, scrollable website that promotes sustainable development goal 11, which aims to create sustainable cities and communities. The project utilizes advanced CSS features, CSS architecture, Sass, BEM, SVG, animations with keyframes, transitions, and transformations. The website implements scrollytelling with Intersection Observer and accessibility features such as prefers-reduced-motion, prefers-color-scheme, and orientation. The project educates users about sustainability goal 11 through storytelling, animations, layout, and typography. Additionally, the project is fully responsive and can be viewed on mobile devices, making it accessible to a wide range of users.
 
 ## Features🌟
 
@@ -44,8 +44,8 @@ This project is an animated, scrollable website that promotes sustainability goa
 ## Why is the project useful? 🌱
 
 - The project is useful because it promotes awareness and education about sustainability goal 11, which is a critical component of creating a sustainable future. By showcasing advanced CSS features and CSS architecture, the project not only educates users about sustainability but also demonstrates the power of technology and design in promoting positive change. - The visually stunning animations, scrollytelling, and accessibility features make the project engaging and informative, ensuring that users will be inspired to take action towards creating sustainable cities and communities.🌿
-- Additionally, the project's responsive design makes it accessible to a wide range of users, further promoting its message of sustainability and inclusivity. Overall, the project serves as a valuable resource for anyone interested in learning about sustainability and taking action towards a more sustainable future.🌎
-- The projects is also useful to understand how basic css animations and javascript intersection observer works with html in styling with keyframes and scrollytelling. This project have given the group a good insight on how to work well with fun features like intersection observer, css animation and scrollytelling.🎓
+- Additionally, the project's responsive design makes it accessible to a wide range of users, further promoting its message of sustainability and inclusivity. Overall, the project serves as a valuable resource for anyone interested in learning about sustainability and taking action towards a better future.🌎
+- The projects is also useful to understand how basic CSS animations and javascript intersection observer works with HTML in styling with keyframes and scrollytelling. This project have given the group a good insight on how to work well with fun features like intersection observer, CSS animation and scrollytelling.🎓
 
 ## Technologies Used💻
 
@@ -63,7 +63,7 @@ The project utilizes various technologies to create an animated, scrollable webs
   - Scrollytelling with Intersection Observer, Javascript
   - Accessibility features such as prefers-reduced-motion, prefers-color-scheme, and orientation
     The use of these technologies ensures that the project is visually stunning, informative, and accessible to a wide range of users. The website's responsive design also makes it viewable on mobile devices, further emphasizing the project's commitment to inclusivity and sustainability.
-    Intersection observer gives us ability to show scrollable website to our users. This means that animations start when article is in the veiwport. Intersection observer checks if the user is looking at an article (on our website we use article) and plays the style or animation for the current one.📊
+    Intersection observer gives us ability to show scrollable website to our users. This means that animations start when article is in the viewport. Intersection observer checks if the user is looking at an article (on our website we use article) and plays the style or animation for the current one.📊
 
 ## Contributors and Maintainers👥
 
@@ -77,19 +77,19 @@ Add a section in the readme where we try to explain the bugs we faced and what w
 
 ### Intersection observer
 
-During the end stages of creating the scrollable website we decided to add our scroll functionallity. This means that at the end of the project we added intersection observer. This was a big mistake that have created some bugs for us.🐜
+During the end stages of creating the scrollable website we decided to add our scroll functionality. This means that we didn't add intersection observer until we were nearing the end our work, instead of implementing it from the very beginning. This was a big mistake that have created some bugs for us.🐜
 
 Instead of adding the intersection observer in the end we should have designed and created the website out of how the intersection observer interacts with our webpage.
 
-The problem we faced after working with the styling and animations first before adding intersection observer was that the observer itself did not add anything to the website. This makes sense after a lot of reflecting around our choices, but during the night where we added it. It was not clear to us how the observer works as a whole.
+The problem we faced after working with the styling and animations first before adding intersection observer was that the observer itself did not add anything to the website. This makes sense after a lot of reflecting around our choices, but the night we added it it was not clear to us how the observer works as a whole.
 
 The solution we ended up on was to create one interaction observer for each article on the page and connect this with the classname that we had been using from before during our styling phase.
 
 ### Keyframes animations with intersection observer
 
-Keyframes and intersection observer should work really well together when we add the start animation to the class that the observer creates. We discovered that in our code interaction observer works really well with divs, but when we have keyframes on the svg images/files, the observer would not observe the elements on the webpage and instead just ignore them or run the style in a buggy way.🪲
+Keyframes and intersection observer should work really well together when we add the start animation to the class that the observer creates. We discovered that in our code intersection observer works really well with divs, but when we have keyframes on the SVG images/files, the observer would not observe the elements on the webpage and instead just ignore them or run the style in a buggy way.🪲
 
-We had based our website around movable svg images/files to make the website more fun to look at, but after finding out that the intersection observer did not work as we wanted to we had to remove some of the animations that we arleady added. Even without these animations we could show the story in the way that we wanted to showcase it to the users.
+We had based our website around movable SVG images/files to make the website more fun to look at, but after finding out that the intersection observer did not work as we wanted to we had to remove some of the animations that we already added. Even without these animations we could showcase the story the way we wanted to the users.
 
 Problem:
 [Intersection Observer issues](https://github.com/w3c/IntersectionObserver/issues/376)
@@ -98,4 +98,4 @@ Problem:
 
 In the next scrollable website that we will create some time during the future, we will need to work out from a framework like scrollama. This would make the process much easier to understand and it would be more enjoyable to create something like this again with some help. 
 
-We will also focus on creating the website from the aspect of intersection observer, since we did not do that during this project we had a lot of problems to make it work in the end. Luckely for us we figured out a way to make it workable so we are happy with the result.
+We will also focus on creating the website from the aspect of intersection observer, since we did not do that during this project we had a lot of problems to make it work in the end. Luckily for us we figured out a way to make it workable so we are happy with the result.
