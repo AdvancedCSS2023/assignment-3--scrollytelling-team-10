@@ -8,7 +8,7 @@
 }
 
 .scene2__buildings--animation {
-    animation: move-down 3s ease-in forwards;
+    animation: move-down 3s ease-in forwards, fade-in 1s linear forwards;
 }
 
 .scene3_shake--animation {

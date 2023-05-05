@@ -630,7 +630,7 @@
 }
 
 .scene2__buildings--animation {
-  animation: move-down 3s ease-in forwards;
+  animation: move-down 3s ease-in forwards, fade-in 1s linear forwards;
 }
 
 .scene3_shake--animation {
@@ -834,6 +834,7 @@ body {
   left: 60px;
   bottom: 600px;
   z-index: 1;
+  opacity: 0;
 }
 .scene2__buildings__img--small {
   width: 40px;
