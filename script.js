@@ -1,3 +1,8 @@
+// REduced motion
+function prefersReducedMotion() {
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
+
 /* scene 1 */
 const scene1__img__logo = document.querySelectorAll(".scene1__img--logo");
 
@@ -7,6 +12,11 @@ const options = {
 
 const observer1 = new IntersectionObserver(
   function (entries, observer1) {
+
+    if (prefersReducedMotion()){
+      return;
+    }
+
     entries.forEach((entry) => {
       if (!entry.isIntersecting) {
         return;
