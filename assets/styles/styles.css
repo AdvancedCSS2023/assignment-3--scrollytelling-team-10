@@ -624,7 +624,10 @@
   animation: grow 2s forwards, move-up 4s forwards;
 }
 
-.scene2__img--cloud,
+.scene2__img--cloud {
+  animation: horizontal-shaking 8s ease-out infinite;
+}
+
 .scene2__img--cloud--animation {
   animation: horizontal-shaking 3s ease-out;
 }
@@ -762,7 +765,6 @@ body {
   position: relative;
   right: 30px;
 }
-
 .story6 p {
   position: relative;
   top: 50px;
