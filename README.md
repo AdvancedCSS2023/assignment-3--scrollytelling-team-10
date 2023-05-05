@@ -45,7 +45,7 @@ This project is an animated, scrollable website that promotes sustainability goa
 - The projects is also useful to understand how basic css animations and javascript intersection observer works with html in styling with keyframes and scrollytelling. This project have given the group a good insight on how to work well with fun features like intersection observer, css animation and scrollytelling.
 
 ## Technologies Used
-- The project utilizes various technologies to create an animated, scrollable website that promotes sustainability goal 11.
+The project utilizes various technologies to create an animated, scrollable website that promotes sustainability goal 11.
 - These technologies include:
 
   - Advanced CSS features
@@ -58,11 +58,11 @@ This project is an animated, scrollable website that promotes sustainability goa
   - Transformations
   - Scrollytelling with Intersection Observer, Javascript
   - Accessibility features such as prefers-reduced-motion, prefers-color-scheme, and orientation
-- The use of these technologies ensures that the project is visually stunning, informative, and accessible to a wide range of users. The website's responsive design also makes it viewable on mobile devices, further emphasizing the project's commitment to inclusivity and sustainability.
-- Intersection observer gives us ability to show scrollable website to our users. This means that animations start when article is in the veiwport. Intersection observer checks if the user is looking at an article (on our website we use article) and plays the style or animation for the current one.
+The use of these technologies ensures that the project is visually stunning, informative, and accessible to a wide range of users. The website's responsive design also makes it viewable on mobile devices, further emphasizing the project's commitment to inclusivity and sustainability.
+Intersection observer gives us ability to show scrollable website to our users. This means that animations start when article is in the veiwport. Intersection observer checks if the user is looking at an article (on our website we use article) and plays the style or animation for the current one.
 
 ## Contributors and Maintainers
 
-- The project is maintained and contributed to by the team members listed in the GitHub repository contributors. Elina, Hannah, and Jon Helge are the developers who created the project and continue to maintain and contribute to it.
-- They work collaboratively by creating individual branches per implemented feature and merging changes through pull requests that are reviewed and approved by the group members. The owner of the branch merges the changes to the master branch.
-- Additionally, the project may also accept contributions from other developers who fork the project repository and make changes to the code via pull requests. However, these contributions will be reviewed and approved by the team members before being merged into the master branch.
+The project is maintained and contributed to by the team members listed in the GitHub repository contributors. Elina, Hannah, and Jon Helge are the developers who created the project and continue to maintain and contribute to it.
+They work collaboratively by creating individual branches per implemented feature and merging changes through pull requests that are reviewed and approved by the group members. The owner of the branch merges the changes to the master branch.
+Additionally, the project may also accept contributions from other developers who fork the project repository and make changes to the code via pull requests. However, these contributions will be reviewed and approved by the team members before being merged into the master branch.
