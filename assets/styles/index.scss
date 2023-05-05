@@ -1,11 +1,11 @@
-@import "accessibility";
-@import "animations";
-@import "colors";
-@import "fonts";
-@import "intersection";
-//@import "intersectionwanimation";
-@import "reset";
-@import "story";
+@import "_reset";
+@import "_story";
+@import "_colors";
+@import "_fonts";
+@import "_animations";
+@import "_intersection";
+//@import "_intersectionwanimation";
+@import "_accessibility";
 
 .scene {
   width: 100vw;

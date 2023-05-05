@@ -24,11 +24,17 @@
   }
 }
 
+.story3 {
+  p {
+    z-index: 4;
+  }
+}
+
 .story4 {
   p {
     position: relative;
     top: 320px;
-    color:$black;
+    color: $black;
   }
 }
 
