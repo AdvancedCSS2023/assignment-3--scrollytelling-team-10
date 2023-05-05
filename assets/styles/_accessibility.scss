@@ -1,11 +1,18 @@
 @import "colors";
 @import "animations";
 
-@media (prefer-reduced-motion) {
+@media (prefer-reduced-motion: reduce) {
 
-    *, .scene,
-    .scene1__img--logo {
-        animation: none;
+    .scene2__buildings--animation,
+    .scene3_shake--animation,
+    .scene3_shake,
+    .scene4__img--sun--animation,
+    .scene4__img--car--animation,
+    .scene4__img--car,
+    .scene6__img--bigcar--animation,
+    .scene6__img--bigcar {
+        animation: none !important;
+        transition: none !important;
     }
 }
 

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&display=swap");
 @keyframes right-left {
   0% {
     transform: translateX(0);
@@ -284,10 +285,16 @@
     transform: translateX(0);
   }
 }
-@media (prefer-reduced-motion) {
-  *, .scene,
-  .scene1__img--logo {
-    animation: none;
+@keyframes stop {
+  to {
+    visibility: visible;
+  }
+}
+@media (prefer-reduced-motion: reduce) {
+  .scene3_shake--animation,
+  .scene3_shake {
+    animation: none !important;
+    transition: none !important;
   }
 }
 @media (prefer-color-scheme) {
@@ -620,6 +627,11 @@
     transform: translateX(0);
   }
 }
+@keyframes stop {
+  to {
+    visibility: visible;
+  }
+}
 .scene1__img--logo--animation {
   animation: grow 2s forwards, move-up 4s forwards;
 }
@@ -733,7 +745,7 @@ body {
 .story {
   width: 450px;
   font-family: "Arimo", sans-serif;
-  color: white;
+  color: #FFF;
   font-size: 32px;
   text-align: center;
 }
@@ -752,13 +764,13 @@ body {
 .story4 p {
   position: relative;
   top: 320px;
-  color: black;
+  color: #000000;
 }
 
 .story5 p {
   position: relative;
   top: 400px;
-  color: black;
+  color: #000000;
 }
 
 .story6 {

@@ -2,7 +2,7 @@
 const scene1__img__logo = document.querySelectorAll(".scene1__img--logo");
 
 const options = {
-  threshold: 0.5,
+  threshold: 0.6,
 };
 
 const observer1 = new IntersectionObserver(
