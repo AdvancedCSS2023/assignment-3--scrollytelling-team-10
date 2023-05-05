@@ -1,0 +1,36 @@
+@media (prefers-color-scheme: dark) {
+  body.dark-mode {
+    background-color: $black;
+    color: $white;
+
+    .scene {
+      background-color: $dark-orange;
+    }
+
+    .ground--line {
+      background-color: $white;
+    }
+
+    .scene5__div--ground {
+      background-color: $dark-orange;
+    }
+
+    .scene5 {
+      background-color: $dark-sky;
+    }
+
+    .scene7 {
+      background-color: $dark-orange;
+    }
+
+    .scene1,
+    .scene2,
+    .scene3,
+    .scene4,
+    .scene5,
+    .scene6,
+    .scene7 {
+      background-color: $dark-orange;
+    }
+  }
+}
