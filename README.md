@@ -1,3 +1,4 @@
+<img src="icon.png" align="right" />
 # Assignment 3 - Scrollytelling / Creative Computing
 
 An animated, scrollable website that focuses on promoting sustainability goal 11, which aims to create sustainable cities and communities.
