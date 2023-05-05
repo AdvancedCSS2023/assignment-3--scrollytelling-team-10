@@ -40,13 +40,9 @@ This project is an animated, scrollable website that promotes sustainability goa
 
 ## Technologies Used
 
-<<<<<<< HEAD
 - The project is maintained and contributed to by the team members listed in the GitHub repository contributors. Elina, Hannah, and Jon Helge are the developers who created the project and continue to maintain and contribute to it.
 - They work collaboratively by creating individual branches per implemented feature and merging changes through pull requests that are reviewed and approved by the group members. The owner of the branch merges the changes to the master branch.
 - Additionally, the project may also accept contributions from other developers who fork the project repository and make changes to the code via pull requests. However, these contributions will be reviewed and approved by the team members before being merged into the master branch.
-
-# Problems we faced and what we could do better
-=======
 - Advanced CSS features
 - CSS architecture
 - Sass
@@ -63,4 +59,29 @@ This project is an animated, scrollable website that promotes sustainability goa
 The project is maintained and contributed to by the team members listed in the GitHub repository contributors: Elina, Hannah, and Jon Helge. They work collaboratively by creating individual branches per implemented feature and merging changes through pull requests that are reviewed and approved by the group members. The owner of the branch merges the changes to the master branch.
 
 The project may also accept contributions from other developers who fork the project repository and make changes to the code via pull requests. However, these contributions will be reviewed and approved by the team members before being merged into the master branch.
->>>>>>> 12e14cac7155b9cbc35ae29dc3121b914f53668c
+
+
+# Problems we faced and what we could do better
+
+Add a section in the readme where we try to explain the bugs we faced and what we could do better. This will give us an ability to reflect around our choices.
+
+## Intersection observer
+
+During the end stages of creating the scrollable website we decided to add our scroll functionallity. This means that at the end of the project we added intersection observer. This was a big mistake that have created some bugs for us. 
+
+Instead of adding the intersection observer in the end we should have designed and created the website out of how the intersection observer interacts with our webpage. 
+
+The problem we faced after working with the styling and animations first before adding intersection observer was that the observer itself did not add anything to the website. This makes sense after a lot of reflecting around our choices, but during the night where we added it. It was not clear to us how the observer works as a whole. 
+
+The solution we ended up on was to create one interaction observer for each article on the page and connect this with the classname that we had been using from before during our styling phase. 
+
+## Keyframes animations with intersection observer
+
+Keyframes and intersection observer should work really well together when we add the start animation to the class that the observer creates. We discovered that in our code interaction observer works really well with divs, but when we have keyframes on the svg images/files, the observer would not observe the elements on the webpage and instead just ignore them or run the style in a buggy way. 
+
+We had based our website around movable svg images/files to make the website more fun to look at, but after finding out that the intersection observer did not work as we wanted to we had to remove some of the animations that we arleady added. Even without these animations we could show the story in the way that we wanted to showcase it to the users. 
+
+Problem:
+https://github.com/w3c/IntersectionObserver/issues/376
+
+## How could we improve with the next scrollable website that we create
