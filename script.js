@@ -1,3 +1,15 @@
+const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    function applyDarkMode(prefersDarkMode) {
+      if (prefersDarkMode.matches) {
+        document.body.classList.add('dark-mode');
+      } else {
+        document.body.classList.remove('dark-mode');
+      }
+    }
+    applyDarkMode(darkModeMediaQuery);
+    darkModeMediaQuery.addListener(applyDarkMode);
+
+
 /* scene 1 */
 const scene1__img__logo = document.querySelectorAll(".scene1__img--logo");
 
