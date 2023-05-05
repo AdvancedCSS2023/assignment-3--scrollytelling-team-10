@@ -8,7 +8,7 @@ An animated, scrollable website that focuses on promoting sustainability goal 11
 - [Features](#features)
 - [How to Get Started](#how-to-get-started)
 - [Getting Help](#getting-help)
-- [Why is the project useful?](#why-is-the-project-useful?)
+- [Why is the project useful?](#why-is-the-project-useful)
 - [Technologies Used](#technologies-used)
 - [Contributors and Maintainers](#contributors-and-maintainers)
 - [Problems we faced and what we could do better](#problems-we-faced-and-what-we-could-do-better)
