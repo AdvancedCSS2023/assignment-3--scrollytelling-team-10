@@ -1,97 +1,115 @@
+$reduced-motion-speed-factor: 10; // Adjust this value to control the animation speed for reduced motion (larger values make animations slower)
+
+@mixin reduced-motion-animation($property, $animation) {
+  #{$property}: $animation;
+
+  @media (prefers-reduced-motion: reduce) {
+    $new-animation: ();
+    @each $value in $animation {
+      @if type-of($value) == number and unit($value) == "s" {
+        $new-animation: append($new-animation, $value * $reduced-motion-speed-factor);
+      } @else {
+        $new-animation: append($new-animation, $value);
+      }
+    }
+    #{$property}: $new-animation;
+  }
+}
+
 .scene1__img--logo--animation {
-    animation: grow 2s forwards, move-up 4s forwards;
+  @include reduced-motion-animation(animation, (grow 2s forwards, move-up 4s forwards));
 }
 
 .scene2__img--cloud {
-    animation: horizontal-shaking 8s ease-out infinite;
+  @include reduced-motion-animation(animation, (horizontal-shaking 8s ease-out infinite));
 }
 
 .scene2__img--cloud--animation {
-    animation: horizontal-shaking 3s ease-out;
+  @include reduced-motion-animation(animation, (horizontal-shaking 3s ease-out));
 }
 
 .scene2__buildings--animation {
-    animation: move-down 3s ease-in forwards, fade-in 1s linear forwards;
+  @include reduced-motion-animation(animation, (move-down 3s ease-in forwards, fade-in 1s linear forwards));
 }
 
 .scene3_shake--animation {
-    animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;
+  @include reduced-motion-animation(animation, (shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards));
 }
 
 .scene4__img--sun--animation {
-    animation: pulse 2s infinite, sunRising 12s ease-out forwards;
+  @include reduced-motion-animation(animation, (pulse 2s infinite, sunRising 12s ease-out forwards));
 }
 
 .scene4__img--cloud--animation {
-    animation: moveclouds 7s linear alternate infinite;
+  @include reduced-motion-animation(animation, (moveclouds 7s linear alternate infinite));
 }
 
 .scene4--animation,
 .scene4 {
-    animation: bgChange 20s 1 forwards;
+  @include reduced-motion-animation(animation, (bgChange 20s 1 forwards));
 }
 
 .scene4__food--animation,
 .scene4__food {
-    animation: fade-in 1s 13s forwards;
+  @include reduced-motion-animation(animation, (fade-in 1s 13s forwards));
 }
 
 .scene4__img--person1--animation,
 .scene4__img--person1 {
-    animation: walking1 4s linear 6s forwards;
+  @include reduced-motion-animation(animation, (walking1 4s linear 6s forwards));
 }
 
 .scene4__img--person2--animation,
 .scene4__img--person2 {
-    animation: walking1 4s linear 6.4s forwards;
+  @include reduced-motion-animation(animation, (walking1 4s linear 6.4s forwards));
 }
 
 .scene4__img--car--animation,
 .scene4__img--car {
-    animation: left-right 5s ease-in-out 10s 1 forwards;
+  @include reduced-motion-animation(animation, (left-right 5s ease-in-out 10s 1 forwards));
 }
 
 .scene5__img--cloud--animation {
-    animation: moveclouds2 4s linear alternate infinite;
+  @include reduced-motion-animation(animation, (moveclouds2 4s linear alternate infinite));
 }
 
 .scene5__img--other--cloud--animation {
-    animation: moveclouds2 4s linear alternate-reverse infinite;
+  @include reduced-motion-animation(animation, (moveclouds2 4s linear alternate-reverse infinite));
 }
 
 .scene5__img--tent--animation,
 .scene5__img--tent {
-    animation: move-down2 3s ease-in forwards;
+  @include reduced-motion-animation(animation, (move-down2 3s ease-in forwards));
 }
 
 .scene5__img--red--cross--person--animation,
 .scene5__img--red--cross--person {
-    animation: move-down2 3s ease-in forwards;
+  @include reduced-motion-animation(animation, (move-down2 3s ease-in forwards));
 }
 
 .scene6__img--bigcar--animation,
 .scene6__img--bigcar {
-    animation: rightstopleft 5s;
+  @include reduced-motion-animation(animation, (rightstopleft 5s));
 }
 
 .scene6__img--houses--animation,
 .scene6__img--houses {
-    animation: fade-in 1s 2s forwards, shake 2s ease-in 5s forwards;
+  @include reduced-motion-animation(animation, (fade-in 1s 2s forwards, shake 2s ease-in 5s forwards));
 }
 
 .scene6__svg--heart--animation,
 .scene6__svg--heart {
-    animation: fade-in 2s 8s forwards, beat 1s ease infinite;
+  @include reduced-motion-animation(animation, (fade-in 2s 8s forwards, beat 1s ease infinite));
 }
 
 .scene7__img--logo--animation {
-    animation: grow 5s forwards, alt-move 3s forwards;
+  @include reduced-motion-animation(animation, (grow 5s forwards, alt-move 3s forwards));
 }
 
 .scene7__img--logo--animation {
-    animation: grow 5s forwards, alt-move 3s forwards;
+  @include reduced-motion-animation(animation, (grow 5s forwards, alt-move 3s forwards));
 }
 
 .story--animation {
-    animation: fade-in 2s ease-in forwards;
+  @include reduced-motion-animation(animation, (fade-in 2s ease-in forwards));
 }

@@ -346,444 +346,221 @@ body {
 .scene1__img--logo--animation {
   animation: grow 2s forwards, move-up 4s forwards;
 }
+@media (prefers-reduced-motion: reduce) {
+  .scene1__img--logo--animation {
+    animation: grow 2s forwards move-up 4s forwards;
+  }
+}
 
 .scene2__img--cloud {
   animation: horizontal-shaking 8s ease-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scene2__img--cloud {
+    animation: horizontal-shaking 80s ease-out infinite;
+  }
 }
 
 .scene2__img--cloud--animation {
   animation: horizontal-shaking 3s ease-out;
 }
+@media (prefers-reduced-motion: reduce) {
+  .scene2__img--cloud--animation {
+    animation: horizontal-shaking 30s ease-out;
+  }
+}
 
 .scene2__buildings--animation {
   animation: move-down 3s ease-in forwards, fade-in 1s linear forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scene2__buildings--animation {
+    animation: move-down 3s ease-in forwards fade-in 1s linear forwards;
+  }
 }
 
 .scene3_shake--animation {
   animation: shake 2s ease-in 1 forwards, center-right 1s 3s ease-in 1 forwards;
 }
+@media (prefers-reduced-motion: reduce) {
+  .scene3_shake--animation {
+    animation: shake 2s ease-in 1 forwards center-right 1s 3s ease-in 1 forwards;
+  }
+}
 
 .scene4__img--sun--animation {
   animation: pulse 2s infinite, sunRising 12s ease-out forwards;
 }
+@media (prefers-reduced-motion: reduce) {
+  .scene4__img--sun--animation {
+    animation: pulse 2s infinite sunRising 12s ease-out forwards;
+  }
+}
 
 .scene4__img--cloud--animation {
   animation: moveclouds 7s linear alternate infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scene4__img--cloud--animation {
+    animation: moveclouds 70s linear alternate infinite;
+  }
 }
 
 .scene4--animation,
 .scene4 {
   animation: bgChange 20s 1 forwards;
 }
+@media (prefers-reduced-motion: reduce) {
+  .scene4--animation,
+  .scene4 {
+    animation: bgChange 200s 1 forwards;
+  }
+}
 
 .scene4__food--animation,
 .scene4__food {
   animation: fade-in 1s 13s forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scene4__food--animation,
+  .scene4__food {
+    animation: fade-in 10s 130s forwards;
+  }
 }
 
 .scene4__img--person1--animation,
 .scene4__img--person1 {
   animation: walking1 4s linear 6s forwards;
 }
+@media (prefers-reduced-motion: reduce) {
+  .scene4__img--person1--animation,
+  .scene4__img--person1 {
+    animation: walking1 40s linear 60s forwards;
+  }
+}
 
 .scene4__img--person2--animation,
 .scene4__img--person2 {
   animation: walking1 4s linear 6.4s forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scene4__img--person2--animation,
+  .scene4__img--person2 {
+    animation: walking1 40s linear 64s forwards;
+  }
 }
 
 .scene4__img--car--animation,
 .scene4__img--car {
   animation: left-right 5s ease-in-out 10s 1 forwards;
 }
+@media (prefers-reduced-motion: reduce) {
+  .scene4__img--car--animation,
+  .scene4__img--car {
+    animation: left-right 50s ease-in-out 100s 1 forwards;
+  }
+}
 
 .scene5__img--cloud--animation {
   animation: moveclouds2 4s linear alternate infinite;
 }
+@media (prefers-reduced-motion: reduce) {
+  .scene5__img--cloud--animation {
+    animation: moveclouds2 40s linear alternate infinite;
+  }
+}
 
 .scene5__img--other--cloud--animation {
   animation: moveclouds2 4s linear alternate-reverse infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scene5__img--other--cloud--animation {
+    animation: moveclouds2 40s linear alternate-reverse infinite;
+  }
 }
 
 .scene5__img--tent--animation,
 .scene5__img--tent {
   animation: move-down2 3s ease-in forwards;
 }
+@media (prefers-reduced-motion: reduce) {
+  .scene5__img--tent--animation,
+  .scene5__img--tent {
+    animation: move-down2 30s ease-in forwards;
+  }
+}
 
 .scene5__img--red--cross--person--animation,
 .scene5__img--red--cross--person {
   animation: move-down2 3s ease-in forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scene5__img--red--cross--person--animation,
+  .scene5__img--red--cross--person {
+    animation: move-down2 30s ease-in forwards;
+  }
 }
 
 .scene6__img--bigcar--animation,
 .scene6__img--bigcar {
   animation: rightstopleft 5s;
 }
+@media (prefers-reduced-motion: reduce) {
+  .scene6__img--bigcar--animation,
+  .scene6__img--bigcar {
+    animation: rightstopleft 50s;
+  }
+}
 
 .scene6__img--houses--animation,
 .scene6__img--houses {
   animation: fade-in 1s 2s forwards, shake 2s ease-in 5s forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scene6__img--houses--animation,
+  .scene6__img--houses {
+    animation: fade-in 1s 2s forwards shake 2s ease-in 5s forwards;
+  }
 }
 
 .scene6__svg--heart--animation,
 .scene6__svg--heart {
   animation: fade-in 2s 8s forwards, beat 1s ease infinite;
 }
-
-.scene7__img--logo--animation {
-  animation: grow 5s forwards, alt-move 3s forwards;
+@media (prefers-reduced-motion: reduce) {
+  .scene6__svg--heart--animation,
+  .scene6__svg--heart {
+    animation: fade-in 2s 8s forwards beat 1s ease infinite;
+  }
 }
 
 .scene7__img--logo--animation {
   animation: grow 5s forwards, alt-move 3s forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scene7__img--logo--animation {
+    animation: grow 5s forwards alt-move 3s forwards;
+  }
+}
+
+.scene7__img--logo--animation {
+  animation: grow 5s forwards, alt-move 3s forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scene7__img--logo--animation {
+    animation: grow 5s forwards alt-move 3s forwards;
+  }
 }
 
 .story--animation {
   animation: fade-in 2s ease-in forwards;
 }
+@media (prefers-reduced-motion: reduce) {
+  .story--animation {
+    animation: fade-in 20s ease-in forwards;
+  }
+}
 
-@keyframes right-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-1700px);
-  }
-}
-@keyframes moveclouds2 {
-  0% {
-    left: -5%;
-  }
-  100% {
-    left: 20%;
-  }
-}
-@keyframes moveclouds {
-  0% {
-    left: 100%;
-  }
-  100% {
-    left: -50%;
-  }
-}
-@keyframes shake {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-  10% {
-    transform: translate(-5px, -5px) rotate(-5deg);
-  }
-  20% {
-    transform: translate(5px, -5px) rotate(5deg);
-  }
-  30% {
-    transform: translate(-5px, -5px) rotate(-5deg);
-  }
-  40% {
-    transform: translate(5px, -5px) rotate(5deg);
-  }
-  50% {
-    transform: translate(-5px, 5px) rotate(-5deg);
-  }
-  60% {
-    transform: translate(5px, 5px) rotate(5deg);
-  }
-  70% {
-    transform: translate(-5px, 5px) rotate(-5deg);
-  }
-  80% {
-    transform: translate(5px, 5px) rotate(5deg);
-  }
-  90% {
-    transform: translate(-5px, -5px) rotate(-5deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-}
-@keyframes center-right {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(900px);
-  }
-}
-@keyframes bgChange {
-  0% {
-    background: #F99D25;
-  }
-  100% {
-    background: #ADD8E6;
-  }
-}
-@keyframes sunRising {
-  0% {
-    top: 90%;
-    left: -10%;
-  }
-  100% {
-    top: 5%;
-    left: 50%;
-  }
-}
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    animation-timing-function: ease-in;
-  }
-  50% {
-    transform: scale(1.2);
-    animation-timing-function: ease-out;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    visibility: hidden;
-  }
-  to {
-    opacity: 1;
-    visibility: visible;
-  }
-}
-@keyframes hidden-visible {
-  to {
-    visibility: visible;
-  }
-}
-@keyframes left-right {
-  0% {
-    transform: translateX(0px);
-  }
-  30% {
-    transform: translateX(890px);
-  }
-  70% {
-    transform: translateX(890px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-@keyframes left-right-desktop3 {
-  0% {
-    transform: translateX(0px);
-  }
-  30% {
-    transform: translateX(900px);
-  }
-  70% {
-    transform: translateX(900px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-@keyframes left-right-desktop2 {
-  0% {
-    transform: translateX(0px);
-  }
-  30% {
-    transform: translateX(400px);
-  }
-  70% {
-    transform: translateX(400px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-@keyframes walking1 {
-  0% {
-    transform: translateY(0) translateX(0);
-  }
-  10% {
-    transform: translateY(15px) translateX(90px);
-  }
-  20% {
-    transform: translateY(0) translateX(180px);
-  }
-  30% {
-    transform: translateY(15px) translateX(270px);
-  }
-  40% {
-    transform: translateY(0) translateX(360px);
-  }
-  50% {
-    transform: translateY(15px) translateX(450px);
-  }
-  60% {
-    transform: translateY(0) translateX(540px);
-  }
-  70% {
-    transform: translateY(15px) translateX(630px);
-  }
-  80% {
-    transform: translateY(0) translateX(720px);
-  }
-  89% {
-    transform: translateY(15px) translateX(810px);
-  }
-  100% {
-    transform: translateY(0) translateX(900px);
-  }
-}
-@keyframes grow {
-  from {
-    width: 0px;
-    height: 0px;
-  }
-  to {
-    width: 390px;
-    height: 390px;
-  }
-}
-@keyframes move-up {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-180px);
-  }
-}
-@keyframes move-down {
-  from {
-    transform: translateY(0) scale(0);
-  }
-  to {
-    transform: translateY(600px) scale(0.5);
-  }
-}
-@keyframes move-down2 {
-  from {
-    transform: translateY(0) scale(0);
-  }
-  to {
-    transform: translateY(530px) scale(1);
-  }
-}
-@keyframes rotate {
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes rightstopleft {
-  0% {
-    transform: translateX(0);
-  }
-  40% {
-    transform: translateX(-580px);
-  }
-  60% {
-    transform: translateX(-580px);
-  }
-  100% {
-    transform: translateX(-1000px);
-  }
-}
-@keyframes rightstopleft-desktop {
-  0% {
-    transform: translateX(0);
-  }
-  40% {
-    transform: translateX(-580px);
-  }
-  60% {
-    transform: translateX(-580px);
-  }
-  100% {
-    transform: translateX(-1000px);
-  }
-}
-@keyframes beat {
-  0%, 50%, 100% {
-    transform: scale(1, 1);
-  }
-  30%, 80% {
-    transform: scale(0.92, 0.95);
-  }
-}
-@keyframes horizontal-shaking {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(15px);
-  }
-  50% {
-    transform: translateX(-15px);
-  }
-  75% {
-    transform: translateX(15px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@media (prefer-reduced-motion: reduce) {
-  .scene2__buildings--animation,
-  .scene3_shake--animation,
-  .scene3_shake,
-  .scene4__img--sun--animation,
-  .scene4__img--car--animation,
-  .scene4__img--car,
-  .scene6__img--bigcar--animation,
-  .scene6__img--bigcar {
-    animation: none !important;
-    transition: none !important;
-  }
-}
-@media (prefer-color-scheme) {
-  body {
-    background-color: #3537B5;
-  }
-  @keyframes bgChange {
-    0% {
-      background: #AB5214;
-    }
-    100% {
-      background: #3537B5;
-    }
-  }
-}
-@media (orientation: landscape) {
-  .scene4__img--car {
-    bottom: 90px;
-  }
-  .scene4__img--car {
-    animation: left-right-desktop3 6s ease-in-out 10s 1 forwards;
-  }
-  .scene6__img--bigcar {
-    position: relative;
-    left: 150px;
-    top: 240px;
-  }
-  .scene6__img--bigcar--animation {
-    animation: left-right-desktop2 5s ease-in-out 1 forwards;
-  }
-  .scene6__img--houses {
-    position: relative;
-    left: 200px;
-    width: 300px;
-  }
-  .scene6__img--houses--animation {
-    animation: fade-in 1s 3.5s forwards, shake 2s ease-in 6.5s forwards;
-  }
-  .scene6__svg--heart {
-    bottom: 200px;
-    left: 670px;
-    width: 50px;
-  }
-  .scene6__svg--heart--animation {
-    animation: fade-in 2s 9.5s forwards, beat 1s ease infinite;
-  }
-}
 .scene {
   width: 100vw;
   height: 844px;
