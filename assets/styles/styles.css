@@ -1,63 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  background-color: #ADD8E6;
+@media (prefers-color-scheme: dark) {
+  body.dark-mode {
+    background-color: #000000;
+    color: #FFF;
+  }
+  body.dark-mode .scene {
+    background-color: #AB5214;
+  }
+  body.dark-mode .ground--line {
+    background-color: #FFF;
+  }
+  body.dark-mode .scene5__div--ground {
+    background-color: #d77309;
+  }
+  body.dark-mode .scene5 {
+    background-color: #3537B5;
+  }
+  body.dark-mode .scene7 {
+    background-color: #AB5214;
+  }
+  body.dark-mode .scene1,
+  body.dark-mode .scene2,
+  body.dark-mode .scene3,
+  body.dark-mode .scene4,
+  body.dark-mode .scene5,
+  body.dark-mode .scene6,
+  body.dark-mode .scene7 {
+    background-color: #AB5214;
+  }
 }
-
-.story {
-  width: 450px;
-  font-family: "Arimo", sans-serif;
-  color: #FFF;
-  font-size: 32px;
-  text-align: center;
-}
-
-.story p {
-  position: relative;
-  left: 80px;
-  width: 300px;
-}
-
-.story2 p {
-  position: relative;
-  top: 50px;
-}
-
-.story3 p {
-  z-index: 4;
-}
-
-.story4 p {
-  position: relative;
-  top: 320px;
-  color: #000000;
-}
-
-.story5 p {
-  position: relative;
-  top: 400px;
-  color: #000000;
-}
-
-.story6 {
-  position: relative;
-  right: 30px;
-}
-.story6 p {
-  position: relative;
-  top: 50px;
-  padding-bottom: 10px;
-  font-size: 30px;
-}
-
 @keyframes right-left {
   0% {
     transform: translateX(0);
@@ -561,36 +538,58 @@ body {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  body.dark-mode {
-    background-color: #000000;
-    color: #FFF;
-  }
-  body.dark-mode .scene {
-    background-color: #AB5214;
-  }
-  body.dark-mode .ground--line {
-    background-color: #FFF;
-  }
-  body.dark-mode .scene5__div--ground {
-    background-color: #d77309;
-  }
-  body.dark-mode .scene5 {
-    background-color: #3537B5;
-  }
-  body.dark-mode .scene7 {
-    background-color: #AB5214;
-  }
-  body.dark-mode .scene1,
-  body.dark-mode .scene2,
-  body.dark-mode .scene3,
-  body.dark-mode .scene4,
-  body.dark-mode .scene5,
-  body.dark-mode .scene6,
-  body.dark-mode .scene7 {
-    background-color: #AB5214;
-  }
+.story {
+  width: 450px;
+  font-family: "Arimo", sans-serif;
+  color: #FFF;
+  font-size: 32px;
+  text-align: center;
 }
+
+.story p {
+  position: relative;
+  left: 80px;
+  width: 300px;
+}
+
+.story2 p {
+  position: relative;
+  top: 50px;
+}
+
+.story3 p {
+  z-index: 4;
+}
+
+.story4 p {
+  position: relative;
+  top: 320px;
+  color: #000000;
+}
+
+.story5 p {
+  position: relative;
+  top: 400px;
+  color: #000000;
+}
+
+.story6 {
+  position: relative;
+  right: 30px;
+}
+.story6 p {
+  position: relative;
+  top: 50px;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #ADD8E6;
+}
+
 .scene {
   width: 100vw;
   height: 844px;
