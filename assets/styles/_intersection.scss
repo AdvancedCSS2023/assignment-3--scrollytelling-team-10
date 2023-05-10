@@ -1,4 +1,4 @@
-$reduced-motion-speed-factor: 10;
+$reduced-motion-speed-factor: 10; // Adjust this value to control the animation speed for reduced motion (larger values make animations slower)
 
 @mixin reduced-motion-animation($property, $animation) {
   #{$property}: $animation;
