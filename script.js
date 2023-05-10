@@ -1,16 +1,14 @@
-const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    function applyDarkMode(prefersDarkMode) {
-      if (prefersDarkMode.matches) {
-        document.body.classList.add('dark-mode');
-      } else {
-        document.body.classList.remove('dark-mode');
-      }
-    }
-    applyDarkMode(darkModeMediaQuery);
-    darkModeMediaQuery.addListener(applyDarkMode);
+const darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+function applyDarkMode(prefersDarkMode) {
+  if (prefersDarkMode.matches) {
+    document.body.classList.add("dark-mode");
+  } else {
+    document.body.classList.remove("dark-mode");
+  }
+}
+applyDarkMode(darkModeMediaQuery);
+darkModeMediaQuery.addListener(applyDarkMode);
 
-
-/* scene 1 */
 const scene1__img__logo = document.querySelectorAll(".scene1__img--logo");
 
 const options = {
@@ -35,8 +33,6 @@ scene1__img__logo.forEach((scene1__img__logo) => {
   observer1.observe(scene1__img__logo);
 });
 
-/* scene 2 - cloud */
-
 const scene2__img__cloud = document.querySelectorAll(".scene2__img--cloud");
 
 const observer19 = new IntersectionObserver(
@@ -57,7 +53,6 @@ scene2__img__cloud.forEach((scene2__img__cloud) => {
   observer19.observe(scene2__img__cloud);
 });
 
-/* scene 2 - buildings */
 const scene2__buildings = document.querySelectorAll(".scene2__buildings");
 
 const observer2 = new IntersectionObserver(
@@ -77,8 +72,6 @@ const observer2 = new IntersectionObserver(
 scene2__buildings.forEach((scene2__buildings) => {
   observer2.observe(scene2__buildings);
 });
-
-/* scene 3 */
 
 const scene3__shake = document.querySelectorAll(".scene3__shake");
 
