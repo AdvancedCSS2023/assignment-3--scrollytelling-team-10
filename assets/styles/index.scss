@@ -1,12 +1,16 @@
 @import "_reset";
-@import "_story";
 @import "_colors";
 @import "_fonts";
+@import "_dark-mode";
 @import "_animations";
 @import "_intersection";
-@import "_dark-mode";
-//@import "_intersectionwanimation";
-//@import "_accessibility";
+@import "_story";
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: $sky;
+}
 
 .scene {
   width: 100vw;

@@ -1,17 +1,21 @@
-$reduced-motion-speed-factor: 10; // Adjust this value to control the animation speed for reduced motion (larger values make animations slower)
+$reduced-motion-speed-factor: 10;
 
 @mixin reduced-motion-animation($property, $animation) {
   #{$property}: $animation;
 
   @media (prefers-reduced-motion: reduce) {
     $new-animation: ();
+
     @each $value in $animation {
-      @if type-of($value) == number and unit($value) == "s" {
+      @if type-of($value)==number and unit($value)=="s" {
         $new-animation: append($new-animation, $value * $reduced-motion-speed-factor);
-      } @else {
+      }
+
+      @else {
         $new-animation: append($new-animation, $value);
       }
     }
+
     #{$property}: $new-animation;
   }
 }
