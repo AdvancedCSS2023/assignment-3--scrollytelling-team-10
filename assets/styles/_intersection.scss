@@ -5,13 +5,17 @@ $reduced-motion-speed-factor: 10;
 
   @media (prefers-reduced-motion: reduce) {
     $new-animation: ();
+
     @each $value in $animation {
-      @if type-of($value) == number and unit($value) == "s" {
+      @if type-of($value)==number and unit($value)=="s" {
         $new-animation: append($new-animation, $value * $reduced-motion-speed-factor);
-      } @else {
+      }
+
+      @else {
         $new-animation: append($new-animation, $value);
       }
     }
+
     #{$property}: $new-animation;
   }
 }
